@@ -1,25 +1,13 @@
 <template>
   <div>
-    <GreyHeader />
-    <main class="lg:block relative pt-16 lg:pt-24">
-      <Nuxt />
-    </main>
+    <nuxt />
   </div>
 </template>
 
-<script>
-import GreyHeader from "../components/GreyHeader"
-export default {
-  components: {
-    GreyHeader,
-  },
-}
-</script>
-
 <style>
 html {
-  font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, 'Helvetica Neue', Arial, sans-serif;
   font-size: 16px;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;
