@@ -14,7 +14,7 @@
 
       </NuxtLink>
       <!-- Center Navigation -->
-      <nav class="hidden lg:flex lg:pt-1 xl:pt-0 mx-auto">
+      <nav class="hidden lg:flex lg:pt-1 xl:pt-0">
         <ul class="flex text-center">
           <li
             v-for="link in headerLinks"
@@ -23,7 +23,7 @@
           >
             <NuxtLink
               class="block p-2 font-medium uppercase hover:no-underline transition-colors duration-300 ease-linear"
-              :to="link"
+              :to="`/${link}`"
             >
               {{ link }}
             </NuxtLink>
@@ -40,11 +40,11 @@ export default {
   data () {
     return {
       headerLinks: [
-        'mission',
+        'vision',
         'projects',
-        'services',
-        'blog',
-        'github'
+        // 'services',
+        // 'blog',
+        // 'github'
       ]
     }
   }

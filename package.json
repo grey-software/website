@@ -11,13 +11,18 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
+    "@fortawesome/fontawesome": "^1.1.8",
     "@fortawesome/fontawesome-free": "5.13.0",
+    "@fortawesome/free-brands-svg-icons": "^5.13.0",
+    "@fortawesome/free-solid-svg-icons": "^5.13.0",
     "@nuxtjs/axios": "^5.10.3",
     "@nuxtjs/pwa": "^3.0.0-0",
     "bootstrap-vue": "^2.14.0",
-    "nuxt": "^2.12.2"
+    "nuxt": "^2.12.2",
+    "nuxt-fontawesome": "^0.4.0"
   },
   "devDependencies": {
+    "@nuxtjs/fontawesome": "^1.1.2",
     "@nuxtjs/tailwindcss": "^2.0.0"
   }
 }
