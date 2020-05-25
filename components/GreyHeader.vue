@@ -14,7 +14,7 @@
 
       </NuxtLink>
       <!-- Center Navigation -->
-      <nav class="hidden lg:flex lg:pt-1 xl:pt-0">
+      <nav class="lg:flex lg:pt-1 xl:pt-0">
         <ul class="flex text-center">
           <li
             v-for="link in headerLinks"
