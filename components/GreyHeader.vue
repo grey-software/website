@@ -40,7 +40,7 @@ export default {
   data () {
     return {
       headerLinks: [
-        'vision',
+        // 'vision',
         'projects',
         // 'services',
         // 'blog',
