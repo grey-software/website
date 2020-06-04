@@ -42,7 +42,7 @@ export default {
       headerLinks: [
         // 'vision',
         'projects',
-        // 'services',
+        'education',
         // 'blog',
         // 'github'
       ]

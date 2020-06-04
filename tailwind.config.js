@@ -16,7 +16,7 @@ module.exports = {
         ]
       },
       fontSize: {
-        ss: '0.666666rem'
+        ss: '0.69rem'
       },
       colors: {
         nuxt: {

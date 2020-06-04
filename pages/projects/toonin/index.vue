@@ -1,7 +1,7 @@
 <template>
   <!--Hero-->
   <div>
-    <div class="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
+    <div class="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center my-24">
       <!--Left Col-->
       <div class="flex flex-col w-full md:w-2/5 justify-center items-start md:text-left">
         <h1 class="my-4 text-5xl font-bold leading-tight text-light-onSurfacePrimary">Toonin</h1>
@@ -42,50 +42,48 @@
           loop
           muted
           playsinline
+          style="height: 309px;float: right;"
         />
       </div>
     </div>
-<!-- 
-    <div class="container mx-auto px-2 py-8">
-
-      <div class="items-center flex flex-wrap my-8">
-        <div class="w-full md:w-5/12 ml-auto mr-auto">
-          <div class="md:pr-12">
-            <fa-icon
-              class="w-16 h-16 mb-6"
-              :icon=['']
-            />
-
-            <h3 class="text-3xl font-semibold text-capitalize">{{project.name}}</h3>
-            <p class="mt-4 text-lg leading-relaxed text-gray-600">
-              {{project.desc}}
-            </p>
-            <NuxtLink
-              :to="`/projects/${project.name}`"
-              class="flex items-center my-4 hover:no-underline"
-            >
-              <button class="shadow-md bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center">
-                <span>Learn More</span>
-                <b-icon
-                  icon="arrow-right-short"
-                  font-scale="2"
-                ></b-icon>
-              </button>
-            </NuxtLink>
-          </div>
-        </div>
-        <div class="w-full md:w-4/12 ml-auto mr-auto">
-          <video
-            class="rounded-lg shadow-lg"
-            :src="`/projects/${project.name}/landing-clip.mp4`"
-            autoplay
-            loop
-            muted
-            playsinline
-          />
-        </div>
+    <section class="container flex flex-col md:flex-row flex-wrap mx-auto justify-between items-center my-24">
+      <div class="flex flex-col w-full md:w-2/5">
+        <img
+          style="height: 207px;"
+          src="@/assets/icons/hd.svg"
+        />
       </div>
-    </div> -->
+      <div class="flex flex-col w-full md:w-2/5">
+        <div class="text-3xl font-bold text-light-onSurfacePrimary mb-3">Quality you deserve!</div>
+        <div class="text-xl text-light-onSurfacePrimary text-base mb-2">Toonin allows you to stream HD audio and video directly from your browser to others.</div>
+        <div class="text-xl text-light-onSurfacePrimary text-base">With Toonin, you don't need to sacrifice quality for your freedom and privacy!</div>
+
+      </div>
+    </section>
+    <section class="container flex flex-col md:flex-row flex-wrap mx-auto justify-between items-center my-24">
+      <div class="flex flex-col w-full md:w-2/5">
+        <div class="text-3xl font-bold text-light-onSurfacePrimary mb-3">Your streams are yours!</div>
+        <div class="text-xl text-light-onSurfacePrimary text-base mb-1">You can password protect your Toonin rooms to keep the party limited to those you want there.</div>
+      </div>
+      <div class="flex flex-col w-full md:w-2/5">
+        <img
+          style="height: 207px;"
+          src="@/assets/icons/password.svg"
+        />
+      </div>
+    </section>
+    <section class="container flex flex-col md:flex-row flex-wrap mx-auto justify-between items-center my-24">
+      <div class="flex flex-col w-full md:w-2/5">
+        <img
+          style="height: 207px;"
+          src="@/assets/icons/responsive.svg"
+        />
+      </div>
+      <div class="flex flex-col w-full md:w-2/5">
+        <div class="text-3xl font-bold text-light-onSurfacePrimary mb-3">All your devices!</div>
+        <div class="text-xl text-light-onSurfacePrimary text-base mb-2">Toonin allows your desktop and mobile devices to stream HD audio and video to each other without a server.</div>
+      </div>
+    </section>
 
   </div>
 </template>
@@ -96,5 +94,9 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+.my-24 {
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+}
 </style>
