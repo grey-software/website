@@ -1,27 +1,41 @@
 <template>
   <div>
-    <div class="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
-      <!--Left Col-->
-      <div class="flex flex-col w-full md:w-2/5 justify-center items-start md:text-left">
-        <h1 class="my-4 text-5xl font-bold leading-tight text-light-onSurfacePrimary">Our Projects</h1>
-        <p class="leading-normal text-2xl mb-8 text-light-onSurfaceSecondary"> We're improving the open source ecosystem by creating useful, creative apps and dev-tools with the world's latest technology.</p>
+    <section class="g-hero-container">
+
+      <div class="mt-10 w-full md:w-3/5 mx-auto px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
+        <div class="text-left">
+          <h2 class="g-hero-heading">
+            Our Projects
+          </h2>
+          <p class="mt-3 text-base text-gray-600 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-2xl lg:mx-0">
+            We're on a mission to improve the open source ecosystem by creating useful, creative apps and developer tools with the world's latest technology. </p>
+          <div class="mt-5 sm:mt-8 sm:flex md:justify-start">
+            <div class="rounded-md shadow">
+              <a
+                href="/projects"
+                class="g-btn-cta"
+              >
+                Our Projects
+              </a>
+            </div>
+          </div>
+        </div>
 
       </div>
-      <!--Right Col-->
-      <div class="w-full md:w-3/5 py-6">
+      <div class="w-full md:w-2/5 py-6">
         <img
           style="float:right;"
-          class="w-full md:w-4/5 z-50"
+          class="w-full z-50"
           src="@/assets/img/projects.svg"
         >
       </div>
-    </div>
+    </section>
 
-    <section class="relative py-8">
+    <section class="relative py-8 my-8">
       <div
         v-for="project in projects"
         :key="project"
-        class="container mx-auto px-2 py-8"
+        class="container mx-4 px-2 py-8"
       >
 
         <div class="items-center flex flex-wrap my-8">
@@ -32,25 +46,15 @@
                 :src="`/projects/${project.name}/logo.svg`"
               />
 
-              <h3 class="text-3xl font-semibold text-capitalize">{{project.name}}</h3>
-              <p class="mt-4 text-lg leading-relaxed text-gray-600">
+              <h3 class="text-3xl font-semibold capitalize">{{project.name.replace('-',' ')}}</h3>
+              <p class="mt-4 text-lg leading-relaxed text-gray-600 mb-4">
                 {{project.desc}}
               </p>
-              <NuxtLink
-                :to="`/projects/${project.name}`"
-                class="flex items-center my-4 hover:no-underline"
-              >
-                <button class="shadow-md bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center">
-                  <span>Learn More</span>
-                  <b-icon
-                    icon="arrow-right-short"
-                    font-scale="2"
-                  ></b-icon>
-                </button>
-              </NuxtLink>
+              <a class="g-btn w-48" :href="`/projects/${project.name}`">Learn More</a>
+
             </div>
           </div>
-          <div class="w-full md:w-4/12 ml-auto mr-auto">
+          <div class="w-4/12 ml-auto mr-auto">
             <video
               class="rounded-lg shadow-lg"
               :src="`/projects/${project.name}/landing-clip.mp4`"
