@@ -1,0 +1,29 @@
+{
+  "name": "grey.software",
+  "version": "1.0.0",
+  "description": "Grey Software&#39;s website",
+  "author": "Arsala Bangash",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "test": "jest"
+  },
+  "dependencies": {
+    "nuxt": "^2.0.0",
+    "bootstrap-vue": "^2.0.0",
+    "bootstrap": "^4.1.3",
+    "@nuxtjs/pwa": "^3.0.0-0",
+    "@nuxtjs/dotenv": "^1.4.0"
+  },
+  "devDependencies": {
+    "@nuxtjs/stylelint-module": "^3.1.0",
+    "stylelint": "^10.1.0",
+    "@vue/test-utils": "^1.0.0-beta.27",
+    "babel-jest": "^24.1.0",
+    "jest": "^24.1.0",
+    "vue-jest": "^4.0.0-0"
+  }
+}
