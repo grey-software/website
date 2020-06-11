@@ -1,16 +1,8 @@
 <template>
   <b-container>
     <grey-header></grey-header>
-
     <nuxt />
-
-    <div>
-      <ProjectCard/>
-    </div>
   </b-container>
-
-
-
 </template>
 
 <script>
@@ -48,7 +40,54 @@ export default {
 body {
   font-family: var(--font-body) !important;
   background-color: var(--bg);
-  color: var(--color);
+  color: var(--color-text);
   transition: background-color 0.3s;
+}
+
+.g-hero-heading {
+  font-weight: 800;
+  font-family: var(--font-heading);
+  color: var(--color-text-dark);
+  font-size: 2.75rem;
+  letter-spacing: -0.025em;
+}
+
+.g-hero-tag {
+  font-size: 1.5rem;
+  color: var(--color-text);
+}
+
+.g-hero-img {
+  height: 236px;
+}
+
+.g-btn-cta {
+  background-color: var(--color-gold) !important;
+  border-color: var(--color-gold) !important;
+  outline: none;
+}
+
+.g-btn-cta:active {
+  background-color: var(--color-gold) !important;
+  border-color: var(--color-gold) !important;
+}
+
+.g-btn-cta:hover {
+  color: var(--color-gold-light) !important;
+  background-color: var(--bg) !important;
+  border-color: var(--color-light) !important;
+}
+
+
+.g-btn-cta-alt {
+  color: var(--color-gold) !important;
+  background-color: var(--bg) !important;
+  border-color: var(--color-light) !important;
+  outline: none;
+}
+
+.g-btn-cta-alt:hover {
+  background-color: var(--color-gold) !important;
+  color: #ffffff !important;
 }
 </style>

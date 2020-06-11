@@ -5,7 +5,7 @@
       type="light"
       class="g-navbar"
     >
-      <b-navbar-brand href="#">
+      <b-navbar-brand href="/">
         <img
           class="logo mr-2"
           src="../assets/logo.png"
@@ -13,8 +13,8 @@
         <span class="logo-text">Grey Software</span></b-navbar-brand>
 
       <b-navbar-nav class="ml-auto">
-          <span class="g-nav-link mr-4">Projects</span>
-          <span class="g-nav-link mr-4">Education</span>
+          <nuxt-link to="projects" class="g-nav-link mr-4">Projects</nuxt-link>
+          <nuxt-link to="education" class="g-nav-link mr-4">Education</nuxt-link>
       </b-navbar-nav>
     </b-navbar>
 </template>

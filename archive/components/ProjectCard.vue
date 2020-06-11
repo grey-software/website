@@ -33,11 +33,10 @@ export default {
     project: {
       name: String,
       desc: String,
-      githubPath: String,
+      githubLink: String,
       icon: String,
       link: String,
       starCount: Number,
-      contributors: Array
     }
   }
 }

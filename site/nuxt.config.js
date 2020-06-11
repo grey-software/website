@@ -45,6 +45,14 @@ export default {
     '@nuxtjs/pwa',
     // Doc: https://github.com/nuxt-community/dotenv-module
     '@nuxtjs/dotenv',
+        ['@nuxtjs/fontawesome', {
+      component: 'fa',
+      suffix: true,
+      icons: {
+        solid: true,
+        brands: true
+      }
+    }]
   ],
   /*
   ** Build configuration
