@@ -1,15 +1,25 @@
 <template>
   <b-container>
     <grey-header></grey-header>
+
     <nuxt />
+
+    <div>
+      <ProjectCard/>
+    </div>
   </b-container>
+
+
+
 </template>
 
 <script>
 import GreyHeader from "@/components/GreyHeader"
+import ProjectCard from "@/components/ProjectCard"
 export default {
   components: {
     GreyHeader,
+    ProjectCard
   },
 }
 </script>
