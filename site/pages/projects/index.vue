@@ -33,7 +33,7 @@ export default {
           name: "Material Math",
           desc:
             "Material Math allows you to practice math problems in a fun, beautiful, material experience!",
-          githubLink: "https://github.com/grey-software/toonin",
+          githubLink: "https://github.com/grey-software/material-math",
           icon: "/projects/material-math/logo.svg",
           link: "/projects/material-math",
           starCount: 3
@@ -50,7 +50,7 @@ export default {
         {
           name: "LinkedInFocus",
           desc:
-            "LinkedInFocus allows you to hide the Linkedin news-feed and news-panel so you can focus!",
+            "LinkedInFocus allows you to hide the news feed and news panel on LinkedIn so you can focus on your career!",
           icon: "/projects/linkedin-focus/logo.png",
           githubLink: "https://github.com/grey-software/LinkedIn-InFocus",
           link: "/projects/linkedin-focus",
