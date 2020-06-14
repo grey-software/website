@@ -1,12 +1,40 @@
 <template>
-  <b-container class="mt-5">
-    <grey-hero></grey-hero>
-    <div>
-      <div v-for="project in projects" :key="project.name">
-        <ProjectCard :project="project" />
+  <div class="pb-5">
+    <div class="container g-hero mt-5">
+      <div
+        class="row"
+        align-v="center"
+      >
+        <div
+          class="col"
+          sm="12"
+          md="6"
+        >
+          <h1 class="g-hero-heading">Our Projects</h1>
+          <p class="g-hero-tag">We're improving the open source ecosystem by creating useful, creative, and free software with the world's latest technology.</p>
+          <a href="https://www.github.com/grey-software" target="_blank">
+            <b-button
+              size="lg"
+              variant="outline-primary"
+              class="g-btn-cta-alt"
+            ><fa-icon class="mr-2" :icon="['fab', 'github']"></fa-icon>Github</b-button>
+          </a>
+        </div>
+        <div
+          class="col"
+          sm="12"
+          md="8"
+        >
+          <img
+            class="g-hero-img"
+            style="float:right;"
+            src="@/assets/img/projects.svg"
+          />
+
+        </div>
       </div>
     </div>
-  </b-container>
+  </div>
 </template>
 
 <script>
@@ -17,7 +45,7 @@ export default {
     GreyHero,
     ProjectCard
   },
-  data() {
+  data () {
     return {
       projects: [
         {

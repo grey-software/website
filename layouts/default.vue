@@ -1,8 +1,8 @@
 <template>
-  <b-container>
+  <div>
     <grey-header></grey-header>
     <nuxt />
-  </b-container>
+  </div>
 </template>
 
 <script>
@@ -17,7 +17,7 @@ export default {
 </script>
 
 <style>
-@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700 &family=Montserrat:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700 &family=Montserrat:wght@400;500&display=swap");
 
 *,
 *:before,
@@ -26,15 +26,25 @@ export default {
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+a:hover {
+  text-decoration: none;
+  color: unset;
+}
+
 :root {
-  --color-text: #8b9496;
-  --color-text-dark: #343434;
-  --bg: #ffffff;
+  --color-text: #fcfcfc;
+  --color-text-dark: #fcfcfc;
+  --bg: #1f1f1f;
   --border-color: #ddd;
   --color-gold: #b29a66;
-  --color-gold-light: rgba(178, 154, 102, 0.85);
+  --color-gold-light: rgba(178, 154, 102, 0.8);
   --font-heading: "Montserrat", sans-serif;
-  --font-body: "Lato", sans-serif;
+  --font-body: "Nunito Sans", sans-serif;
 }
 
 body {
@@ -44,27 +54,21 @@ body {
   transition: background-color 0.3s;
 }
 
-.g-hero-heading {
-  font-weight: 800;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-heading);
-  color: var(--color-text-dark);
-  font-size: 2.75rem;
-  letter-spacing: -0.025em;
-}
-
-.g-hero-tag {
-  font-size: 1.5rem;
-  color: var(--color-text);
-}
-
-.g-hero-img {
-  height: 236px;
 }
 
 .g-btn-cta {
   background-color: var(--color-gold) !important;
   border-color: var(--color-gold) !important;
   outline: none;
+  padding: 1rem 2.5rem;
+  font-size: 1.42rem;
 }
 
 .g-btn-cta:active {
@@ -78,16 +82,22 @@ body {
   border-color: var(--color-light) !important;
 }
 
-
 .g-btn-cta-alt {
   color: var(--color-gold) !important;
   background-color: var(--bg) !important;
   border-color: var(--color-light) !important;
   outline: none;
+  padding: 1rem 2.5rem;
+  font-size: 1.42rem;
 }
 
 .g-btn-cta-alt:hover {
   background-color: var(--color-gold) !important;
   color: #ffffff !important;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
 }
 </style>
