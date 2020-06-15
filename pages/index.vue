@@ -1,5 +1,6 @@
 <template>
   <div class="pb-5">
+    <!-- Hero -->
     <div class="container g-hero mt-5">
       <div
         class="row"
@@ -42,27 +43,28 @@
         </div>
       </div>
     </div>
-    <div class="container pb-5">
+    <!-- What we do -->
+    <section class="container pb-5">
       <div class="row">
         <div
           class="col"
           cols="4"
         >
-          <h1 class="g-hero-heading">What we do</h1>
+          <h1 class="g-section-heading">What we do</h1>
         </div>
       </div>
       <div class="row mt-5 justify-content-center align-items-center">
         <div class="col">
           <img
-            class="img-what-we-do"
+            class="two-col-icon"
             src="@/assets/icons/create.svg"
           />
-          <h1 class="heading-what-we-do mt-4">Create</h1>
-          <p class="body-what-we-do mt-4">We create free apps and tools to improve the open source software ecosystem.</p>
+          <h1 class="two-col-heading mt-4">Create</h1>
+          <p class="two-col-body mt-4">We create free apps and tools to improve the open source software ecosystem.</p>
           <div class="mt-4">
             <nuxt-link
               to="/projects"
-              class="arrow-link "
+              class="arrow-link"
             >See what we're building <fa-icon
                 class="ml-2 mt-2"
                 :icon="['fas', 'long-arrow-alt-right']"
@@ -73,11 +75,11 @@
         </div>
         <div class="col">
           <img
-            class="img-what-we-do"
+            class="two-col-icon"
             src="@/assets/icons/educate.svg"
           />
-          <h1 class="heading-what-we-do mt-4">Educate</h1>
-          <p class="body-what-we-do mt-4">We help students learn software engineering through collaborating with a mentor.</p>
+          <h1 class="two-col-heading mt-4">Educate</h1>
+          <p class="two-col-body mt-4">We help students learn software engineering through collaborating with a mentor.</p>
           <div class="mt-4">
             <nuxt-link
               to="/education"
@@ -92,14 +94,15 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
+    <!-- Free Software? -->
     <section class="mt-5 pt-2 pb-5 bg-gold">
       <div class="container">
         <div class="row mt-5">
-          <h1 class="g-hero-heading">Free Software?</h1>
+          <h1 class="g-section-heading">Free Software?</h1>
           <h1 class="g-hero-text mt-2">For us, 'free' is a matter of liberty, not price!</h1>
 
-          <p class="g-text-body mt-4">We respect an individual human’s freedom and community by orienting our software to the <a
+          <p class="g-section-body mt-4" style="width: 75%;">We respect an individual human’s freedom and community by orienting our software to the <a
               class="link-freedoms"
               href="https://www.gnu.org/philosophy/free-sw.en.html"
             >Free Software Foundation's essential freedoms.</a></p>
@@ -107,56 +110,57 @@
         </div>
       </div>
     </section>
-    <div class="container pt-5">
+    <!-- Who are we? -->
+    <section class="container pt-5">
       <div class="row mt-5">
         <div
           class="col"
           cols="4"
         >
-          <h1 class="g-hero-heading">Who are we?</h1>
-          <h1 class="g-hero-subheading">A dedicated group of:</h1>
+          <h1 class="g-section-heading">Who are we?</h1>
+          <h1 class="g-section-subheading">A dedicated group of:</h1>
           <div class="row d-flex pt-5 justify-content-start align-items-center">
             <div class="col flex-col align-items-center">
               <img
                 class="icon-who-we-are"
                 src="@/assets/icons/engineers.svg"
               />
-              <h4 class="text-who-we-are">Engineers</h4>
+              <h4 class="g-section-info">Engineers</h4>
             </div>
             <div class="col d-flex flex-col align-items-center">
               <img
                 class="icon-who-we-are"
                 src="@/assets/icons/designers.svg"
               />
-              <h4 class="text-who-we-are">Designers</h4>
+              <h4 class="g-section-info">Designers</h4>
             </div>
             <div class="col d-flex flex-col align-items-center">
               <img
                 class="icon-who-we-are"
                 src="@/assets/icons/educators.svg"
               />
-              <h4 class="text-who-we-are">Educators</h4>
+              <h4 class="g-section-info">Educators</h4>
             </div>
             <div class="col d-flex flex-col align-items-center">
               <img
                 class="icon-who-we-are"
                 src="@/assets/icons/creatives.svg"
               />
-              <h4 class="text-who-we-are">Creatives</h4>
+              <h4 class="g-section-info">Creatives</h4>
             </div>
             <div class="col d-flex flex-col align-items-center">
               <img
                 class="icon-who-we-are"
                 src="@/assets/icons/strategists.svg"
               />
-              <h4 class="text-who-we-are">Strategists</h4>
+              <h4 class="g-section-info">Strategists</h4>
             </div>
           </div>
-          <h1 class="g-hero-subheading mt-5">using our intellect and spirit to work for an open source future!</h1>
+          <h1 class="g-section-subheading mt-5">using our intellect and spirit to build a beautiful, open source future!</h1>
 
         </div>
       </div>
-    </div>
+    </section>
 
   </div>
 </template>
@@ -171,37 +175,135 @@ export default {
 </script>
 
 <style>
-.heading-what-we-do {
+.two-col-heading {
   font-size: 42px;
   font-family: var(--font-heading);
   font-weight: 600;
   line-height: 1.05;
 }
 
-.img-what-we-do {
+.two-col-icon {
   height: 96px;
 }
 
-.g-text-body {
-  font-size: 28px;
-  line-height: 1.2;
-  width: 69%;
-}
-
-.body-what-we-do {
+.two-col-body {
   font-size: 28px;
   width: 434px;
 }
 
-.section-title {
-  font-size: 80px;
+.three-col-heading {
+  font-size: 42px;
+  font-family: var(--font-heading);
+  font-weight: 600;
+  line-height: 1.05;
 }
 
-.section-body {
-  max-width: 680px;
+.three-col-icon {
+  height: 96px;
+}
+
+.three-col-body {
+  font-size: 20px;
+  max-width: 343px;
+  line-height: 1.5;
+}
+
+.g-section-body {
   font-size: 28px;
+  line-height: 1.2;
 }
 
+.g-hero {
+  height: 88vh;
+}
+.g-hero-heading {
+  font-weight: 800;
+  font-family: var(--font-heading);
+  color: var(--color-text-dark);
+  letter-spacing: -0.025em;
+  font-size: calc(12px + 6vw);
+  line-height: 1.05;
+  z-index: 1000;
+}
+
+.g-section-heading {
+  font-weight: 800;
+  font-family: var(--font-heading);
+  color: var(--color-text-dark);
+  letter-spacing: -0.025em;
+  font-size: calc(12px + 6vw);
+  line-height: 1.05;
+  z-index: 1000;
+}
+
+.g-section-subheading {
+  font-weight: 800;
+  font-family: var(--font-heading);
+  color: var(--color-text-dark);
+  letter-spacing: -0.025em;
+  font-size: calc(12px + 3vw);
+  line-height: 1.05;
+  z-index: 1000;
+  max-width: 72%;
+}
+
+.g-section-info {
+  font-family: var(--font-heading);
+  margin-top: 20px;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.g-text-testimonial {
+  font-family: var(--font-heading);
+  margin-top: 20px;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.g-hero-tag {
+  font-size: 32px;
+  color: var(--color-text);
+  letter-spacing: -0.032em;
+  line-height: 1.5;
+  margin-top: 32px;
+}
+
+.g-hero-img {
+  height: 343px;
+  opacity: 0.96;
+  float: right;
+  margin-right: -42px;
+}
+
+.g-hero-cta-container {
+  margin-top: 48px;
+}
+
+@media screen and (max-width: 992px) {
+  .g-hero-img {
+    height: 236px;
+    opacity: 0.96;
+    float: right;
+    margin-right: -42px;
+  }
+
+  .g-hero-heading {
+    font-size: calc(12px + 4vw);
+    line-height: 1.05;
+    z-index: 1000;
+  }
+
+  .g-section-heading {
+    font-size: calc(12px + 4vw);
+    line-height: 1.05;
+    z-index: 1000;
+  }
+
+  .g-hero-tag {
+    font-size: 22px;
+  }
+}
 .arrow-link {
   color: var(--color-gold);
   font-size: 28px;
@@ -215,12 +317,6 @@ export default {
 .icon-who-we-are {
   height: 108px;
 }
-
-.text-who-we-are {
-  font-family: var(--font-heading);
-  margin-top: 20px;
-}
-
 .bg-gold {
   background-color: var(--color-gold);
   width: 100vw;

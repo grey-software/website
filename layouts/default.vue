@@ -63,6 +63,21 @@ h6 {
   font-family: var(--font-heading);
 }
 
+.g-btn {
+  background-color: var(--color-gold) !important;
+  border-color: var(--color-gold) !important;
+  outline: none;
+  font-size: 1.2rem;
+}
+
+.g-btn-alt {
+  color: var(--color-gold) !important;
+  background-color: var(--bg) !important;
+  border-color: var(--color-light) !important;
+  outline: none;
+  font-size: 1.2rem;
+}
+
 .g-btn-cta {
   background-color: var(--color-gold) !important;
   border-color: var(--color-gold) !important;
@@ -71,12 +86,12 @@ h6 {
   font-size: 1.42rem;
 }
 
-.g-btn-cta:active {
+.g-btn:active, .g-btn-cta:active {
   background-color: var(--color-gold) !important;
   border-color: var(--color-gold) !important;
 }
 
-.g-btn-cta:hover {
+.g-btn:hover, .g-btn-cta:hover {
   color: var(--color-gold-light) !important;
   background-color: var(--bg) !important;
   border-color: var(--color-light) !important;
@@ -91,7 +106,7 @@ h6 {
   font-size: 1.42rem;
 }
 
-.g-btn-cta-alt:hover {
+.g-btn-alt:hover, .g-btn-cta-alt:hover {
   background-color: var(--color-gold) !important;
   color: #ffffff !important;
 }

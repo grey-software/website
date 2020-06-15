@@ -41,12 +41,7 @@ export default {
 
 
 <style>
-* {
-  text-decoration: none;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
+
 .col {
   padding: 0;
 }
