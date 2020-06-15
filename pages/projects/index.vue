@@ -3,9 +3,7 @@
     <div class="container g-hero mt-5">
       <div class="row">
         <div
-          class="col"
-          sm="12"
-          md="6"
+          class="col-lg-8"
         >
           <h1 class="g-hero-heading">Our Projects</h1>
           <p class="g-hero-tag">We're improving the open source ecosystem by creating useful, creative, and free software with the world's latest technology.</p>
@@ -25,9 +23,7 @@
           </a>
         </div>
         <div
-          class="col"
-          sm="12"
-          md="8"
+          class="col-lg-4"
         >
           <img
             class="g-hero-img"
@@ -40,7 +36,7 @@
     </div>
     <div class="container px-0 pb-5">
       <div class="row justify-content-space-between align-items-center">
-        <div class="col-md">
+        <div class="col-lg mb-5">
           <h1 class="g-section-heading">Toonin</h1>
           <div class="d-flex align-items-center g-section-info">Status: <span
               style="background-color:#ffcc00;"
@@ -72,7 +68,7 @@
             </b-button>
           </div>
         </div>
-        <div class="col-md">
+        <div class="col-lg">
           <iframe
             width="560"
             height="315"
@@ -87,7 +83,7 @@
     <div class="container px-0 mt-5">
       <div class="row justify-content-space-between align-items-center">
 
-        <div class="col-md">
+        <div class="col-lg mb-5">
           <h1 class="g-section-heading">Material Math</h1>
           <div class="d-flex align-items-center g-section-info">Status: <span
               style="background-color:#FF3366;"
@@ -119,7 +115,7 @@
             </b-button>
           </div>
         </div>
-        <div class="col-md">
+        <div class="col-lg">
           <iframe
             width="560"
             height="315"

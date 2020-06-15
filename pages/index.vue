@@ -2,15 +2,8 @@
   <div class="pb-5">
     <!-- Hero -->
     <div class="container g-hero mt-5">
-      <div
-        class="row"
-        align-v="center"
-      >
-        <div
-          class="col"
-          sm="12"
-          md="6"
-        >
+      <div class="row">
+        <div class="col-md-8">
           <h1 class="g-hero-heading">Liberty and Excellence <br />in Software</h1>
           <p class="g-hero-tag">We're on a mission to write incredible Free, Open Source Software and teach students software engineering.</p>
           <div class="g-hero-cta-container">
@@ -29,14 +22,9 @@
             </nuxt-link>
           </div>
         </div>
-        <div
-          class="col"
-          sm="12"
-          md="8"
-        >
+        <div class="col-md-4">
           <img
             class="g-hero-img"
-            style="float:right;"
             src="@/assets/img/open-source.svg"
           />
 
@@ -50,11 +38,11 @@
           class="col"
           cols="4"
         >
-          <h1 class="g-section-heading">What we do</h1>
+          <h1 class="g-section-heading ml-3">What we do</h1>
         </div>
       </div>
       <div class="row mt-5 justify-content-center align-items-center">
-        <div class="col">
+        <div class="col-md mb-4">
           <img
             class="two-col-icon"
             src="@/assets/icons/create.svg"
@@ -73,7 +61,7 @@
           </div>
 
         </div>
-        <div class="col">
+        <div class="col-md mb-4">
           <img
             class="two-col-icon"
             src="@/assets/icons/educate.svg"
@@ -102,7 +90,10 @@
           <h1 class="g-section-heading">Free Software?</h1>
           <h1 class="g-hero-text mt-2">For us, 'free' is a matter of liberty, not price!</h1>
 
-          <p class="g-section-body mt-4" style="width: 75%;">We respect an individual human’s freedom and community by orienting our software to the <a
+          <p
+            class="g-section-body mt-4"
+            style="width: 75%;"
+          >We respect an individual human’s freedom and community by orienting our software to the <a
               class="link-freedoms"
               href="https://www.gnu.org/philosophy/free-sw.en.html"
             >Free Software Foundation's essential freedoms.</a></p>
@@ -120,35 +111,35 @@
           <h1 class="g-section-heading">Who are we?</h1>
           <h1 class="g-section-subheading">A dedicated group of:</h1>
           <div class="row d-flex pt-5 justify-content-start align-items-center">
-            <div class="col flex-col align-items-center">
+            <div class="col-lg flex-col align-items-center">
               <img
                 class="icon-who-we-are"
                 src="@/assets/icons/engineers.svg"
               />
               <h4 class="g-section-info">Engineers</h4>
             </div>
-            <div class="col d-flex flex-col align-items-center">
+            <div class="col-lg d-flex flex-col align-items-center">
               <img
                 class="icon-who-we-are"
                 src="@/assets/icons/designers.svg"
               />
               <h4 class="g-section-info">Designers</h4>
             </div>
-            <div class="col d-flex flex-col align-items-center">
+            <div class="col-lg d-flex flex-col align-items-center">
               <img
                 class="icon-who-we-are"
                 src="@/assets/icons/educators.svg"
               />
               <h4 class="g-section-info">Educators</h4>
             </div>
-            <div class="col d-flex flex-col align-items-center">
+            <div class="col-lg d-flex flex-col align-items-center">
               <img
                 class="icon-who-we-are"
                 src="@/assets/icons/creatives.svg"
               />
               <h4 class="g-section-info">Creatives</h4>
             </div>
-            <div class="col d-flex flex-col align-items-center">
+            <div class="col-lg d-flex flex-col align-items-center">
               <img
                 class="icon-who-we-are"
                 src="@/assets/icons/strategists.svg"
@@ -188,7 +179,7 @@ export default {
 
 .two-col-body {
   font-size: 28px;
-  width: 434px;
+  max-width: 434px;
 }
 
 .three-col-heading {
@@ -272,19 +263,40 @@ export default {
 .g-hero-img {
   height: 343px;
   opacity: 0.96;
-  float: right;
   margin-right: -42px;
+  float: right;
 }
 
 .g-hero-cta-container {
   margin-top: 48px;
 }
 
+@media screen and (max-width: 768px) {
+  .g-hero-img {
+    float: left;
+  }
+
+  /* .two-col-heading {
+    font-size: 32px;
+    font-family: var(--font-heading);
+    font-weight: 600;
+    line-height: 1.05;
+  }
+
+  .two-col-icon {
+    height: 64px;
+  }
+
+  .two-col-body {
+    font-size: 16px;
+    width: 236px;
+  } */
+}
+
 @media screen and (max-width: 992px) {
   .g-hero-img {
     height: 236px;
     opacity: 0.96;
-    float: right;
     margin-right: -42px;
   }
 
