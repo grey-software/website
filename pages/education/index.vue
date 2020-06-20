@@ -1,39 +1,27 @@
 <template>
   <div class="pb-5">
     <div class="container g-hero mt-5">
-      <div
-        class="row"
-        align-v="center"
-      >
-        <div
-          class="col"
-          sm="12"
-          md="6"
-        >
+      <div class="row">
+        <div class="col-md-8">
           <h1 class="g-hero-heading">A New <br /> Learning Experience</h1>
           <p class="g-hero-tag">We're revolutionizing software education by pairing students with a mentor to build useful and creative open source software.</p>
-
         </div>
-        <div
-          class="col"
-          sm="12"
-          md="8"
-        >
+        <div class="col-md-4">
           <img
             class="g-hero-img"
-            style="float:right;"
             src="@/assets/img/open-source.svg"
           />
 
         </div>
       </div>
     </div>
+
     <section class="container px-0 pb-5">
       <h1 class="g-section-heading">What do our <br /> students have <br /> to say?</h1>
       <div class="row mt-5">
         <div
           class="col"
-          style="margin-left: 20px"
+          style="padding-left: 20px"
         >
           <h1
             style="max-width: 84%;"
@@ -45,7 +33,7 @@
       <div class="row mt-5">
         <div
           class="col"
-          style="margin-left: 20px;text-align:right;"
+          style="padding-left: 20px;text-align:right;"
         >
           <h1 class="g-text-testimonial mt-5">“I got to experience what it was like being onboarded into a codebase and collaborating with a skilled developer and designer. I got the software development education I was looking for."</h1>
           <p
@@ -57,7 +45,7 @@
       <div class="row mt-5">
         <div
           class="col"
-          style="margin-left: 20px"
+          style="padding-left: 20px"
         >
           <h1
             style="max-width: 84%;"

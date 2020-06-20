@@ -2,9 +2,7 @@
   <div class="pb-5">
     <div class="container g-hero mt-5">
       <div class="row">
-        <div
-          class="col-lg-8"
-        >
+        <div class="col-lg-8">
           <h1 class="g-hero-heading">Our Projects</h1>
           <p class="g-hero-tag">We're improving the open source ecosystem by creating useful, creative, and free software with the world's latest technology.</p>
           <a
@@ -22,9 +20,7 @@
             </b-button>
           </a>
         </div>
-        <div
-          class="col-lg-4"
-        >
+        <div class="col-lg-4 mt-3">
           <img
             class="g-hero-img"
             style="float:right;height:263px;"
@@ -70,8 +66,7 @@
         </div>
         <div class="col-lg">
           <iframe
-            width="560"
-            height="315"
+            class="project-promo-video"
             src="https://www.youtube.com/embed/ImxxRMPVHzs"
             frameborder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
@@ -117,8 +112,7 @@
         </div>
         <div class="col-lg">
           <iframe
-            width="560"
-            height="315"
+            class="project-promo-video"
             src="https://www.youtube.com/embed/ceACiAdXSDc"
             frameborder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
@@ -192,5 +186,17 @@ export default {
 }
 .status-dot:hover {
   opacity: 0.8;
+}
+
+@media screen and (min-width: 768px) {
+  .project-promo-video {
+    width: 560px;
+    height: 315px;
+  }
+}
+
+.project-promo-video {
+  width: 100%;
+  height: auto;
 }
 </style>

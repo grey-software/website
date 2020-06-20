@@ -32,7 +32,7 @@
       </div>
     </div>
     <!-- What we do -->
-    <section class="container pb-5">
+    <section class="container pb-5 pl-4">
       <div class="row">
         <div
           class="col"
@@ -86,7 +86,7 @@
     <!-- Free Software? -->
     <section class="mt-5 pt-2 pb-5 bg-gold">
       <div class="container">
-        <div class="row mt-5">
+        <div class="row mt-5 pl-4">
           <h1 class="g-section-heading">Free Software?</h1>
           <h1 class="g-hero-text mt-2">For us, 'free' is a matter of liberty, not price!</h1>
 
@@ -103,10 +103,9 @@
     </section>
     <!-- Who are we? -->
     <section class="container pt-5">
-      <div class="row mt-5">
+      <div class="row mt-5 pl-4">
         <div
           class="col"
-          cols="4"
         >
           <h1 class="g-section-heading">Who are we?</h1>
           <h1 class="g-section-subheading">A dedicated group of:</h1>

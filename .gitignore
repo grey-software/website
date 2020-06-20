@@ -92,4 +92,5 @@ sw.*
 # Vim swap files
 *.swp
 
+.history
 
