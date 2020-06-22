@@ -12,6 +12,7 @@
     "test": "jest"
   },
   "dependencies": {
+    "@nuxtjs/device": "^1.2.7",
     "@nuxtjs/dotenv": "^1.4.0",
     "@nuxtjs/pwa": "^3.0.0-0",
     "bootstrap": "^4.1.3",

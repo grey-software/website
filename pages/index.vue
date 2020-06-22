@@ -10,7 +10,7 @@
             <nuxt-link to="/projects">
               <b-button
                 size="lg"
-                class="mr-4 mb-3 g-btn-cta"
+                class="mr-4 g-btn-cta"
               >Projects</b-button>
             </nuxt-link>
             <nuxt-link to="/education">
@@ -430,7 +430,7 @@ export default {
   }
 
   .g-hero-heading {
-    font-size: calc(12px + 4vw);
+    font-size: calc(12px + 8vw);
     line-height: 1.05;
     z-index: 1000;
   }

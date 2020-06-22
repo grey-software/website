@@ -52,7 +52,8 @@ export default {
         solid: true,
         brands: true
       }
-    }]
+    }],
+    '@nuxtjs/device'
   ],
   /*
   ** Build configuration
