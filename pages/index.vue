@@ -261,7 +261,7 @@ export default {
 
 .g-hero-img {
   height: 343px;
-  opacity: 0.96;
+  max-width: 100%;
   margin-right: -42px;
   float: right;
 }

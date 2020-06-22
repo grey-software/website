@@ -5,7 +5,16 @@
         <div class="col-md-8">
           <h1 class="g-hero-heading">A New <br /> Learning Experience</h1>
           <p class="g-hero-tag">We're revolutionizing software education by pairing students with a mentor to build useful and creative open source software.</p>
+          <div class="g-hero-cta-container">
+            <nuxt-link to="https://tiny.cc/gs-bm">
+              <b-button
+                size="lg"
+                class="mr-4 g-btn-cta"
+              >Our Proposed Model</b-button>
+            </nuxt-link>
+          </div>
         </div>
+
         <div class="col-md-4">
           <img
             class="g-hero-img"
@@ -16,7 +25,7 @@
       </div>
     </div>
 
-    <section class="container px-0 pb-5">
+    <section class="container pl-4 pb-5">
       <h1 class="g-section-heading">What do our <br /> students have <br /> to say?</h1>
       <div class="row mt-5">
         <div
@@ -33,7 +42,7 @@
       <div class="row mt-5">
         <div
           class="col"
-          style="padding-left: 20px;text-align:right;"
+          style="padding-right: 20px;text-align:right;"
         >
           <h1 class="g-text-testimonial mt-5">“I got to experience what it was like being onboarded into a codebase and collaborating with a skilled developer and designer. I got the software development education I was looking for."</h1>
           <p
@@ -55,7 +64,7 @@
         </div>
       </div>
     </section>
-    <section class="container mt-5 pb-5">
+    <section class="container mt-5 pb-5 pl-4">
       <h1 class="g-section-heading">What we offer</h1>
       <div class="row mt-5">
         <div

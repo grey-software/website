@@ -20,10 +20,9 @@
             </b-button>
           </a>
         </div>
-        <div class="col-lg-4 mt-3">
+        <div class="col-lg-4 d-flex flex-column mt-3">
           <img
             class="g-hero-img"
-            style="float:right;height:263px;"
             src="@/assets/img/projects.svg"
           />
 
@@ -31,7 +30,7 @@
       </div>
     </div>
     <div class="container px-0 pb-5">
-      <div class="row justify-content-space-between align-items-center">
+      <div class="justify-content-space-between align-items-center">
         <div class="col-lg mb-5">
           <h1 class="g-section-heading">Toonin</h1>
           <div class="d-flex align-items-center g-section-info">Status: <span
@@ -65,18 +64,20 @@
           </div>
         </div>
         <div class="col-lg">
-          <iframe
-            class="project-promo-video"
-            src="https://www.youtube.com/embed/ImxxRMPVHzs"
-            frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe
+              class="embed-responsive-item"
+              src="https://www.youtube.com/embed/ImxxRMPVHzs"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
         </div>
       </div>
     </div>
     <div class="container px-0 mt-5">
-      <div class="row justify-content-space-between align-items-center">
+      <div class="justify-content-space-between align-items-center">
 
         <div class="col-lg mb-5">
           <h1 class="g-section-heading">Material Math</h1>
@@ -111,13 +112,15 @@
           </div>
         </div>
         <div class="col-lg">
-          <iframe
-            class="project-promo-video"
-            src="https://www.youtube.com/embed/ceACiAdXSDc"
-            frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe
+              class="embed-responsive-item"
+              src="https://www.youtube.com/embed/ceACiAdXSDc"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
         </div>
       </div>
     </div>
@@ -188,15 +191,14 @@ export default {
   opacity: 0.8;
 }
 
-@media screen and (min-width: 768px) {
-  .project-promo-video {
-    width: 560px;
-    height: 315px;
-  }
+.iframe-container {
+  overflow: hidden;
+  padding-top: 56.25%;
+  position: relative;
 }
 
-.project-promo-video {
-  width: 100%;
-  height: auto;
-}
+/* .project-promo-video {
+  max-width: 560px;
+  max-height: 315px;
+} */
 </style>
