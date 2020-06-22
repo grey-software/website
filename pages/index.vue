@@ -1,158 +1,42 @@
 <template>
-  <div class="pb-5">
-    <!-- Hero -->
-    <div class="container g-hero mt-5">
-      <div class="row">
-        <div class="col-md-8">
-          <h1 class="g-hero-heading">Liberty and Excellence <br />in Software</h1>
-          <p class="g-hero-tag">We're on a mission to write incredible Free, Open Source Software and teach students software engineering.</p>
-          <div class="g-hero-cta-container">
-            <nuxt-link to="/projects">
-              <b-button
-                size="lg"
-                class="mr-4 g-btn-cta"
-              >Projects</b-button>
-            </nuxt-link>
-            <nuxt-link to="/education">
-              <b-button
-                size="lg"
-                variant="outline-primary"
-                class="g-btn-cta-alt"
-              >Education</b-button>
-            </nuxt-link>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <img
-            class="g-hero-img"
-            src="@/assets/img/open-source.svg"
-          />
+  <div class="g-landing">
+    <div class="g-hero">
+      <h1 class="g-hero-heading text-rainbow">Liberty & Excellence <br/>in Software.</h1>
+      <p class="g-hero-tag">A mission to write Free, Open Source Software. </p>
 
-        </div>
-      </div>
+      <b-link href="#">
+        <a class="btn neu-dark">PROJECTS</a>
+      </b-link>
     </div>
-    <!-- What we do -->
-    <section class="container pb-5 pl-4">
-      <div class="row">
-        <div
-          class="col"
-          cols="4"
-        >
-          <h1 class="g-section-heading ml-3">What we do</h1>
-        </div>
-      </div>
-      <div class="row mt-5 justify-content-center align-items-center">
-        <div class="col-md mb-4">
-          <img
-            class="two-col-icon"
-            src="@/assets/icons/create.svg"
-          />
-          <h1 class="two-col-heading mt-4">Create</h1>
-          <p class="two-col-body mt-4">We create free apps and tools to improve the open source software ecosystem.</p>
-          <div class="mt-4">
-            <nuxt-link
-              to="/projects"
-              class="arrow-link"
-            >See what we're building <fa-icon
-                class="ml-2 mt-2"
-                :icon="['fas', 'long-arrow-alt-right']"
-              ></fa-icon>
-            </nuxt-link>
-          </div>
 
-        </div>
-        <div class="col-md mb-4">
-          <img
-            class="two-col-icon"
-            src="@/assets/icons/educate.svg"
-          />
-          <h1 class="two-col-heading mt-4">Educate</h1>
-          <p class="two-col-body mt-4">We help students learn software engineering through collaborating with a mentor.</p>
-          <div class="mt-4">
-            <nuxt-link
-              to="/education"
-              class="arrow-link"
-            >Learn about our programs
-              <fa-icon
-                class="ml-2 mt-2"
-                :icon="['fas', 'long-arrow-alt-right']"
-              ></fa-icon>
-            </nuxt-link>
+    <!-- MORE -->
+    <div class="more-indicator animation-more mt">
+      <p>MORE</p>
+      <fa-icon
+        class="mr-2"
+        :icon="['fas', 'chevron-down']"
+      ></fa-icon>
+    </div>
 
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Free Software? -->
-    <section class="mt-5 pt-2 pb-5 bg-gold">
-      <div class="container">
-        <div class="row mt-5 pl-4">
-          <h1 class="g-section-heading">Free Software?</h1>
-          <h1 class="g-hero-text mt-2">For us, 'free' is a matter of liberty, not price!</h1>
+    <div class="free-software">
+      <h1 class="g-hero-heading">Free Software.</h1>
+      <h1 class="g-hero-heading" style="color:#FE5C26;"> A matter of liberty, <br/>not price!</h1>
 
-          <p
-            class="g-section-body mt-4"
-            style="width: 75%;"
-          >We respect an individual human’s freedom and community by orienting our software to the <a
-              class="link-freedoms"
-              href="https://www.gnu.org/philosophy/free-sw.en.html"
-            >Free Software Foundation's essential freedoms.</a></p>
+      <p
+        class="g-section-body mt-4"
+        style="width: 75%;"
+        >We respect an individual human’s freedom and community by orienting our software to the <a
+        class="link-freedoms"
+        href="https://www.gnu.org/philosophy/free-sw.en.html"
+      >Free Software Foundation's essential freedoms.</a>
+      </p>
 
-        </div>
-      </div>
-    </section>
-    <!-- Who are we? -->
-    <section class="container pt-5">
-      <div class="row mt-5 pl-4">
-        <div
-          class="col"
-        >
-          <h1 class="g-section-heading">Who are we?</h1>
-          <h1 class="g-section-subheading">A dedicated group of:</h1>
-          <div class="row d-flex pt-5 justify-content-start align-items-center">
-            <div class="col-lg flex-col align-items-center">
-              <img
-                class="icon-who-we-are"
-                src="@/assets/icons/engineers.svg"
-              />
-              <h4 class="g-section-info">Engineers</h4>
-            </div>
-            <div class="col-lg d-flex flex-col align-items-center">
-              <img
-                class="icon-who-we-are"
-                src="@/assets/icons/designers.svg"
-              />
-              <h4 class="g-section-info">Designers</h4>
-            </div>
-            <div class="col-lg d-flex flex-col align-items-center">
-              <img
-                class="icon-who-we-are"
-                src="@/assets/icons/educators.svg"
-              />
-              <h4 class="g-section-info">Educators</h4>
-            </div>
-            <div class="col-lg d-flex flex-col align-items-center">
-              <img
-                class="icon-who-we-are"
-                src="@/assets/icons/creatives.svg"
-              />
-              <h4 class="g-section-info">Creatives</h4>
-            </div>
-            <div class="col-lg d-flex flex-col align-items-center">
-              <img
-                class="icon-who-we-are"
-                src="@/assets/icons/strategists.svg"
-              />
-              <h4 class="g-section-info">Strategists</h4>
-            </div>
-          </div>
-          <h1 class="g-section-subheading mt-5">using our intellect and spirit to build a beautiful, open source future!</h1>
-
-        </div>
-      </div>
-    </section>
-
+    </div>
   </div>
+
+
+
+
 </template>
 
 <script>
@@ -161,59 +45,122 @@ export default {
   components: {
     GreyHero
   }
+
 };
 </script>
 
 <style>
-.two-col-heading {
-  font-size: 42px;
-  font-family: var(--font-heading);
-  font-weight: 600;
-  line-height: 1.05;
+
+.g-landing {
+  margin: 0 120px;
+}
+.text-rainbow {
+  color: red;
+  background-image: -webkit-linear-gradient(92deg,red,yellow);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: hue 10s infinite linear;
+  font-size:70px;
+  font-weight:300;
 }
 
-.two-col-icon {
-  height: 96px;
-}
+@-webkit-keyframes hue {
+  from {
+    -webkit-filter: hue-rotate(0deg);
+  }
 
-.two-col-body {
-  font-size: 28px;
-  max-width: 434px;
-}
-
-.three-col-heading {
-  font-size: 42px;
-  font-family: var(--font-heading);
-  font-weight: 600;
-  line-height: 1.05;
-}
-
-.three-col-icon {
-  height: 96px;
-}
-
-.three-col-body {
-  font-size: 20px;
-  max-width: 343px;
-  line-height: 1.5;
-}
-
-.g-section-body {
-  font-size: 28px;
-  line-height: 1.2;
+  to {
+    -webkit-filter: hue-rotate(-360deg);
+  }
 }
 
 .g-hero {
-  height: 88vh;
+  text-align: center;
+  padding: 140px 40px 80px 40px;
 }
+
 .g-hero-heading {
   font-weight: 800;
   font-family: var(--font-heading);
   color: var(--color-text-dark);
   letter-spacing: -0.025em;
-  font-size: calc(12px + 6vw);
+  font-size: calc(12px + 5vw);
   line-height: 1.05;
   z-index: 1000;
+
+}
+
+.g-hero-tag {
+  font-size: 20px;
+  color: lightslategrey;
+  letter-spacing: -0.032em;
+  line-height: 1.5;
+  padding: 0px 0 40px 0;
+  text-align: center;
+}
+
+.btn {
+  z-index: 1;
+  padding: 8px 50px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 1em;
+  letter-spacing: 2px;
+  transition: 0.3s ease;
+  font-weight: bold;
+  border: none;
+  color: white;
+}
+
+.neu-dark {
+  box-shadow:
+    10px 10px 20px rgba(0, 0, 0, 0.2),
+    -6px -6px 10px rgba(255, 255, 255, 0.1);
+}
+
+.neu-dark:active {
+  box-shadow:
+    inset 5px 5px 10px rgba(0, 0, 0, 0.2),
+    inset -5px -5px 10px rgba(255, 255, 255, 0.1);
+}
+
+/* ----------- MORE INDICATOR ------------ */
+.more-indicator{
+  text-align: center;
+  font-size: 13px;
+  padding: 40px 40px;
+  margin-top: 90px;
+  opacity: 0;
+  color: white;
+  font-weight: bold;
+}
+
+.mt{
+  margin-top: 50px;
+}
+
+/* ANIMATE */
+.animation-more{
+  animation-name: drive;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-delay: 0.5s;
+  animation-iteration-count: infinite;
+}
+/* KEYFRAMES */
+@keyframes drive{
+  from{
+    transform: translateY(0);
+    opacity: 0
+  }
+  to{
+    transform: translateY(15px);
+    opacity: 1
+  }
+}
+
+.free-software {
+  padding: 140px 0;
 }
 
 .g-section-heading {
@@ -251,13 +198,6 @@ export default {
   font-weight: 600;
 }
 
-.g-hero-tag {
-  font-size: 32px;
-  color: var(--color-text);
-  letter-spacing: -0.032em;
-  line-height: 1.5;
-  margin-top: 32px;
-}
 
 .g-hero-img {
   height: 343px;
