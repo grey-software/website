@@ -10,7 +10,7 @@
             <nuxt-link to="/projects">
               <b-button
                 size="lg"
-                class="mr-4 g-btn-cta"
+                class="mr-4 mb-3 g-btn-cta"
               >Projects</b-button>
             </nuxt-link>
             <nuxt-link to="/education">
@@ -86,9 +86,9 @@
     <!-- Free Software? -->
     <section class="mt-5 pt-2 pb-5 bg-gold">
       <div class="container">
-        <div class="row mt-5 pl-4">
+        <div class="mt-5 pl-4">
           <h1 class="g-section-heading">Free Software?</h1>
-          <h1 class="g-hero-text mt-2">For us, 'free' is a matter of liberty, not price!</h1>
+          <h1 class="g-section-subheading mt-2">For us, 'free' is a matter of liberty, not price!</h1>
 
           <p
             class="g-section-body mt-4"
@@ -101,44 +101,140 @@
         </div>
       </div>
     </section>
+    <section class="container pt-5">
+      <h1 class="g-section-heading pl-3 mb-5">What have we built?</h1>
+      <div class="container px-0 pb-5">
+        <div class="justify-content-space-between align-items-center">
+          <div class="col-lg mb-5">
+            <h1 class="g-section-heading">Toonin</h1>
+            <div class="d-flex align-items-center g-section-info">Status: <span
+                style="background-color:#ffcc00;"
+                class="status-dot"
+              ></span>Live Beta</div>
+            <p class="g-section-body mt-4">Technology that allows you to tune in to your friends and family in realtime using peer to peer sharing.</p>
+            <div class="d-flex mt-5">
+              <b-button
+                size="lg"
+                class="g-btn mr-4"
+                target="_blank"
+                href="https://www.toonin.ml"
+              >
+                <fa-icon
+                  class="mr-2"
+                  :icon="['fas', 'play']"
+                ></fa-icon>Live Demo
+              </b-button>
+              <b-button
+                size="lg"
+                class="g-btn-alt"
+                target="_blank"
+                href="https://github.com/grey-software/material-math"
+              >
+                <fa-icon
+                  class="mr-2"
+                  :icon="['fab', 'github']"
+                ></fa-icon>Repository
+              </b-button>
+            </div>
+          </div>
+          <div class="col-lg">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe
+                class="embed-responsive-item"
+                src="https://www.youtube.com/embed/ImxxRMPVHzs"
+                frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container px-0 mt-5">
+        <div class="justify-content-space-between align-items-center">
+
+          <div class="col-lg mb-5">
+            <h1 class="g-section-heading">Material Math</h1>
+            <div class="d-flex align-items-center g-section-info">Status: <span
+                style="background-color:#FF3366;"
+                class="status-dot"
+              ></span>Live Alpha</div>
+            <p class="g-section-body mt-4">The spiritial successor to Boltz on Android, Material Math brings unlimited mental math practice in a fun, beautiful interface to the web!</p>
+            <div class="d-flex mt-5">
+              <b-button
+                size="lg"
+                class="g-btn mr-4"
+                href="https://material-math.netlify.app"
+                target="_blank"
+              >
+                <fa-icon
+                  class="mr-2"
+                  :icon="['fas', 'play']"
+                ></fa-icon>Live Demo
+              </b-button>
+              <b-button
+                size="lg"
+                class="g-btn-alt"
+                href="https://github.com/grey-software/material-math"
+                target="_blank"
+              >
+                <fa-icon
+                  class="mr-2"
+                  :icon="['fab', 'github']"
+                ></fa-icon>Repository
+              </b-button>
+            </div>
+          </div>
+          <div class="col-lg">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe
+                class="embed-responsive-item"
+                src="https://www.youtube.com/embed/ceACiAdXSDc"
+                frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- Who are we? -->
     <section class="container pt-5">
       <div class="row mt-5 pl-4">
-        <div
-          class="col"
-        >
+        <div class="col">
           <h1 class="g-section-heading">Who are we?</h1>
           <h1 class="g-section-subheading">A dedicated group of:</h1>
           <div class="row d-flex pt-5 justify-content-start align-items-center">
-            <div class="col-lg flex-col align-items-center">
+            <div class="flex-col align-items-center mx-4">
               <img
                 class="icon-who-we-are"
                 src="@/assets/icons/engineers.svg"
               />
               <h4 class="g-section-info">Engineers</h4>
             </div>
-            <div class="col-lg d-flex flex-col align-items-center">
+            <div class="flex-col align-items-center mx-4">
               <img
                 class="icon-who-we-are"
                 src="@/assets/icons/designers.svg"
               />
               <h4 class="g-section-info">Designers</h4>
             </div>
-            <div class="col-lg d-flex flex-col align-items-center">
+            <div class="flex-col align-items-center mx-4">
               <img
                 class="icon-who-we-are"
                 src="@/assets/icons/educators.svg"
               />
               <h4 class="g-section-info">Educators</h4>
             </div>
-            <div class="col-lg d-flex flex-col align-items-center">
+            <div class="flex-col align-items-center mx-4">
               <img
                 class="icon-who-we-are"
                 src="@/assets/icons/creatives.svg"
               />
               <h4 class="g-section-info">Creatives</h4>
             </div>
-            <div class="col-lg d-flex flex-col align-items-center">
+            <div class="flex-col align-items-center mx-4">
               <img
                 class="icon-who-we-are"
                 src="@/assets/icons/strategists.svg"
@@ -270,12 +366,37 @@ export default {
   margin-top: 48px;
 }
 
+.icon-who-we-are {
+  height: 108px;
+}
+
+.arrow-link {
+  color: var(--color-gold);
+  font-size: 28px;
+  transition: color 0.2s ease-out;
+}
+
+.arrow-link:hover {
+  color: var(--color-gold-light);
+}
+
 @media screen and (max-width: 768px) {
   .g-hero-img {
     float: left;
   }
 
-  /* .two-col-heading {
+  .icon-who-we-are {
+    height: 64px;
+  }
+
+  .g-section-info {
+    font-family: var(--font-heading);
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .two-col-heading {
     font-size: 32px;
     font-family: var(--font-heading);
     font-weight: 600;
@@ -283,13 +404,22 @@ export default {
   }
 
   .two-col-icon {
-    height: 64px;
+    height: 72px;
   }
 
   .two-col-body {
-    font-size: 16px;
-    width: 236px;
-  } */
+    font-size: 20px;
+    max-width: 434px;
+  }
+
+  .arrow-link {
+    font-size: 20px;
+  }
+
+  .g-section-body {
+    font-size: 24px;
+    line-height: 1.2;
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -306,7 +436,7 @@ export default {
   }
 
   .g-section-heading {
-    font-size: calc(12px + 4vw);
+    font-size: calc(12px + 8vw);
     line-height: 1.05;
     z-index: 1000;
   }
@@ -315,19 +445,7 @@ export default {
     font-size: 22px;
   }
 }
-.arrow-link {
-  color: var(--color-gold);
-  font-size: 28px;
-  transition: color 0.2s ease-out;
-}
 
-.arrow-link:hover {
-  color: var(--color-gold-light);
-}
-
-.icon-who-we-are {
-  height: 108px;
-}
 .bg-gold {
   background-color: var(--color-gold);
   width: 100vw;

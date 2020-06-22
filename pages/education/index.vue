@@ -6,12 +6,12 @@
           <h1 class="g-hero-heading">A New <br /> Learning Experience</h1>
           <p class="g-hero-tag">We're revolutionizing software education by pairing students with a mentor to build useful and creative open source software.</p>
           <div class="g-hero-cta-container">
-            <nuxt-link to="https://tiny.cc/gs-bm">
+            <a href="https://tiny.cc/gs-bm">
               <b-button
                 size="lg"
                 class="mr-4 g-btn-cta"
               >Our Proposed Model</b-button>
-            </nuxt-link>
+            </a>
           </div>
         </div>
 
