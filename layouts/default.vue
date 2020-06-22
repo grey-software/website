@@ -1,18 +1,15 @@
 <template>
   <div>
-    <!-- <grey-header></grey-header> -->
     <grey-nav-bar></grey-nav-bar>
     <nuxt />
   </div>
 </template>
 
 <script>
-import GreyHeader from "@/components/GreyHeader"
 import GreyNavBar from "@/components/GreyNavBar"
 import ProjectCard from "@/components/ProjectCard"
 export default {
   components: {
-    GreyHeader,
     ProjectCard,
     GreyNavBar
   },
