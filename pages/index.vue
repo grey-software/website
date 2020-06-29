@@ -4,8 +4,8 @@
     <div class="container g-hero mt-5">
       <div class="row">
         <div class="col-md-8">
-          <h1 class="g-hero-heading">Liberty and Excellence <br />in Software</h1>
-          <p class="g-hero-tag">We're on a mission to write incredible Free, Open Source Software and teach students software engineering.</p>
+          <h1 class="g-hero-heading">Freedom and Collaboration <br />in Software</h1>
+          <p class="g-hero-tag">We're creating the open source ecosystem of the future where software maintainers mentor students and build free software together!</p>
           <div class="g-hero-cta-container">
             <nuxt-link to="/projects">
               <b-button
@@ -307,7 +307,7 @@ export default {
   font-family: var(--font-heading);
   color: var(--color-text-dark);
   letter-spacing: -0.025em;
-  font-size: calc(12px + 6vw);
+  font-size: calc(12px + 5vw);
   line-height: 1.05;
   z-index: 1000;
 }
@@ -317,7 +317,7 @@ export default {
   font-family: var(--font-heading);
   color: var(--color-text-dark);
   letter-spacing: -0.025em;
-  font-size: calc(12px + 6vw);
+  font-size: calc(12px + 5vw);
   line-height: 1.05;
   z-index: 1000;
 }
@@ -327,7 +327,7 @@ export default {
   font-family: var(--font-heading);
   color: var(--color-text-dark);
   letter-spacing: -0.025em;
-  font-size: calc(12px + 3vw);
+  font-size: calc(12px + 2vw);
   line-height: 1.05;
   z-index: 1000;
   max-width: 72%;
