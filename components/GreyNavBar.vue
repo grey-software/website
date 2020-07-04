@@ -38,6 +38,11 @@
         to="/education"
         class="g-nav-link mr-4"
       >Education</nuxt-link>
+      <nuxt-link
+        @click.native="checked = false"
+        to="/futurist"
+        class="g-nav-link mr-4"
+      >Futurist</nuxt-link>
     </div>
   </div>
 </template>
