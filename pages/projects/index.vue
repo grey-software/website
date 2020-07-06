@@ -124,6 +124,46 @@
         </div>
       </div>
     </div>
+          <div class="container px-0 mt-5">
+        <div class="justify-content-space-between align-items-center">
+
+          <div class="col-lg mb-5">
+            <h1 class="g-section-heading">LinkedInFocus</h1>
+            <div class="d-flex align-items-center g-section-info">Status: <span
+                style="background-color:#ffcc00;"
+                class="status-dot"
+              ></span>Unofficial Release</div>
+            <p class="g-section-body mt-4">A web extension that allows you to hide the news feed and news panel on LinkedIn so you can focus on your career!</p>
+            <div class="d-flex mt-5">
+              <b-button
+                size="lg"
+                class="g-btn mr-4"
+                href="https://github.com/grey-software/LinkedInFocus/releases/tag/0.01"
+                target="_blank"
+              >
+                <fa-icon
+                  class="mr-2"
+                  :icon="['fas', 'box-open']"
+                ></fa-icon>Latest Release
+              </b-button>
+              <b-button
+                size="lg"
+                class="g-btn-alt"
+                href="https://github.com/grey-software/material-math"
+                target="_blank"
+              >
+                <fa-icon
+                  class="mr-2"
+                  :icon="['fab', 'github']"
+                ></fa-icon>Repository
+              </b-button>
+            </div>
+          </div>
+          <div class="col-lg">
+            <img style="width: 100%;" src="https://github.com/grey-software/LinkedInFocus/raw/master/after.png" />
+          </div>
+        </div>
+      </div>
   </div>
 </template>
 
