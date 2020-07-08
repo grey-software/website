@@ -168,10 +168,8 @@
 </template>
 
 <script>
-import GreyHero from "@/components/GreyHero";
 export default {
   components: {
-    GreyHero,
   },
   data () {
     return {

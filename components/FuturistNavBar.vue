@@ -13,9 +13,9 @@
       >
         <img
           class="logo"
-          src="../assets/logo.png"
+          src="../assets/f-logo.png"
         />
-        <span class="logo-text">Futurist Foundation</span>
+        
       </nuxt-link>
 
     </div>
@@ -57,8 +57,8 @@ export default {
   height: 12vh;
 }
 .logo {
-  height: 48px;
-  width: 48px;
+  height: 80px;
+  width: auto;
   margin-right: 16px;
 }
 .logo-text {

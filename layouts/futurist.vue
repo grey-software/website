@@ -22,7 +22,7 @@ export default {
 *:before,
 *:after {
   box-sizing: border-box;
-  margin: 0;
+
 }
 
 a {
@@ -38,11 +38,13 @@ a:hover {
 :root {
   --color-text: #fcfcfc;
   --color-text-dark: #fcfcfc;
-  --bg: #1f1f1f;
+  --bg: #050C17;
   --border-color: #ddd;
   --color-gold: #b22738;
   --color-gold-light: rgba(178, 154, 102, 0.8);
   --font-heading: "Montserrat", sans-serif;
   --font-body: "Nunito Sans", sans-serif;
 }
+
+
 </style>

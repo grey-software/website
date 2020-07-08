@@ -1,6 +1,5 @@
 <template>
-  <div class="ProjectCard">
-    <div class="card">
+  <!-- <div class="card">
       <div class="text">
         <b-col>
           <b-row>
@@ -21,8 +20,26 @@
           <fa-icon class="mr-3 icon" :icon="['fab', 'github']" />
         </b-link>
       </div>
-    </div>
-  </div>
+  </div>-->
+  <b-card
+    :title="project.title"
+    :img-src="imageUrl"
+    :img-alt="`${project.title} Image`"
+    img-top
+    style="max-width: 20rem;"
+    class="project-card mb-2"
+  >
+    <b-card-text>{{project.desc}}</b-card-text>
+
+    <b-button
+      @click="copyToClipboard(project.discord)"
+      v-b-tooltip.hover
+      :title="project.discord"
+      class="icon-button rounded-circle"
+    >
+      <fa-icon :icon="['fab', 'discord']"></fa-icon>
+    </b-button>
+  </b-card>
 </template>
 
 <script>
@@ -31,74 +48,45 @@ export default {
     project: {
       name: String,
       desc: String,
-      status: String,
-      icon: String,
-      githubLink: String
+      link: String,
+      email: String,
+      discord: String,
+      image: {
+        url: String
+      }
+    }
+  },
+  methods: {
+    copyToClipboard(str) {
+      const el = document.createElement("textarea");
+      el.value = str;
+      el.setAttribute("readonly", "");
+      el.style.position = "absolute";
+      el.style.left = "-9999px";
+      document.body.appendChild(el);
+      el.select();
+      document.execCommand("copy");
+      document.body.removeChild(el);
+    }
+  },
+  computed: {
+    imageUrl() {
+      return `http://159.89.124.15${this.project.image.url}`
     }
   }
 };
 </script>
 
 
-<style>
-
-.col {
-  padding: 0;
-}
-.ProjectCard {
-  width: 450px;
-  height: 650px;
-  border-color: white;
-}
-.icon {
-  opacity: 0;
-}
-.card {
-  padding: 40px 40px;
+<style scoped>
+.icon-button {
+  width: 48px;
+  height: 48px;
+  padding: 8px;
 }
 
-.card:hover {
-  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.09);
-  border: none;
-}
-
-.card:hover .icon {
-  opacity: 100%;
-  transition: opacity 0.4s ease;
-  color: black;
-}
-
-.text img {
-  width: 50px;
-  height: 50px;
-  overflow: hidden;
-  background-size: cover;
-  background-repeat: no-repeat;
-  border-radius: 50%;
-}
-
-/* .text {
-  padding: 40px 40px;
-} */
-.text .status {
-  letter-spacing: 2px;
-  font-size: 12px;
-  font-weight: bold;
-  color: #b29a66;
-}
-
-.text .description {
-  font-size: 14px;
-  line-height: 16px;
-}
-
-.text .title {
-  font-size: 40px;
-  font-weight: bolder;
-  transform: translate(-30px, 0px);
-}
-col-3 {
-  padding: 0;
+.project-card {
+  color: gray;
 }
 </style>
 

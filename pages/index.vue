@@ -307,15 +307,13 @@
 </template>
 
 <script>
-import GreyHero from "@/components/GreyHero";
 export default {
   components: {
-    GreyHero
   }
 };
 </script>
 
-<style>
+<style scoped>
 .two-col-heading {
   font-size: 42px;
   font-family: var(--font-heading);
