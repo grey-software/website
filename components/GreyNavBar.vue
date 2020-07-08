@@ -38,6 +38,12 @@
         to="/education"
         class="g-nav-link mr-4"
       >Education</nuxt-link>
+      <a
+        @click.native="checked = false"
+        target="_blank"
+        href="https://www.github.com/grey-software"
+        class="g-nav-link mr-4"
+      >Github</a>
       <nuxt-link
         @click.native="checked = false"
         to="/futurist"

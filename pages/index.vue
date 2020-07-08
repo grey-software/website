@@ -38,7 +38,7 @@
           class="col"
           cols="4"
         >
-          <h1 class="g-section-heading ml-3">What we do</h1>
+          <h1 class="g-section-heading ml-3">What do we do?</h1>
         </div>
       </div>
       <div class="row mt-5 justify-content-center align-items-center">
@@ -53,7 +53,7 @@
             <nuxt-link
               to="/projects"
               class="arrow-link"
-            >See what we're building <fa-icon
+            >Our projects <fa-icon
                 class="ml-2 mt-2"
                 :icon="['fas', 'long-arrow-alt-right']"
               ></fa-icon>
@@ -72,7 +72,7 @@
             <nuxt-link
               to="/education"
               class="arrow-link"
-            >Learn about our programs
+            >Learn more
               <fa-icon
                 class="ml-2 mt-2"
                 :icon="['fas', 'long-arrow-alt-right']"
@@ -83,8 +83,68 @@
         </div>
       </div>
     </section>
+    <!-- Who are we? -->
+    <section class="container pt-5 pb-5">
+      <div class="row mt-5 pl-4">
+        <div class="col">
+          <h1 class="g-section-heading">Who are we?</h1>
+          <h1 class="g-section-subheading">A dedicated group of:</h1>
+          <div class="row d-flex pt-5 justify-content-start align-items-center">
+            <div class="flex-col align-items-center mx-4">
+              <img
+                class="icon-who-we-are"
+                src="@/assets/icons/engineers.svg"
+              />
+              <h4 class="g-section-info">Engineers</h4>
+            </div>
+            <div class="flex-col align-items-center mx-4">
+              <img
+                class="icon-who-we-are"
+                src="@/assets/icons/designers.svg"
+              />
+              <h4 class="g-section-info">Designers</h4>
+            </div>
+            <div class="flex-col align-items-center mx-4">
+              <img
+                class="icon-who-we-are"
+                src="@/assets/icons/educators.svg"
+              />
+              <h4 class="g-section-info">Educators</h4>
+            </div>
+            <div class="flex-col align-items-center mx-4">
+              <img
+                class="icon-who-we-are"
+                src="@/assets/icons/creatives.svg"
+              />
+              <h4 class="g-section-info">Creatives</h4>
+            </div>
+            <div class="flex-col align-items-center mx-4">
+              <img
+                class="icon-who-we-are"
+                src="@/assets/icons/strategists.svg"
+              />
+              <h4 class="g-section-info">Strategists</h4>
+            </div>
+          </div>
+          <h1 class="g-section-subheading mt-5">using our intellect and spirit to build a beautiful, open source future!</h1>
+
+        </div>
+      </div>
+      <b-button
+        size="lg"
+        class="g-btn mr-4 mt-4"
+        target="_blank"
+        href="https://angel.co/company/grey-software/jobs"
+      >
+        <fa-icon
+          class="mr-2"
+          :icon="['fas', 'user-plus']"
+        ></fa-icon>
+        Join us
+      </b-button>
+    </section>
     <!-- Free Software? -->
-    <section class="mt-5 pt-2 pb-5 bg-gold">
+    <!-- <section class="mt-5 pt-2 pb-5 bg-gold">
       <div class="container">
         <div class="mt-5 pl-4">
           <h1 class="g-section-heading">Free Software?</h1>
@@ -100,13 +160,13 @@
 
         </div>
       </div>
-    </section>
+    </section> -->
     <section class="container pt-5">
       <h1 class="g-section-heading pl-3 mb-5">What have we built?</h1>
       <div class="container px-0 pb-5">
         <div class="justify-content-space-between align-items-center">
           <div class="col-lg mb-5">
-            <h1 class="g-section-heading">Toonin</h1>
+            <h1 class="g-section-project-heading">Toonin</h1>
             <div class="d-flex align-items-center g-section-info">Status: <span
                 style="background-color:#ffcc00;"
                 class="status-dot"
@@ -154,7 +214,7 @@
         <div class="justify-content-space-between align-items-center">
 
           <div class="col-lg mb-5">
-            <h1 class="g-section-heading">Material Math</h1>
+            <h1 class="g-section-project-heading">Material Math</h1>
             <div class="d-flex align-items-center g-section-info">Status: <span
                 style="background-color:#FF3366;"
                 class="status-dot"
@@ -198,52 +258,47 @@
           </div>
         </div>
       </div>
-    </section>
-    <!-- Who are we? -->
-    <section class="container pt-5">
-      <div class="row mt-5 pl-4">
-        <div class="col">
-          <h1 class="g-section-heading">Who are we?</h1>
-          <h1 class="g-section-subheading">A dedicated group of:</h1>
-          <div class="row d-flex pt-5 justify-content-start align-items-center">
-            <div class="flex-col align-items-center mx-4">
-              <img
-                class="icon-who-we-are"
-                src="@/assets/icons/engineers.svg"
-              />
-              <h4 class="g-section-info">Engineers</h4>
-            </div>
-            <div class="flex-col align-items-center mx-4">
-              <img
-                class="icon-who-we-are"
-                src="@/assets/icons/designers.svg"
-              />
-              <h4 class="g-section-info">Designers</h4>
-            </div>
-            <div class="flex-col align-items-center mx-4">
-              <img
-                class="icon-who-we-are"
-                src="@/assets/icons/educators.svg"
-              />
-              <h4 class="g-section-info">Educators</h4>
-            </div>
-            <div class="flex-col align-items-center mx-4">
-              <img
-                class="icon-who-we-are"
-                src="@/assets/icons/creatives.svg"
-              />
-              <h4 class="g-section-info">Creatives</h4>
-            </div>
-            <div class="flex-col align-items-center mx-4">
-              <img
-                class="icon-who-we-are"
-                src="@/assets/icons/strategists.svg"
-              />
-              <h4 class="g-section-info">Strategists</h4>
+      <div class="container px-0 mt-5">
+        <div class="justify-content-space-between align-items-center">
+
+          <div class="col-lg mb-5">
+            <h1 class="g-section-project-heading">LinkedInFocus</h1>
+            <div class="d-flex align-items-center g-section-info">Status: <span
+                style="background-color:#ffcc00;"
+                class="status-dot"
+              ></span>Unofficial Release</div>
+            <p class="g-section-body mt-4">A web extension that allows you to hide the news feed and news panel on LinkedIn so you can focus on your career!</p>
+            <div class="d-flex mt-5">
+              <b-button
+                size="lg"
+                class="g-btn mr-4"
+                href="https://github.com/grey-software/LinkedInFocus/releases/tag/0.01"
+                target="_blank"
+              >
+                <fa-icon
+                  class="mr-2"
+                  :icon="['fas', 'box-open']"
+                ></fa-icon>Latest Release
+              </b-button>
+              <b-button
+                size="lg"
+                class="g-btn-alt"
+                href="https://github.com/grey-software/material-math"
+                target="_blank"
+              >
+                <fa-icon
+                  class="mr-2"
+                  :icon="['fab', 'github']"
+                ></fa-icon>Repository
+              </b-button>
             </div>
           </div>
-          <h1 class="g-section-subheading mt-5">using our intellect and spirit to build a beautiful, open source future!</h1>
-
+          <div class="col-lg">
+            <img
+              style="width: 100%;"
+              src="https://github.com/grey-software/LinkedInFocus/raw/master/after.png"
+            />
+          </div>
         </div>
       </div>
     </section>
@@ -318,6 +373,16 @@ export default {
   color: var(--color-text-dark);
   letter-spacing: -0.025em;
   font-size: calc(12px + 5vw);
+  line-height: 1.05;
+  z-index: 1000;
+}
+
+.g-section-project-heading {
+  font-weight: 800;
+  font-family: var(--font-heading);
+  color: var(--color-text-dark);
+  letter-spacing: -0.025em;
+  font-size: calc(12px + 3.5vw);
   line-height: 1.05;
   z-index: 1000;
 }
@@ -437,6 +502,12 @@ export default {
 
   .g-section-heading {
     font-size: calc(12px + 8vw);
+    line-height: 1.05;
+    z-index: 1000;
+  }
+
+  .g-section-project-heading {
+    font-size: calc(12px + 6.5vw);
     line-height: 1.05;
     z-index: 1000;
   }
