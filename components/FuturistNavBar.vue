@@ -15,7 +15,7 @@
           class="logo"
           src="../assets/f-logo.png"
         />
-        
+
       </nuxt-link>
 
     </div>
@@ -37,7 +37,7 @@
         @click.native="checked = false"
         to="/education"
         class="g-nav-link mr-4"
-      >Education</nuxt-link>
+      >Contact</nuxt-link>
     </div>
   </div>
 </template>
@@ -55,6 +55,7 @@ export default {
 <style scoped>
 .g-header {
   height: 12vh;
+  background-color: #050C17;
 }
 .logo {
   height: 80px;
@@ -70,11 +71,10 @@ export default {
 }
 
 .g-nav-link {
-  font-size: 1.125rem;
+  font-size: 18px;
   color: var(--color-text);
   font-weight: 500;
   font-family: var(--font-heading);
-  text-transform: uppercase;
 }
 </style>
 
@@ -108,14 +108,14 @@ export default {
 
 .nav > .nav-links > a {
   display: inline-block;
-  padding: 13px 10px 13px 10px;
+  padding: 15px 10px 13px 10px;
   text-decoration: none;
   color: #efefef;
 }
 
-.nav > .nav-links > a:hover {
-  background-color: rgba(0, 0, 0, 0.3);
-}
+/*.nav > .nav-links > a:hover {*/
+/*  background-color: rgba(0, 0, 0, 0.3);*/
+/*}*/
 
 .nav > #nav-check {
   display: none;
