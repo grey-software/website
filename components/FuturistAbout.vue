@@ -4,7 +4,7 @@
     <div class="about">
 
       <div class="heading">
-        <h1 class="title">What We Do?</h1>
+        <h1 class="title">What We <span style="color: #2BACF9">Do?</span></h1>
         <p class="sub-title">
           The Futurist foundation is an organization working to guide the future in a net positive direction by allowing the public to propose,
           fund, and work on the themes and technologies of the future.
@@ -69,7 +69,7 @@
             <img src="../assets/world-map.png"/>
           </div>
           <div class="col">
-            <h1 class="title" style="text-align: left"> Tech of <br/>the Future.</h1>
+            <h1 class="title" style="text-align: left"> Tech of <br/>the <span style="color: #2BACF9">Future.</span></h1>
             <p class="desc" >
               Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor. Foinshgt instajfe  nonumy eirmod tempor.
             </p>

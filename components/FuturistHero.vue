@@ -2,9 +2,9 @@
   <div class="g-landing">
     <div class="g-hero">
       <p class="g-hero-tag">Propose, Fund, & Work.</p>
-      <h1 class="g-hero-heading text-rainbow">
+      <h1 class="g-hero-heading">
         Crowdsourcing
-        <br />the Future.
+        <br />the <span class="text-rainbow">Future.</span>
       </h1>
 
       <div>
@@ -52,7 +52,7 @@
 .g-hero-heading {
   font-weight: 800;
   font-family: var(--font-heading);
-  color: var(--color-text-dark);
+  color: white;
   letter-spacing: -0.025em;
   font-size: calc(12px + 5vw);
   line-height: 1.05;
