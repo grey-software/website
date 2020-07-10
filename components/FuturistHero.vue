@@ -7,9 +7,9 @@
         <br />the <span class="text-rainbow">Future.</span>
       </h1>
 
-      <div>
-        <b-link href="#">
-          <a class="btn neu-dark">Join Now</a>
+      <div class=" btn">
+        <b-link class="neumorphism-3" href="#">
+          <a style="color:white;">Join Now</a>
         </b-link>
       </div>
 
@@ -27,7 +27,7 @@
 </script>
 
 <style scope>
-.g-landing {
+  .g-landing {
   margin: 0 120px;
 }
 .text-rainbow {
@@ -80,14 +80,33 @@
   border: none;
   color: white;
 }
-.neu-dark {
-  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2),
+.btn :hover{
+  text-decoration: none;
+}
+  .neumorphism-3 {
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 55px;
+    width: 200px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.8),
     -6px -6px 10px rgba(255, 255, 255, 0.1);
-}
-.neu-dark:active {
-  box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.2),
+    position: relative;
+
+  }
+  .neumorphism-3:after {
+    content: '';
+    border-radius: 30px;
+    position: absolute;
+    height: 75%;
+    width: 95%;
+    background-color: transparent;
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.8),
     inset -5px -5px 10px rgba(255, 255, 255, 0.1);
-}
+  }
+
+
 /* ----------- MORE INDICATOR ------------ */
 .more-indicator {
   text-align: center;

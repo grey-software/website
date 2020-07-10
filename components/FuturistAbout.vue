@@ -4,7 +4,7 @@
     <div class="about">
 
       <div class="heading">
-        <h1 class="title">What We <span style="color: #2BACF9">Do?</span></h1>
+        <h1 class="title">What We <span style="color: crimson">Do?</span></h1>
         <p class="sub-title">
           The Futurist foundation is an organization working to guide the future in a net positive direction by allowing the public to propose,
           fund, and work on the themes and technologies of the future.
@@ -148,14 +148,17 @@
     font-weight: 700;
     font-size: 26px;
   }
+
   .sub-heading-text {
     color: lightslategrey;
   }
+
   .desc {
     text-align: left;
     color: lightslategrey;
     font-size: 13px;
   }
+
   .sub-box {
     padding: 40px 0;
   }
@@ -179,7 +182,4 @@
   .text-box{
     padding: 120px 0;
   }
-
-
-
 </style>
