@@ -26,7 +26,7 @@
 <script>
 </script>
 
-<style scope>
+<style scoped>
   .g-landing {
   margin: 0 120px;
 }

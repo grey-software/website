@@ -38,6 +38,17 @@
         to="/education"
         class="g-nav-link mr-4"
       >Contact</nuxt-link>
+
+      <nuxt-link
+        @click.native="checked = false"
+        to="/education"
+        class="g-nav-link mr-4"
+      ><div class=" btn">
+        <b-link class="neumorphism-3" href="#">
+          <a style="color:white;">Donate</a>
+        </b-link>
+      </div>
+      </nuxt-link>
     </div>
   </div>
 </template>
@@ -76,9 +87,49 @@ export default {
   font-weight: 500;
   font-family: var(--font-heading);
 }
+
+.btn {
+  z-index: 1;
+  padding: 0;
+  margin: 0;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 1em;
+  letter-spacing: 2px;
+  transition: 0.3s ease;
+  font-weight: bold;
+  border: none;
+  color: white;
+}
+.btn :hover{
+  text-decoration: none;
+}
+.neumorphism-3 {
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 55px;
+  width: 200px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.8),
+  -6px -6px 10px rgba(255, 255, 255, 0.1);
+  position: relative;
+  transform: scale(0.6);
+
+}
+.neumorphism-3:after {
+  content: '';
+  border-radius: 30px;
+  position: absolute;
+  height: 75%;
+  width: 95%;
+  background-color: transparent;
+  box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.8),
+  inset -5px -5px 10px rgba(255, 255, 255, 0.1);
+}
 </style>
 
-<style>
+<style scoped>
 .nav {
   width: 100%;
   position: relative;
