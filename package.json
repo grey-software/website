@@ -7,7 +7,7 @@
         "dev": "nuxt",
         "build": "nuxt build",
         "start": "nuxt start",
-        "generate": "nuxt build && nuxt export",
+        "generate": "nuxt build --target static && nuxt export",
         "test": "jest"
     },
     "dependencies": {
