@@ -1,6 +1,10 @@
+require('dotenv').config()
 
 export default {
   mode: 'universal',
+  env: {
+    apiUrl: process.env.API_URL
+  },
   /*
   ** Headers of the page
   */
@@ -13,6 +17,9 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+    ],
+    script: [
+      { src: "https://plausible.io/js/plausible.js", async: true, defer: true, "data-domain": "grey.software" }
     ]
   },
   /*
@@ -42,10 +49,11 @@ export default {
   modules: [
     // Doc: https://bootstrap-vue.js.org
     'bootstrap-vue/nuxt',
+    '@nuxtjs/apollo',
     '@nuxtjs/pwa',
     // Doc: https://github.com/nuxt-community/dotenv-module
     '@nuxtjs/dotenv',
-        ['@nuxtjs/fontawesome', {
+    ['@nuxtjs/fontawesome', {
       component: 'fa',
       suffix: true,
       icons: {
@@ -55,6 +63,13 @@ export default {
     }],
     '@nuxtjs/device'
   ],
+  apollo: {
+    clientConfigs: {
+      default: {
+        httpEndpoint: process.env.GRAPHQL_URL
+      }
+    }
+  },
   /*
   ** Build configuration
   */
