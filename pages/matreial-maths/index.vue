@@ -38,7 +38,7 @@
             </b-button>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 justify-content-center d-flex mt-3">
           <img
               class="g-hero-img"
               src="@/assets/material-maths.png"
@@ -46,12 +46,19 @@
         </div>
       </div>
     </section>
-    <!-- Project Details -->
+    <!-- Become A Math Person -->
     <section class="pt-5 pb-5" style="background-color:#ddd;" align-v="center">
-      <div class="container">
-        <div>
-          <p class="g-hero-tag" style="color:#000">Material Maths is the successor of Boltz</p>
+      <div class="container justify-content-around">
+        <div class="text-center">
+          <h1 class="g-hero-heading mb-5 darker-heading">Anyone Can Do Maths</h1>
         </div>
+        <GreyFeatureCard />
+      </div>
+    </section>
+    <!-- Project Details -->
+    <section class="pt-5 pb-5" align-v="center">
+      <div class="container">
+          <p class="g-hero-tag">Material Math is the spiritual successor to Boltz, a mental math app for Android. Grey software is building off of Boltz's great work, and bringing Boltz's principles of unlimited fun math practice, interleaved concepts, and spaced repition to the web!</p>
         <div class="container">
           <div class="col-lg">
               <div class="embed-responsive embed-responsive-16by9">
@@ -66,13 +73,21 @@
             </div>
           </div>
         </div>
-    </section>
+    </section> 
   </div>
 </template>
 
 <script>
-export default {};
+import GreyFeatureCard from '@/components/GreyFeatureCard.vue'
+export default {
+  components : {
+    GreyFeatureCard
+  }
+};
 </script>
 
-<style>
+<style scoped>
+.darker-heading {
+  color: var(--bg)
+}
 </style>
