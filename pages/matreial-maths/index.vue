@@ -47,46 +47,71 @@
       </div>
     </section>
     <!-- Become A Math Person -->
-    <section class="pt-5 pb-5" style="background-color:#ddd;" align-v="center">
+    <section class="pt-5 pb-5 lighter-bg" style="" align-v="center">
       <div class="container justify-content-around">
         <div class="text-center">
           <h1 class="g-hero-heading mb-5 darker-heading">Anyone Can Do Maths</h1>
         </div>
-        <GreyFeatureCard />
+        <div class="row justify-content-around align-items-stretch">
+          <GreyFeatureCard icon="@/assets/img/projects.svg" heading="Tailor Your Practice!" text="You get to choose which math concepts you want to strengthen." />
+          <GreyFeatureCard icon="@/assets/img/projects.svg" heading="Compete with Friends!" text="Set a new highscore and get a chance to be featured in the Leaderboard." />
+          <GreyFeatureCard icon="@/assets/img/projects.svg" heading="Track Your Progress!" text="Monitor your progress to see where you excel and where you need work." />
+        </div>
       </div>
     </section>
     <!-- Project Details -->
-    <section class="pt-5 pb-5" align-v="center">
+    <section class="container pt-5 pb-5" align-v="center">
+      <h1 class="g-hero-heading mb-5 text-center">Inspiration</h1>
+      <p class="g-hero-tag">Material Math is the spiritual successor to Boltz, a mental math app for Android. Grey software is building off of Boltz's great work, and bringing Boltz's principles of unlimited fun math practice, interleaved concepts, and spaced repition to the web!</p>
       <div class="container">
-          <p class="g-hero-tag">Material Math is the spiritual successor to Boltz, a mental math app for Android. Grey software is building off of Boltz's great work, and bringing Boltz's principles of unlimited fun math practice, interleaved concepts, and spaced repition to the web!</p>
-        <div class="container">
-          <div class="col-lg">
-              <div class="embed-responsive embed-responsive-16by9">
-                <iframe
-                  class="embed-responsive-item"
-                  src="https://www.youtube.com/embed/ceACiAdXSDc"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen
-                ></iframe>
-              </div>
-            </div>
+        <div class="col-lg">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe
+              class="embed-responsive-item"
+              src="https://www.youtube.com/embed/ceACiAdXSDc"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
           </div>
         </div>
-    </section> 
+      </div>
+    </section>
+    <!-- Technologies Used -->
+    <section class="pt-5 pb-5 lighter-bg" style="" align-v="center">
+      <div class="container justify-content-around">
+        <div class="text-center">
+          <h1 class="g-hero-heading mb-5 darker-heading">Technologies Used</h1>
+        </div>
+        <ImageGrid :images="[
+          {src:'https://upload.wikimedia.org/wikipedia/commons/9/95/Vue.js_Logo_2.svg', height:'80px', desc:'Vue'},
+          {src:'https://image.flaticon.com/icons/svg/919/919832.svg', height:'80px', desc:'TypeScript'},
+          {src:'https://image.flaticon.com/icons/svg/919/919828.svg', height:'80px', desc:'JavaScript'},
+        ]" />
+      </div>
+    </section>
+    <!-- Get Involved -->
+    <section class="container pt-5 pb-5" align-v="center">
+
+    </section>
   </div>
 </template>
 
 <script>
 import GreyFeatureCard from '@/components/GreyFeatureCard.vue'
+import ImageGrid from '@/components/ImageGrid.vue'
 export default {
   components : {
-    GreyFeatureCard
+    GreyFeatureCard,
+    ImageGrid
   }
 };
 </script>
 
 <style scoped>
+.lighter-bg {
+  background-color: var(--border-color);
+}
 .darker-heading {
   color: var(--bg)
 }
