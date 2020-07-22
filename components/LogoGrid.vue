@@ -13,7 +13,7 @@
       <img v-else-if="img.width" :src="img.src" :width="img.width" class="image-property" />
       <img v-else-if="img.height" :src="img.src" :height="img.height" class="image-property" />
       <img v-else :src="img.src" class="image-property" />
-      <p class="text-center mt-3">{{img.desc}}</p>
+      <p class="text-center mt-3" :class="{'text-color-black':txtBlack}">{{img.desc}}</p>
     </div>
   </div>
   </div>
@@ -21,12 +21,18 @@
 
 <script>
 export default {
-  props: { images: Array }
+  props: { 
+      images: Array,
+      txtBlack: Boolean
+  }
 };
 </script>
 
 <style scoped>
 .image-property {
   position: relative;
+}
+.text-color-black {
+  color: var(--bg)
 }
 </style>
