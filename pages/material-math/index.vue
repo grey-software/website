@@ -62,18 +62,18 @@
         </div>
         <div class="row justify-content-around align-items-stretch">
           <GreyFeatureCard
-            icon="@/assets/img/projects.svg"
-            heading="Tailor Your Practice!"
+            icon="/projects/material-math/concepts.svg"
+            title="Tailor Your Practice!"
             text="Choose which concepts you'd like to practice!"
           />
           <GreyFeatureCard
-            icon="@/assets/img/projects.svg"
-            heading="Compete with Friends!"
+            icon="/projects/material-math/leaderboard.svg"
+            title="Compete Globally!"
             text="Aim high and compete with users around the world!"
           />
           <GreyFeatureCard
-            icon="@/assets/img/projects.svg"
-            heading="Track Your Progress!"
+            icon="/projects/material-math/progress.svg"
+            title="Track Your Progress!"
             text="Monitor your progress to see where you excel and where you need work."
           />
         </div>
