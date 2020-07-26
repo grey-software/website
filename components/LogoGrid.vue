@@ -1,38 +1,25 @@
 <template>
- <div>
-  <div class="d-md-flex flex-wrap justify-content-around">
-    <div class="text-center" v-for="img in images" :key="img.src">
-      <!-- image div -->
-      <img
-        v-if="img.width && img.height"
-        :src="img.src"
-        :width="img.width"
-        :height="img.height"
-        class="image-property"
-      />
-      <img v-else-if="img.width" :src="img.src" :width="img.width" class="image-property" />
-      <img v-else-if="img.height" :src="img.src" :height="img.height" class="image-property" />
-      <img v-else :src="img.src" class="image-property" />
-      <p class="text-center mt-3" :class="{'text-color-black':txtBlack}">{{img.desc}}</p>
+  <div>
+    <div class="d-md-flex flex-wrap justify-content-around">
+      <div class="text-center m-3" v-for="logo in logos" :key="logo">
+        <!-- image div -->
+        <i class="logo-icon" :class="logo"></i>
+      </div>
     </div>
-  </div>
   </div>
 </template>
 
 <script>
 export default {
-  props: { 
-      images: Array,
-      txtBlack: Boolean
+  props: {
+    logos: Array
   }
 };
 </script>
 
 <style scoped>
-.image-property {
-  position: relative;
-}
-.text-color-black {
-  color: var(--bg)
+.logo-icon {
+  font-size: 96px;
+  color: var(--color-gold);
 }
 </style>
