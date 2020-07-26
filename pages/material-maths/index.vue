@@ -108,7 +108,6 @@
       </div>
     </section>
     <!-- Contributors -->
-    <!-- Get In Touch -->
   </div>
 </template>
 
