@@ -16,7 +16,8 @@ export default {
       { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'stylesheet', type: 'text/css', href: 'https://cdn.jsdelivr.net/gh/konpa/devicon@master/devicon.min.css' }
     ],
     script: [
       { src: "https://plausible.io/js/plausible.js", async: true, defer: true, "data-domain": "grey.software" }
@@ -48,6 +49,7 @@ export default {
   */
   modules: [
     // Doc: https://bootstrap-vue.js.org
+    '@nuxt/content',
     'bootstrap-vue/nuxt',
     '@nuxtjs/apollo',
     '@nuxtjs/pwa',

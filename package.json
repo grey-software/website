@@ -11,6 +11,7 @@
         "test": "jest"
     },
     "dependencies": {
+        "@nuxt/content": "^1.4.1",
         "@nuxtjs/apollo": "^4.0.1-rc.1",
         "@nuxtjs/device": "^1.2.7",
         "@nuxtjs/dotenv": "^1.4.1",
