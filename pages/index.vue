@@ -446,6 +446,10 @@ export default {
 }
 
 @media screen and (max-width: 768px) {
+  .g-hero {
+    min-height: 100vh;
+  }
+
   .g-hero-img {
     float: left;
   }
