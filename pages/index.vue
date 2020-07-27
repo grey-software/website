@@ -302,7 +302,45 @@
         </div>
       </div>
     </section>
+    <div class="about mt-5">
+      <div class="container">
+        <div class="row row-cols-2">
+          <div class="col">
+            <img src="../assets/world-map.png" />
+          </div>
+          <div class="col">
+            <h1 class="title" style="text-align: left;">
+              Tech of
+              <br />the
+              <span style="color: #2bacf9;">Future.</span>
+            </h1>
+            <p
+              class="desc"
+            >Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor. Foinshgt instajfe nonumy eirmod tempor.</p>
 
+            <div class="sub-box" style="text-align: left;">
+              <div class="row row-cols-2">
+                <div class="col">
+                  <fa-icon :icon="['fas', 'globe']" class="fa-3x" style="color: #6f75ff;"></fa-icon>
+                  <h5 class="title">Crowdsourcing</h5>
+                  <p
+                    class="desc"
+                  >Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor. Foinshgt instajfe nonumy eirmod tempor.</p>
+                </div>
+
+                <div class="col">
+                  <fa-icon :icon="['fas', 'users']" class="fa-3x" style="color: #6fffa6;"></fa-icon>
+                  <h5 class="title">Futurist Community</h5>
+                  <p
+                    class="desc"
+                  >Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor. Foinshgt instajfe nonumy eirmod tempor.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -321,6 +359,27 @@ export default {
   font-family: var(--font-heading);
   font-weight: 600;
   line-height: 1.05;
+}
+
+.about {
+  color: white;
+  margin: 0 120px;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.sub-box {
+  padding: 40px 0;
+}
+
+.sub-box .title {
+  font-size: 20px;
+  font-weight: 600;
+  padding: 20px 0 0;
+}
+
+.sub-box .desc {
+  padding: 0;
 }
 
 .two-col-icon {
