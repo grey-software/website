@@ -16,6 +16,7 @@
     
     <section class="container">
       <OneCrossTwo reverse="true" title="Title" desc="hifehugyrfjbrujnhirfuburbu uhfeuihfoinf egfuibjsnifbe bufefbuene d" imgSrc="/projects/toonin/logo.svg" />
+      <OneCrossTwo title="Title" desc="hifehugyrfjbrujnhirfuburbu uhfeuihfoinf egfuibjsnifbe bufefbuene d" imgSrc="/projects/toonin/logo.svg" />
     </section>
   </div>
 </template>
