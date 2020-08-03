@@ -4,11 +4,16 @@
     <div
       v-for="article of articles"
       :key="article.slug"
+      class="mb-5"
     >
       <NuxtLink :to="{ name: 'blog-slug', params: { slug: article.slug } }">
-        <div class="article-card">
-          <h2>{{ article.title }}</h2>
-          <p>{{ article.description }}</p>
+        <div class="article-card d-flex justify-space-between">
+          <div class="flex-col">
+            <h2>{{ article.title }}</h2>
+            <p>{{ article.description }}</p>
+          </div>
+          <img class="img-article" :src="article.img" />
+
         </div>
       </NuxtLink>
     </div>
@@ -38,6 +43,7 @@ h1 {
 
 h2 {
   color: #f7fafc;
+  margin-top: 1em;
 }
 
 h3 {
@@ -54,6 +60,12 @@ a {
 }
 
 .article-card {
-    border: solid 2px white;
+  border: solid 2px white;
+  border-radius: 8px;
+  padding: 12px 24px;
+}
+
+.img-article {
+    height: 236px;
 }
 </style>

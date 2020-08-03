@@ -1,7 +1,7 @@
 ---
 title: Useful Git Aliases
 description: Type less and get more done with Git using aliases!
-img: useful-git-aliases.png
+img: /useful-git-aliases.png
 alt: useful git aliases
 author: Arsala Grey
 ---
