@@ -11,22 +11,26 @@
         "test": "jest"
     },
     "dependencies": {
+        "@nuxt/content": "^1.5.3",
+        "@nuxt/content-theme-docs": "^0.3.0",
         "@nuxtjs/apollo": "^4.0.1-rc.1",
         "@nuxtjs/device": "^1.2.7",
         "@nuxtjs/dotenv": "^1.4.1",
         "@nuxtjs/pwa": "^3.0.0-0",
+        "@tailwindcss/typography": "^0.2.0",
         "apollo-cache-inmemory": "^1.6.6",
         "bootstrap": "^4.5.0",
-        "bootstrap-vue": "^2.15.0",
+        "bootstrap-vue": "^2.16.0",
         "core-js": "^2.6.5",
         "graphql": "^15.3.0",
-        "nuxt": "^2.13.3"
+        "nuxt": "^2.14.0"
     },
     "devDependencies": {
-        "@fortawesome/free-brands-svg-icons": "^5.13.0",
-        "@fortawesome/free-solid-svg-icons": "^5.13.0",
+        "@fortawesome/free-brands-svg-icons": "^5.14.0",
+        "@fortawesome/free-solid-svg-icons": "^5.14.0",
         "@nuxtjs/fontawesome": "^1.1.2",
-        "@nuxtjs/stylelint-module": "^3.1.0",
+        "@nuxtjs/stylelint-module": "^4.0.0",
+        "@nuxtjs/tailwindcss": "^2.1.1",
         "@vue/test-utils": "^1.0.0-beta.27",
         "babel-jest": "^24.1.0",
         "jest": "^24.1.0",

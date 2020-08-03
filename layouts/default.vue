@@ -13,11 +13,11 @@ export default {
     ProjectCard,
     GreyNavBar
   },
-    created() {
+  created () {
     if (process.client) {
       document.addEventListener("keyup", e => {
         if (e.key == "d") {
-          [].forEach.call(document.querySelectorAll("*"), function(a) {
+          [].forEach.call(document.querySelectorAll("*"), function (a) {
             a.style.outline =
               "1px solid #" + (~~(Math.random() * (1 << 24))).toString(16);
           });
@@ -98,12 +98,14 @@ h6 {
   font-size: 1.42rem;
 }
 
-.g-btn:active, .g-btn-cta:active {
+.g-btn:active,
+.g-btn-cta:active {
   background-color: var(--color-gold) !important;
   border-color: var(--color-gold) !important;
 }
 
-.g-btn:hover, .g-btn-cta:hover {
+.g-btn:hover,
+.g-btn-cta:hover {
   color: var(--color-gold-light) !important;
   background-color: var(--bg) !important;
   border-color: var(--color-light) !important;
@@ -118,7 +120,8 @@ h6 {
   font-size: 1.42rem;
 }
 
-.g-btn-alt:hover, .g-btn-cta-alt:hover {
+.g-btn-alt:hover,
+.g-btn-cta-alt:hover {
   background-color: var(--color-gold) !important;
   color: #ffffff !important;
 }
@@ -128,3 +131,5 @@ h6 {
   flex-direction: column;
 }
 </style>
+
+
