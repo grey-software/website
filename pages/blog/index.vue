@@ -1,5 +1,5 @@
 <template>
-  <div class="prose prose-sm sm:prose lg:prose-lg xl:prose-2xl mx-auto">
+  <div class="prose prose-sm sm:prose lg:prose-lg xl:prose-2xl mx-auto mt-5">
     <h1>Blog Posts</h1>
     <div
       v-for="article of articles"
@@ -8,11 +8,14 @@
     >
       <NuxtLink :to="{ name: 'blog-slug', params: { slug: article.slug } }">
         <div class="article-card d-flex justify-space-between">
-          <div class="flex-col">
+          <div class="flex-col mr-2">
             <h2>{{ article.title }}</h2>
             <p>{{ article.description }}</p>
           </div>
-          <img class="img-article" :src="article.img" />
+          <img
+            class="img-article"
+            :src="article.img"
+          />
 
         </div>
       </NuxtLink>
@@ -66,6 +69,14 @@ a {
 }
 
 .img-article {
-    height: 236px;
+  height: 209px;
 }
+
+@media (max-width: 600px) {
+.img-article {
+  height: 108px;
+}
+}
+
+
 </style>
