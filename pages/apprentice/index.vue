@@ -15,8 +15,8 @@
     </section>
     
     <section class="container">
-      <OneCrossTwo reverse="true" title="Title" desc="hifehugyrfjbrujnhirfuburbu uhfeuihfoinf egfuibjsnifbe bufefbuene d" imgSrc="/projects/toonin/logo.svg" />
-      <OneCrossTwo title="Title" desc="hifehugyrfjbrujnhirfuburbu uhfeuihfoinf egfuibjsnifbe bufefbuene d" imgSrc="/projects/toonin/logo.svg" />
+      <OneCrossTwo link="/" reverse="true" title="Contribute to software that  makes it to production." desc="You'll work on Open Source projects that  companies actually depend on, not a side project that never sees the light of day." imgSrc="/projects/toonin/logo.svg" />
+      <OneCrossTwo title="Contribute to software that  makes it to production." desc="You'll work on Open Source projects that  companies actually depend on, not a side project that never sees the light of day." imgSrc="/projects/toonin/logo.svg" />
     </section>
   </div>
 </template>

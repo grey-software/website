@@ -1,12 +1,15 @@
 <template>
   <div class="mb-5 mt-5">
-    <div class="row d-flex justify-items-between">
-      <div class="col-md-4 col-12 img-container" :class="{'order-md-last': !reverse}">
+    <div class="row d-flex justify-content-between">
+      <div class="col-md-5 py-5 px-4 d-flex justify-content-center" :class="{'order-md-last': !reverse}">
         <img class="feature-img" :src="imgSrc" />
       </div>
-      <div class="col-md-8 text-container">
-        <h1 class="feature-heading">{{ title }}</h1>
+      <div class="col-md-6 d-flex justify-content-center flex-column text-container">
+        <h3 class="feature-heading">{{ title }}</h3>
         <p class="desc">{{ desc }}</p>
+        <div v-if="link != ''">
+          <a :href="link" class="feature-btn">Learn More →</a>
+        </div>
       </div>
     </div>
   </div>
@@ -21,47 +24,50 @@ export default {
     reverse: {
       type: Boolean,
       default: false,
-    }
+    },
+    link: {
+      type: String,
+      default: "",
+    },
   },
 };
 </script>
 
 <style lang="css" scoped>
+.feature-btn {
+  color: var(--color-gold) !important;
+  font-size: 1.1rem;
+  max-width: 200px;
+  text-align: left;
+}
+
+.feature-btn:hover {
+  text-decoration: underline;
+}
+
 .feature-img {
-  height: 343px;
-  max-width: 100%;
+  width: 275px;
 }
 
 .desc {
-  font-size: 32px;
   color: var(--color-text);
-  letter-spacing: -0.032em;
-  line-height: 1.5;
   margin-top: 32px;
-}
-
-.img-container {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 40px;
+  font-size: 1.125rem;
+  font-weight: 300;
+  line-height: 1.75rem;
+  opacity: 0.9;
 }
 
 .feature-heading {
-  font-weight: 800;
-  font-family: var(--font-heading);
+  font-family: "Open Sans", "Helvetica", "Arial", "sans-serif";
+  font-weight: 700;
+  line-height: 1.25;
   color: var(--color-text-dark);
-  letter-spacing: -0.025em;
-  font-size: calc(12px + 5vw);
-  line-height: 1.05;
 }
 
 @media screen and (max-width: 768px) {
   .text-container {
     text-align: center;
-  }
-
-  .desc {
-    font-size: 22px;
   }
 }
 
