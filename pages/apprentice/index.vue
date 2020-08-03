@@ -18,15 +18,21 @@
       <OneCrossTwo link="/" reverse="true" title="Contribute to software that  makes it to production." desc="You'll work on Open Source projects that  companies actually depend on, not a side project that never sees the light of day." imgSrc="/projects/toonin/logo.svg" />
       <OneCrossTwo title="Contribute to software that  makes it to production." desc="You'll work on Open Source projects that  companies actually depend on, not a side project that never sees the light of day." imgSrc="/projects/toonin/logo.svg" />
     </section>
+
+    <section class="container">
+      <TwoCrossThree desc="Work with the technologies you care about. We'll match you with a project that lets you put your skills and interests into practice." title="Latest & Greatest Tech." icon="/projects/material-math/concepts.svg" />
+    </section>
   </div>
 </template>
 
 <script>
 import OneCrossTwo from '@/components/OneCrossTwo.vue'
+import TwoCrossThree from '@/components/TwoCrossThreeChild.vue'
 
 export default {
   components: {
-    OneCrossTwo
+    OneCrossTwo,
+    TwoCrossThree
   }
 };
 </script>

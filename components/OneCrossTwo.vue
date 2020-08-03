@@ -1,7 +1,10 @@
 <template>
   <div class="mb-5 mt-5">
     <div class="row d-flex justify-content-between">
-      <div class="col-md-5 py-5 px-4 d-flex justify-content-center" :class="{'order-md-last': !reverse}">
+      <div
+        class="col-md-5 py-5 px-4 d-flex justify-content-center"
+        :class="{'order-md-last': !reverse}"
+      >
         <img class="feature-img" :src="imgSrc" />
       </div>
       <div class="col-md-6 d-flex justify-content-center flex-column text-container">
