@@ -1,10 +1,10 @@
 <template>
-  <div class="d-flex flex-column align-items-center">
-    <div class="mb-3 d-flex align-middle justify-content-center logo-bg">
-      <img :src="icon" />
+  <div>
+    <div class="mb-3 d-flex align-middle logo-bg">
+      <img :src="icon" class="col-icon" />
     </div>
-    <p class="h6 mb-2 mt-4 text-title">{{ title }}</p>
-    <p class="mt-1 text-center">{{ desc }}</p>
+    <p class="h6 mb-2 mt-4 col-heading">{{ title }}</p>
+    <p class="mt-1 col-body">{{ desc }}</p>
   </div>
 </template>
 
@@ -19,16 +19,25 @@ export default {
 </script>
 
 <style scoped>
-.logo-bg {
-  background: var(--color-gold);
-  width: 4.5rem;
-  height: 4.5rem;
+.col-heading {
+  font-size: 42px;
+  font-family: var(--font-heading);
+  font-weight: 600;
+  line-height: 1.05;
 }
 
-.text-title {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-  opacity: 0.9;
-  font-weight: 700;
+.col-icon {
+  height: 96px;
+}
+
+.col-body {
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.logo-bg {
+  background: var(--color-gold);
+  width: 96px;
+  height: 96px;
 }
 </style>
