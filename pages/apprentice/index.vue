@@ -30,7 +30,11 @@
     </section>
 
     <section class="container">
-      <TwoCrossThree :children="twoCrossThreeChildren" />
+      <TwoCrossThree :children="ThreeColumnChildren" />
+    </section>
+
+    <section class="container">
+      <OneCrossThree :children="OneCrossTwoChildren" />
     </section>
   </div>
 </template>
@@ -38,11 +42,12 @@
 <script>
 import OneCrossTwo from "@/components/OneCrossTwo.vue";
 import TwoCrossThree from "@/components/TwoCrossThree.vue";
+import OneCrossThree from "@/components/OneCrossThree.vue";
 
 export default {
   data() {
     return {
-      twoCrossThreeChildren: [
+      ThreeColumnChildren: [
         {
           desc:
             "Work with the technologies you care about. We'll match you with a project that lets you put your skills and interests into practice.",
@@ -80,11 +85,32 @@ export default {
           icon: "/projects/material-math/concepts.svg",
         },
       ],
+      OneCrossTwoChildren: [
+        {
+          desc:
+            "Work with the technologies you care about. We'll match you with a project that lets you put your skills and interests into practice.",
+          title: "Latest & Greatest Tech.",
+          icon: "/projects/material-math/concepts.svg",
+        },
+        {
+          desc:
+            "Work with the technologies you care about. We'll match you with a project that lets you put your skills and interests into practice.",
+          title: "Latest & Greatest Tech.",
+          icon: "/projects/material-math/concepts.svg",
+        },
+        {
+          desc:
+            "Work with the technologies you care about. We'll match you with a project that lets you put your skills and interests into practice.",
+          title: "Latest & Greatest Tech.",
+          icon: "/projects/material-math/concepts.svg",
+        },
+      ]
     };
   },
   components: {
     OneCrossTwo,
     TwoCrossThree,
+    OneCrossThree
   },
 };
 </script>

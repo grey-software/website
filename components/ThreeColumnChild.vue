@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="mb-3 d-flex align-middle logo-bg">
+    <div class="mb-3 d-flex align-middle logo" :class="{'logo-color': logoColor}">
       <img :src="icon" class="col-icon" />
     </div>
     <p class="h6 mb-2 mt-4 col-heading">{{ title }}</p>
@@ -14,7 +14,11 @@ export default {
     title: String,
     icon: String,
     desc: String,
-  },
+    logoColor: {
+      type: Boolean,
+      default: false
+    }
+  }
 };
 </script>
 
@@ -35,9 +39,12 @@ export default {
   line-height: 1.5;
 }
 
-.logo-bg {
-  background: var(--color-gold);
+.logo {
   width: 96px;
   height: 96px;
+}
+
+.logo-color {
+  background: var(--color-gold);
 }
 </style>
