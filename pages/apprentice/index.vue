@@ -1,7 +1,7 @@
 <template>
   <div>
     <section class="container">
-      <div class="row mt-5 g-hero" align-v="center">
+      <div class="row mt-5 g-hero">
         <div class="col-md-8">
           <h1 class="g-hero-heading">Apprentice Program</h1>
           <p

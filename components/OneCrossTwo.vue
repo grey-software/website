@@ -1,5 +1,5 @@
 <template>
-  <div class="mb-5 mt-5">
+  <div class="my-5">
     <div class="row d-flex justify-content-between">
       <div
         class="col-md-5 py-5 px-4 d-flex justify-content-center"
@@ -8,7 +8,7 @@
         <img class="feature-img" :src="imgSrc" />
       </div>
       <div class="col-md-6 d-flex justify-content-center flex-column text-container">
-        <h3 class="feature-heading">{{ title }}</h3>
+        <h3 class="feature-title">{{ title }}</h3>
         <div>
           <p class="desc">{{ desc }}</p>
           <div v-if="link != ''">
@@ -71,7 +71,7 @@ export default {
   margin-top: 20px;
 }
 
-.feature-heading {
+.feature-title {
   font-weight: 600;
   line-height: 1.25;
   font-size: 42px;
@@ -79,7 +79,7 @@ export default {
 }
 
 @media screen and (max-width: 768px) {
-  .feature-heading {
+  .feature-title {
     font-size: 32px;
   }
 

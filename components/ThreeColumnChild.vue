@@ -1,10 +1,10 @@
 <template>
   <div>
-    <div class="mb-3 d-flex align-middle logo" :class="{'logo-color': logoColor}">
+    <div class="mb-3 d-flex align-middle icon-size" :class="{'icon-color': logoColor}">
       <img :src="icon" class="col-icon" />
     </div>
-    <p class="h6 mb-2 mt-4 col-heading">{{ title }}</p>
-    <p class="mt-1 col-body">{{ desc }}</p>
+    <p class="mb-2 mt-4 title">{{ title }}</p>
+    <p class="mt-1 desc">{{ desc }}</p>
   </div>
 </template>
 
@@ -23,7 +23,7 @@ export default {
 </script>
 
 <style scoped>
-.col-heading {
+.title {
   font-size: 42px;
   font-family: var(--font-heading);
   font-weight: 600;
@@ -34,17 +34,17 @@ export default {
   height: 96px;
 }
 
-.col-body {
+.desc {
   font-size: 20px;
   line-height: 1.5;
 }
 
-.logo {
+.icon-size {
   width: 96px;
   height: 96px;
 }
 
-.logo-color {
+.icon-color {
   background: var(--color-gold);
 }
 </style>
