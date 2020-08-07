@@ -13,11 +13,7 @@ export default {
   props: {
     title: String,
     icon: String,
-    desc: String,
-    logoColor: {
-      type: Boolean,
-      default: false
-    }
+    desc: String
   }
 };
 </script>

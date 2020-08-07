@@ -27,21 +27,14 @@ export default {
     title: String,
     desc: String,
     reverse: {
-      type: String,
-      default: "false",
+      type: Boolean,
+      default: false,
     },
     link: {
       type: String,
       default: "",
     },
   },
-  computed: {
-    reversed() {
-      if (this.reverse === 'true')
-        return true
-      return false
-    }
-  }
 };
 </script>
 
