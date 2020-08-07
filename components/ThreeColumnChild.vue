@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="mb-3 d-flex align-middle icon-size" :class="{'icon-color': logoColor}">
+    <div class="mb-3 d-flex align-middle icon-size">
       <img :src="icon" class="col-icon" />
     </div>
     <p class="mb-2 mt-4 title">{{ title }}</p>
@@ -38,9 +38,5 @@ export default {
 .icon-size {
   width: 96px;
   height: 96px;
-}
-
-.icon-color {
-  background: var(--color-gold);
 }
 </style>
