@@ -49,6 +49,14 @@
         href="https://www.github.com/grey-software"
         class="g-nav-link mr-4"
       >Github</a>
+      <b-btn
+        target="_blank"
+        href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=VEAGAZP7DHJNE&source=url"
+        class="g-btn paypal-btn d-flex align-items-center"
+      ><img
+          class="paypal-icon mx-2"
+          src="@/assets/icons/paypal.png"
+        >Donate</b-btn>
     </div>
   </div>
 </template>
@@ -111,7 +119,7 @@ export default {
 }
 
 .nav > .nav-links {
-  display: inline;
+  display: flex;
   float: right;
   margin-left: auto;
   font-size: 18px;
@@ -132,7 +140,7 @@ export default {
   display: none;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .nav > .nav-btn {
     display: inline-block;
     float: right;
@@ -179,5 +187,16 @@ export default {
     overflow-y: auto;
     opacity: 1;
   }
+}
+
+.paypal-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.paypal-btn {
+  height: 52px;
+  width: 132px;
+  border-radius: 32px;
 }
 </style>
