@@ -1,6 +1,6 @@
 # grey.software
 
-> Grey Software&#39;s website
+> [Grey Software&#39;s website](https://grey.software/)
 
 ## Build Setup
 
