@@ -6,13 +6,7 @@
 </template>
 
 <script>
-import GreyNavBar from "@/components/GreyNavBar"
-import ProjectCard from "@/components/ProjectCard"
 export default {
-  components: {
-    ProjectCard,
-    GreyNavBar
-  },
   created () {
     if (process.client) {
       document.addEventListener("keyup", e => {

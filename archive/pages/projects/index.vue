@@ -36,12 +36,7 @@
 </template>
 
 <script>
-import ProjectCard from "@/components/ProjectCard"
-
 export default {
-  components: {
-    ProjectCard,
-  },
   data () {
     return {
       projects: [

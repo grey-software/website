@@ -7,14 +7,9 @@
 </template>
 
 <script>
-import ThreeColumnChild from '@/components/ThreeColumnChild.vue'
-
 export default {
   props: {
     children: Array
-  },
-  components: {
-    ThreeColumnChild
   }
 }
 </script>

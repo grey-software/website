@@ -7,15 +7,6 @@
   </div>
 </template>
 
-<script>
-import GreyHeader from "../components/GreyHeader"
-export default {
-  components: {
-    GreyHeader,
-  },
-}
-</script>
-
 <style>
 html {
   font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI",

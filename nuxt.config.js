@@ -38,6 +38,7 @@ export default {
   */
   plugins: [
   ],
+  components: true,
   /*
   ** Nuxt.js dev-modules
   */
