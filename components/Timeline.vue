@@ -21,13 +21,8 @@
 </template>
 
 <script>
-import TimelineItem from "@/components/TimelineItem.vue";
-
 export default {
   name: "Timeline",
-  components: {
-    TimelineItem
-  },
   props: {
     timelineItems: {
       type: Array,

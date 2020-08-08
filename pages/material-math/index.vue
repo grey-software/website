@@ -118,15 +118,7 @@
 </template>
 
 <script>
-import GreyFeatureCard from "@/components/GreyFeatureCard.vue";
-import LogoGrid from "@/components/LogoGrid.vue";
-import Timeline from "@/components/Timeline.vue";
 export default {
-  components: {
-    GreyFeatureCard,
-    LogoGrid,
-    Timeline
-  },
   data: () => ({
     messageWhenNoItems: "There are not items",
     logos: [
