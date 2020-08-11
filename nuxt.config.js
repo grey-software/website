@@ -53,6 +53,7 @@ export default {
   modules: [
     // Doc: https://bootstrap-vue.js.org
     '@nuxt/content',
+    '@nuxtjs/axios',
     'bootstrap-vue/nuxt',
     '@nuxtjs/apollo',
     '@nuxtjs/pwa',

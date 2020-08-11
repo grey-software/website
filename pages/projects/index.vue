@@ -78,7 +78,6 @@
     </div>
     <div class="container px-0 mt-5">
       <div class="justify-content-space-between align-items-center">
-
         <div class="col-lg mb-5">
           <h1 class="g-section-heading">Material Math</h1>
           <div class="d-flex align-items-center g-section-info">Status: <span
@@ -163,6 +162,8 @@
             <img style="width: 100%;" src="https://github.com/grey-software/LinkedInFocus/raw/master/after.png" />
           </div>
         </div>
+
+        
       </div>
   </div>
 </template>
