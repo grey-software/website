@@ -1,12 +1,18 @@
 
-const cheerio = require('cheerio');
-const puppeteer = require('puppeteer');
-const url = 'https://github.com/grey-software/grey.software/graphs/contributors';
 
-(async () => {
+
+getGithubInsights = async () => {
+  const cheerio = require('cheerio');
+  const puppeteer = require('puppeteer');
+  const url = 'https://github.com/grey-software/grey.software/graphs/contributors';
+
+  const start = new Date()
   const browser = await puppeteer.launch();
   const page = await browser.newPage();
+
   await page.goto(url, { waitUntil: 'networkidle0' });
+  console.log("Reached")
+
 
   await page.waitForSelector('#contributors', {
     visible: true,
@@ -24,58 +30,45 @@ const url = 'https://github.com/grey-software/grey.software/graphs/contributors'
   const additions = [];
   const deletions = [];
   const users = [];
-  const user = {avatar: "", rank: "", commits: "", additions: "", deletions: ""}
+  var user = {avatar: "", rank: "", commits: "", additions: "", deletions: ""}
+
 
   //Scraping for img link 
   $('.contrib-person').each(function (i, elem) {
-    avatars.push((elem.children[0]).children[0].children[0].children[0].attribs.src)
+    const avatar = $(elem).find('img')[0].attribs.src
+    const rank = (elem.children[0]).children[0].children[1].children[0].data;
+    const additions = $(elem).find('.text-green')[0].children[0].data.slice(0, -3)
+    const deletions = $(elem).find('.text-red')[0].children[0].data.slice(0, -3)
+    const commits = $(elem).find('.cmeta')[0].children[0].children[0].data
+    const username = $(elem).find('.text-normal')[1].children[0].data
+
+
+
+
+    users.push({
+        avatar: avatar,
+        rank: rank,
+        commits: commits,
+        username: username,
+        additions: additions,
+        deletions: deletions
     
-  });
+    });
 
-  //Scraping for username
-  $('.contrib-person').each(function (i, elem) {
-    usernames.push((elem.children[0]).children[0].children[2].children[0].data);
-
-  });
-
-  //Scraping for rank
-  $('.contrib-person').each(function (i, elem) {
-    if((elem.children[0]).children[0].children[1].children[0] != null){
-        ranks.push((elem.children[0]).children[0].children[1].children[0].data);
-    }
-
-  });
-
-
-  //Scraping for commits, additions, and deletions 
-  $('.contrib-person').each(function (i, elem) {
-    commits.push((elem.children[0]).children[0].children[3].children[0].children[0].children[0].data);
-    additions.push((elem.children[0]).children[0].children[3].children[0].children[2].children[0].data);
-    deletions.push((elem.children[0]).children[0].children[3].children[0].children[4].children[0].data);
     
 
   });
 
-  var count = 0;
-  for(singleUser in usernames){
-      users.push({
-          avatar: avatars[count],
-          rank: ranks[count],
-          commits: commits[count],
-          username: singleUser,
-          additions: additions[count],
-          deletions: deletions[count]
-        
-        
-        });
-      count += 1;
+  console.log(users)
 
-  }
 
-  console.log(users);
+  
 
   await browser.close();
-})();
+  const end = new Date() - start
+};
+
+module.exports = { getGithubInsights }
 
 
 
