@@ -4,6 +4,7 @@
 getGithubInsights = async () => {
   const cheerio = require('cheerio');
   const puppeteer = require('puppeteer');
+  const fs = require('fs');
   const url = 'https://github.com/grey-software/grey.software/graphs/contributors';
 
   const start = new Date()
@@ -11,7 +12,6 @@ getGithubInsights = async () => {
   const page = await browser.newPage();
 
   await page.goto(url, { waitUntil: 'networkidle0' });
-  console.log("Reached")
 
 
   await page.waitForSelector('#contributors', {
@@ -59,7 +59,17 @@ getGithubInsights = async () => {
 
   });
 
-  console.log(users)
+
+  var jsonContent = JSON.stringify(users);
+
+  fs.writeFile("user-insights.json", jsonContent, 'utf8', function (err) {
+    if (err) {
+        console.log("An error occured while writing JSON Object to File.");
+        return console.log(err);
+    }
+ 
+  });
+ 
 
 
   
@@ -69,6 +79,7 @@ getGithubInsights = async () => {
 };
 
 module.exports = { getGithubInsights }
+getGithubInsights();
 
 
 
