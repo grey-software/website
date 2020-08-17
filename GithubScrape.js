@@ -1,14 +1,13 @@
-
-
-
-getGithubInsights = async () => {
+( async () => {
   const cheerio = require('cheerio');
   const puppeteer = require('puppeteer');
   const fs = require('fs');
   const url = 'https://github.com/grey-software/grey.software/graphs/contributors';
 
   const start = new Date()
-  const browser = await puppeteer.launch();
+  const browser = await puppeteer.launch({
+	args: ['--no-sandbox'],
+  });
   const page = await browser.newPage();
 
   await page.goto(url, { waitUntil: 'networkidle0' });
@@ -73,13 +72,10 @@ getGithubInsights = async () => {
 
 
   
-
+  
   await browser.close();
   const end = new Date() - start
-};
-
-module.exports = { getGithubInsights }
-getGithubInsights();
+})();
 
 
 
