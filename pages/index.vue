@@ -165,37 +165,57 @@
       <h1 class="g-section-heading pl-3 mb-5">What have we built?</h1>
       <div class="container px-0 pb-5">
         <div class="justify-content-space-between align-items-center">
-          <div class="col-lg mb-5">
-            <h1 class="g-section-project-heading">Toonin</h1>
-            <div class="d-flex align-items-center g-section-info">Status: <span
-                style="background-color:#ffcc00;"
-                class="status-dot"
-              ></span>Live Beta</div>
-            <p class="g-section-body mt-4">Technology that allows you to tune in to your friends and family in realtime using peer to peer sharing.</p>
-            <div class="d-flex mt-5">
-              <b-button
-                size="lg"
-                class="g-btn mr-4"
-                target="_blank"
-                href="https://www.toonin.ml"
-              >
-                <fa-icon
-                  class="mr-2"
-                  :icon="['fas', 'play']"
-                ></fa-icon>Live Demo
-              </b-button>
-              <b-button
-                size="lg"
-                class="g-btn-alt"
-                target="_blank"
-                href="https://github.com/grey-software/material-math"
-              >
-                <fa-icon
-                  class="mr-2"
-                  :icon="['fab', 'github']"
-                ></fa-icon>Repository
-              </b-button>
-            </div>
+          <div class="row mb-5">
+
+            <ProjectCardRevamp 
+              name="Material Math"
+              logo="../assets/logo.png"
+              description="The spiritial successor to Boltz on Android, Material Math brings unlimited mental math practice in a fun, beautiful interface to the web!"
+              repo="https://github.com/grey-software/Material-Math"
+              demo="https://material-math.netlify.app/#/"
+              trailer="https://www.youtube.com/watch?v=ceACiAdXSDc&feature=emb_title"   
+              statusName="Live Alpha"
+              statusColor="background-color:#FF3366"
+            />
+
+            <ProjectCardRevamp 
+              name="Toonin"
+              logo="../assets/logo.png"
+              description="Technology that allows you to tune in to your friends and family in realtime using peer to peer sharing."
+              repo="https://github.com/grey-software/toonin"
+              demo="https://www.toonin.ml"
+              trailer="https://www.youtube.com/watch?v=ImxxRMPVHzs&feature=emb_logo"   
+              statusName="Live Beta"
+              statusColor="background-color:#B3E83A"
+            />
+
+
+          </div>
+
+          <div class="row">
+            <ProjectCardRevamp 
+              name="LinkedinFocus"
+              logo="../assets/logo.png"
+              description="LinkedInFocus is a web extension that allows you to hide the news feed and news panel on LinkedIn so you can focus on your career!"
+              repo="https://github.com/grey-software/LinkedInFocus"
+              demo="https://chrome.google.com/webstore/detail/linkedin-focus/cmafljjdkloacahjddlpaognhjpacdff?hl=en"
+              trailer="https://www.youtube.com/watch?v=ImxxRMPVHzs&feature=emb_logo"  
+              statusName="Unofficial Release"
+              statusColor="background-color:#FFF200" 
+            />
+
+            <ProjectCardRevamp 
+              name="SLAV"
+              logo="../assets/logo.png"
+              description="Interactive visualizer for pathfinding and learning algorithms designed to bridge the gap between theory and visualization!"
+              repo="hhttps://github.com/grey-software/SLAV"
+              demo="https://slavgrey.netlify.app/#/"
+              trailer="https://www.youtube.com/watch?v=ImxxRMPVHzs&feature=emb_logo"   
+              statusName="Unofficial Release"
+              statusColor="background-color:#FFF200"
+            />
+
+
           </div>
           <div class="col-lg">
             <div class="embed-responsive embed-responsive-16by9">
