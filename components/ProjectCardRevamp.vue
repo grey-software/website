@@ -17,7 +17,7 @@
 
         </div>
 
-        <div class="description mb-3 ml-3">
+        <div class="description mb-5 ml-3">
             <p>{{description}}</p>
 
 
