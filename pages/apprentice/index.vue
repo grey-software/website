@@ -53,6 +53,7 @@
           </p>
         </div>
       </div>
+      <Testimonial v-for="testimonial in testimonials" :key="testimonial.name" :desc="testimonial.desc" :name="testimonial.name" :imgSrc="testimonial.imgSrc" />
 
       <!-- Solutions -->
       <h1 class="mt-5 mb-3 g-hero-heading">Our Solution</h1>
@@ -144,7 +145,24 @@ export default {
             desc: "You'll graduate from the program with a software project(s) to put on your portfolio, and a public log of your Github contributions for employers to look at.",
             icon: "/apprentice/portfolio.svg"
           },
-        ]
+        ],
+      testimonials: [
+        {
+          name: "Brian",
+          desc: "“As an individual project, you are required to know every aspect of the component including frontend, backend, etc. As a result of that, for most students...they have a significant knowledge gap to fill. This preparation process can be time-consuming and discouraging.”",
+          imgSrc: "https://avatars2.githubusercontent.com/u/40159724?s=400&u=188927381ec82ee1f5fb0440a1b0b17a1d9d5787&v=4"
+        },
+        {
+          imgSrc: "https://avatars2.githubusercontent.com/u/36747253?s=400&u=da5cc6b6d730e695dbd20283940e561baa7acf20&v=4",
+          name: "Shawn",
+          desc: "“Even though tons of youtube videos are available, it’s a different experience to have someone that understands what you are going through to guide you in the project.”"
+        },
+        {
+          imgSrc: "https://avatars2.githubusercontent.com/u/40159724?s=400&u=188927381ec82ee1f5fb0440a1b0b17a1d9d5787&v=4",
+          name: "Baichen",
+          desc: "“Without having the assistance whenever we need it, we had to spend hours googling and asking online.”"
+        }
+      ]
     };
   },
 };

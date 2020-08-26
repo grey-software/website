@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="mb-3 d-flex align-middle icon-size">
-      <img :src="icon" class="col-icon" />
+      <img :src="icon" />
     </div>
     <p class="mb-2 mt-4 title">{{ title }}</p>
     <p class="mt-1 desc">{{ desc }}</p>
