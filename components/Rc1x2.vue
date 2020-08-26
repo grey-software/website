@@ -3,7 +3,7 @@
     <div class="row d-flex justify-content-between">
       <div
         class="col-md-5 py-5 px-4 d-flex justify-content-center"
-        :class="{'order-md-last': !reversed}"
+        :class="{'order-md-last': !reverse}"
       >
         <img class="feature-img" :src="imgSrc" />
       </div>

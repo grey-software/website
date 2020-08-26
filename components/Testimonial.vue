@@ -1,17 +1,11 @@
 <template>
   <div class="mx-3 mx-md-4">
-    <h1 class="mt-4">
-      {{ desc }}
-    </h1>
+    <h1 class="mt-4">{{ desc }}</h1>
     <div class="mt-5 d-flex">
-      <img :src="imgSrc" alt="profile image" class="mr-4">
+      <img :src="imgSrc" alt="profile image" class="mr-4" />
       <div class="d-flex flex-column justify-content-center">
-        <div class="name">
-          {{ name }}
-        </div>
-        <div class="about-person mt-2">
-          {{ aboutPerson }}
-        </div>
+        <div class="name">{{ name }}</div>
+        <div class="about-person mt-2">{{ aboutPerson }}</div>
       </div>
     </div>
   </div>
@@ -23,9 +17,9 @@ export default {
     desc: String,
     aboutPerson: String,
     imgSrc: String,
-    name: String
-  }
-}
+    name: String,
+  },
+};
 </script>
 
 <style scoped>
@@ -35,7 +29,7 @@ img {
 }
 .name {
   font-family: var(--font-heading);
-  letter-spacing: .07em;
+  letter-spacing: 0.07em;
   font-size: 22px;
   line-height: 1.05;
   text-transform: uppercase;
