@@ -1,9 +1,9 @@
 <template>
-  <div class="mx-3 mx-md-5">
-    <h1 class="row mt-4">
+  <div class="mx-3 mx-md-4">
+    <h1 class="mt-4">
       {{ desc }}
     </h1>
-    <div class="row mt-5">
+    <div class="mt-5 d-flex">
       <img :src="imgSrc" alt="profile image" class="mr-4">
       <div class="d-flex flex-column justify-content-center">
         <div class="name">

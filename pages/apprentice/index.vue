@@ -22,38 +22,14 @@
       <!-- Problems -->
       <h1 class="mt-5 mb-3 g-hero-heading">The Problem</h1>
       <Rc1X3 :children="problems"></Rc1X3>
-      <div class="row mt-5">
-        <div class="col" style="padding-right: 20px;text-align:right;">
-          <h1
-            class="g-text-testimonial mt-5"
-          >“Without having the assistance whenever we need it, we had to spend hours googling and asking online.”</h1>
-          <p class="g-section-body mt-4" style="max-width: 100%;">
-            - Baichen
-          </p>
-        </div>
-      </div>
-      <div class="row mt-5">
-        <div class="col" style="padding-left: 20px">
-          <h1
-            style="max-width: 84%;"
-            class="g-text-testimonial mt-5"
-          >“Even though tons of youtube videos are available, it’s a different experience to have someone that understands what you are going through to guide you in the project.”</h1>
-          <p class="g-section-body mt-4">
-            - Shawn
-          </p>
-        </div>
-      </div>
-      <div class="row mt-5">
-        <div class="col" style="padding-right: 20px;text-align:right;">
-          <h1
-            class="g-text-testimonial mt-5"
-          >“As an individual project, you are required to know every aspect of the component including frontend, backend, etc. As a result of that, for most students...they have a significant knowledge gap to fill. This preparation process can be time-consuming and discouraging.”</h1>
-          <p class="g-section-body mt-4" style="max-width: 100%;">
-            - Brian
-          </p>
-        </div>
-      </div>
-      <Testimonial v-for="testimonial in testimonials" :key="testimonial.name" :desc="testimonial.desc" :name="testimonial.name" :imgSrc="testimonial.imgSrc" />
+      <Testimonial
+        v-for="testimonial in testimonials"
+        :key="testimonial.name"
+        :desc="testimonial.desc"
+        :name="testimonial.name"
+        :imgSrc="testimonial.imgSrc"
+        :aboutPerson="testimonial.aboutPerson"
+      />
 
       <!-- Solutions -->
       <h1 class="mt-5 mb-3 g-hero-heading">Our Solution</h1>
@@ -68,9 +44,7 @@
       <Rc1X3 :children="solutions"></Rc1X3>
 
       <!-- Features -->
-      <h1 class="mt-5 mb-3 g-hero-heading">
-        Features
-      </h1>
+      <h1 class="mt-5 mb-3 g-hero-heading">Features</h1>
       <Rc2X3 :children="features"></Rc2X3>
     </div>
   </div>
@@ -99,70 +73,87 @@ export default {
       ],
       solutions: [
         {
-            title: "Contribute to Production Software",
-            desc: "You'll work on open source apps that Grey Software deploys, and that users interact with.",
-            icon: "/apprentice/software-development.svg"
+          title: "Contribute to Production Software",
+          desc:
+            "You'll work on open source apps that Grey Software deploys, and that users interact with.",
+          icon: "/apprentice/software-development.svg",
         },
         {
-            title: "Access to a mentor",
-            desc: "Your mentor's goal is to help you grow as an open source software developer. They help you by attending live collaboration sessions, answering questions, reviewing code, and structuring your learning experience.",
-            icon: "/apprentice/teacher.svg"
+          title: "Access to a mentor",
+          desc:
+            "Your mentor's goal is to help you grow as an open source software developer. They help you by attending live collaboration sessions, answering questions, reviewing code, and structuring your learning experience.",
+          icon: "/apprentice/teacher.svg",
         },
         {
-            title: "Collaborative and Educational",
-            desc: "In addition to a mentor, you'll collaborate with other students working on the same project(s) as you.",
-            icon: "/apprentice/programmer.svg"
-        }
+          title: "Collaborative and Educational",
+          desc:
+            "In addition to a mentor, you'll collaborate with other students working on the same project(s) as you.",
+          icon: "/apprentice/programmer.svg",
+        },
       ],
       features: [
-          {
-            title: "Cutting Edge Tech",
-            desc: "Grey Software works with the technologies of the future. We'll match you with a project that lets you use the tools you're proficient or interested in.",
-            icon: "/apprentice/technology-products.svg"
-          },
-          {
-            title: "More than Code",
-            desc: "You'll get a chance to explore your potential as a designer or product owner, and gain a well-rounded set of skills.",
-            icon: "/apprentice/code.svg"
-          },
-          {
-            title: "Designed to be remote",
-            desc: "Founded during the COVID-19 pandemic, the apprentice program was designed to be remote. Our first 3 students were learning from Canada, India, and Indonesia!",
-            icon: "/apprentice/global.svg"
-          },
-          {
-            title: "Financially Empthetic",
-            desc: "We're considerate of your financial background, and are open to adjusting our rates or creating customized programs that require you to give back as a mentor after you graduate.",
-            icon: "/apprentice/loan.svg"
-          },
-          {
-            title: "Made for learning",
-            desc: "The apprentice program was designed to help budding software developers learn by contributing to software that matters, so your education always comes before the project.",
-            icon: "/apprentice/online-course.svg"
-          },
-          {
-            title: "Public Portfolio Upgrade",
-            desc: "You'll graduate from the program with a software project(s) to put on your portfolio, and a public log of your Github contributions for employers to look at.",
-            icon: "/apprentice/portfolio.svg"
-          },
-        ],
+        {
+          title: "Cutting Edge Tech",
+          desc:
+            "Grey Software works with the technologies of the future. We'll match you with a project that lets you use the tools you're proficient or interested in.",
+          icon: "/apprentice/technology-products.svg",
+        },
+        {
+          title: "More than Code",
+          desc:
+            "You'll get a chance to explore your potential as a designer or product owner, and gain a well-rounded set of skills.",
+          icon: "/apprentice/code.svg",
+        },
+        {
+          title: "Designed to be remote",
+          desc:
+            "Founded during the COVID-19 pandemic, the apprentice program was designed to be remote. Our first 3 students were learning from Canada, India, and Indonesia!",
+          icon: "/apprentice/global.svg",
+        },
+        {
+          title: "Financially Empthetic",
+          desc:
+            "We're considerate of your financial background, and are open to adjusting our rates or creating customized programs that require you to give back as a mentor after you graduate.",
+          icon: "/apprentice/loan.svg",
+        },
+        {
+          title: "Made for learning",
+          desc:
+            "The apprentice program was designed to help budding software developers learn by contributing to software that matters, so your education always comes before the project.",
+          icon: "/apprentice/online-course.svg",
+        },
+        {
+          title: "Public Portfolio Upgrade",
+          desc:
+            "You'll graduate from the program with a software project(s) to put on your portfolio, and a public log of your Github contributions for employers to look at.",
+          icon: "/apprentice/portfolio.svg",
+        },
+      ],
       testimonials: [
         {
           name: "Brian",
-          desc: "“As an individual project, you are required to know every aspect of the component including frontend, backend, etc. As a result of that, for most students...they have a significant knowledge gap to fill. This preparation process can be time-consuming and discouraging.”",
-          imgSrc: "https://avatars2.githubusercontent.com/u/40159724?s=400&u=188927381ec82ee1f5fb0440a1b0b17a1d9d5787&v=4"
+          desc:
+            "“As an individual project, you are required to know every aspect of the component including frontend, backend, etc. As a result of that, for most students...they have a significant knowledge gap to fill. This preparation process can be time-consuming and discouraging.”",
+          imgSrc:
+            "https://avatars2.githubusercontent.com/u/40159724?s=400&u=188927381ec82ee1f5fb0440a1b0b17a1d9d5787&v=4",
+          aboutPerson: "Mathematics Specialist at UTM",
         },
         {
-          imgSrc: "https://avatars2.githubusercontent.com/u/36747253?s=400&u=da5cc6b6d730e695dbd20283940e561baa7acf20&v=4",
+          imgSrc:
+            "https://avatars2.githubusercontent.com/u/36747253?s=400&u=da5cc6b6d730e695dbd20283940e561baa7acf20&v=4",
           name: "Shawn",
-          desc: "“Even though tons of youtube videos are available, it’s a different experience to have someone that understands what you are going through to guide you in the project.”"
+          desc:
+            "“Even though tons of youtube videos are available, it’s a different experience to have someone that understands what you are going through to guide you in the project.”",
+          aboutPerson: "Computer Science Specialist at UTM",
         },
         {
-          imgSrc: "https://avatars2.githubusercontent.com/u/40159724?s=400&u=188927381ec82ee1f5fb0440a1b0b17a1d9d5787&v=4",
+          imgSrc:
+            "https://avatars2.githubusercontent.com/u/40159724?s=400&u=188927381ec82ee1f5fb0440a1b0b17a1d9d5787&v=4",
           name: "Baichen",
-          desc: "“Without having the assistance whenever we need it, we had to spend hours googling and asking online.”"
-        }
-      ]
+          desc:
+            "“Without having the assistance whenever we need it, we had to spend hours googling and asking online.”",
+        },
+      ],
     };
   },
 };
