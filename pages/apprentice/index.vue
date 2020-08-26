@@ -41,7 +41,7 @@
           <b-button size="lg" class="mr-4 g-btn-cta">Our Apprentice Projects</b-button>
         </a>
       </div>
-      <Rc1X3 :children="solutions"></Rc1X3>
+      <Rc1X2 v-for="solution in solutions" :key="solution.title" :title="solution.title" :imgSrc="solution.icon" :desc="solution.desc" :reverse="solution.reverse" />
 
       <!-- Features -->
       <h1 class="mt-5 mb-3 g-hero-heading">Features</h1>
@@ -83,6 +83,7 @@ export default {
           desc:
             "Your mentor's goal is to help you grow as an open source software developer. They help you by attending live collaboration sessions, answering questions, reviewing code, and structuring your learning experience.",
           icon: "/apprentice/teacher.svg",
+          reverse: true
         },
         {
           title: "Collaborative and Educational",

@@ -31,7 +31,7 @@ export default {
 <style scoped>
 img {
   width: 100px;
-  border-radius: 12px;
+  border-radius: 50%;
 }
 .name {
   font-family: var(--font-heading);
