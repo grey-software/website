@@ -1,5 +1,5 @@
 <template>
-  <div class="ProjectCard">
+  <div class="ProjectCard montserrat">
     <div class="card">
       <div class="text">
         <div class="header">
@@ -12,7 +12,7 @@
 
         <p class="description">{{project.desc}}</p>
 
-        <div :class="'status-' + project.status.color" class="status">{{project.status.text}}</div>
+        <div :class="'status-' + project.status.color" class="status mulish">{{project.status.text}}</div>
 
         <div class="actions">
           <div class="action"></div>
