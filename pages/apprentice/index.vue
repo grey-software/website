@@ -9,8 +9,18 @@
             <br />
           </h1>
           <p
-            class="g-hero-tag"
+            class="g-hero-tag mb-5"
           >The apprentice program offers you the opportunity to learn software development by contributing to open source apps as an engineer, designer, or product manager with guidance and structure from a mentor</p>
+          <div class="g-hero-cta-container">
+            <b-button
+                size="lg"
+                class="mr-4 g-btn-cta"
+                href=""
+                target="_blank"
+              >
+                Apply Now
+            </b-button>
+          </div>
         </div>
 
         <div class="col-md-4">
@@ -22,15 +32,16 @@
       <!-- Problems -->
       <h1 class="mt-5 mb-3 g-hero-heading">The Problem</h1>
       <Rc1X3 :children="problems"></Rc1X3>
-      <Testimonial
-        v-for="testimonial in testimonials"
-        :key="testimonial.name"
-        :desc="testimonial.desc"
-        :name="testimonial.name"
-        :imgSrc="testimonial.imgSrc"
-        :aboutPerson="testimonial.aboutPerson"
-      />
-
+      <div class="d-flex flex-wrap">
+        <Testimonial
+          v-for="testimonial in testimonials"
+          :key="testimonial.name"
+          :desc="testimonial.desc"
+          :name="testimonial.name"
+          :imgSrc="testimonial.imgSrc"
+          :aboutPerson="testimonial.aboutPerson"
+        />
+      </div>
       <!-- Solutions -->
       <h1 class="mt-5 mb-3 g-hero-heading">Our Solution</h1>
       <p
@@ -156,7 +167,7 @@ export default {
         },
         {
           imgSrc:
-            "https://avatars2.githubusercontent.com/u/40159724?s=400&u=188927381ec82ee1f5fb0440a1b0b17a1d9d5787&v=4",
+            "https://avatars1.githubusercontent.com/u/60441990?s=460&v=4",
           name: "Baichen",
           desc:
             "“Without having the assistance whenever we need it, we had to spend hours googling and asking online.”",

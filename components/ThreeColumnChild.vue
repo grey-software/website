@@ -3,15 +3,18 @@
     <div class="mb-3 d-flex align-middle icon-size">
       <img :src="icon" />
     </div>
-    <p class="mb-2 mt-4 title">{{ title }}</p>
-    <p class="mt-1 desc">{{ desc }}</p>
+    <p v-if="title != ''" class="mb-3 mt-5 title">{{ title }}</p>
+    <p class="desc">{{ desc }}</p>
   </div>
 </template>
 
 <script>
 export default {
   props: {
-    title: String,
+    title: {
+      type: String,
+      default: ''
+    },
     icon: String,
     desc: String
   }
@@ -20,10 +23,11 @@ export default {
 
 <style scoped>
 .title {
-  font-size: 42px;
+  font-size: 36px;
   font-family: var(--font-heading);
   font-weight: 600;
   line-height: 1.05;
+  min-height: 88px;
 }
 
 .col-icon {
