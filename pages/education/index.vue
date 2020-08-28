@@ -92,7 +92,7 @@
             class="three-col-body mt-2"
           >Contribute to established open source software with guidance and structure from a Grey Software mentor!</p>
           <div class="mt-4">
-            <a href="apprentice">
+            <nuxt-link to="/apprentice">
               <b-button
                   size="sm"
                   class="mr-4 g-btn d-flex align-items-center"
@@ -100,7 +100,7 @@
                 >
                 Check it out!
               </b-button>
-            </a>
+            </nuxt-link>
           </div>
         </div>
         <div class="col-md" style="height:434px;">
