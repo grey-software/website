@@ -23,6 +23,7 @@
         "bootstrap": "^4.5.0",
         "bootstrap-vue": "^2.16.0",
         "casperjs": "^1.1.4",
+        "cheerio": "^1.0.0-rc.3",
         "core-js": "^2.6.5",
         "graphql": "^15.3.0",
         "jquery": "^3.5.1",
