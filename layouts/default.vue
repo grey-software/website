@@ -46,7 +46,7 @@ a:hover {
 :root {
   --color-text: #fcfcfc;
   --color-text-dark: #fcfcfc;
-  --bg: #1f1f1f;
+  --bg: #2d3748;
   --border-color: #ddd;
   --color-gold: #b29a66;
   --color-gold-light: rgba(178, 154, 102, 0.8);

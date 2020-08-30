@@ -1,29 +1,58 @@
 <template>
-  <div class="ProjectCard">
-    <div class="card">
-      <div class="text">
-        <b-col>
-          <b-row>
-            <b-col cols="3">
-              <img :src="project.icon" />
-            </b-col>
-            <b-col cols="9">
-              <div class="title">{{project.name}}</div>
-            </b-col>
-          </b-row>
-        </b-col>
+  <div class="project-card pl-4 p-2 mr-4 mb-4">
+    <span
+      :style="`background-color:${getStatusColor(project.status)}`"
+      class="status ml-auto mb-2"
+      v-b-tooltip.hover
+      :title="project.status"
+    ></span>
 
-        <p class="description">{{project.desc}}</p>
+    <div class="flex align-items-center mb-4">
+      <img
+        class="logo justify-start"
+        :src="project.logo"
+      />
+      <div class="ml-3">
+        <h5 class="project-heading">{{project.name}}</h5>
 
-        <div class="status">{{project.status}}</div>
-
-        <b-link :href="project.githubLink" target="_blank">
-          <fa-icon class="mr-3 icon" :icon="['fab', 'github']" />
-        </b-link>
       </div>
+
     </div>
+
+    <div class="description">
+      <p>{{project.desc}}</p>
+
+    </div>
+
+    <div class="calls-to-action d-flex mt-4">
+      <b-button
+        size="lg"
+        class="g-btn mr-4"
+        :href="project.repo"
+        target="_blank"
+      >
+        <fa-icon
+          class="mr-2"
+          :icon="['fab', 'github']"
+        ></fa-icon>Repo
+      </b-button>
+      <b-button
+        size="lg"
+        class="g-btn"
+        :href="project.demo"
+        target="_blank"
+      >
+        <fa-icon
+          class="mr-2"
+          :icon="['fas', 'play']"
+        ></fa-icon>Demo
+      </b-button>
+    </div>
+
   </div>
+
 </template>
+
 
 <script>
 export default {
@@ -31,74 +60,70 @@ export default {
     project: {
       name: String,
       desc: String,
-      status: String,
-      icon: String,
-      githubLink: String
+      repo: String,
+      logo: String,
+      demo: String,
+      trailer: String,
+      status: String
     }
-  }
+  },
+  methods: {
+    getStatusColor: function (status) {
+      switch (status) {
+        case "Live Alpha": {
+          return "Red"
+        }
+        case "Live Beta": {
+          return "Yellow"
+        }
+      }
+    }
+  },
 };
 </script>
 
-
-<style>
-
-.col {
-  padding: 0;
-}
-.ProjectCard {
-  width: 450px;
-  height: 650px;
-  border-color: white;
-}
-.icon {
-  opacity: 0;
-}
-.card {
-  padding: 40px 40px;
-}
-
-.card:hover {
-  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.09);
-  border: none;
-}
-
-.card:hover .icon {
-  opacity: 100%;
-  transition: opacity 0.4s ease;
-  color: black;
-}
-
-.text img {
-  width: 50px;
-  height: 50px;
-  overflow: hidden;
-  background-size: cover;
-  background-repeat: no-repeat;
+<style scoped>
+.status {
+  top: 12px;
+  right: 12px;
+  height: 28px;
+  width: 28px;
   border-radius: 50%;
+  position: relative;
+  opacity: 0.69;
+  transition: opacity 0.2s ease-out;
 }
 
-/* .text {
-  padding: 40px 40px;
-} */
-.text .status {
-  letter-spacing: 2px;
-  font-size: 12px;
-  font-weight: bold;
-  color: #b29a66;
+.status:hover {
+  opacity: 1;
 }
 
-.text .description {
-  font-size: 14px;
-  line-height: 16px;
+.project-card {
+  width: 369px;
+  height: 309px;
+  border-radius: 12px;
+  background: var(--bg);
+  box-shadow: 12px 24px 72px -12px rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: flex-start;
+  align-content: flex-start;
+  flex-direction: column;
 }
 
-.text .title {
-  font-size: 40px;
-  font-weight: bolder;
-  transform: translate(-30px, 0px);
+.logo {
+  height: 72px;
 }
-col-3 {
-  padding: 0;
+
+.project-heading {
+  font-size: 32px;
+  line-height: 1.2;
+  font-weight: 800;
+}
+
+.description {
+  font-size: 18px;
+  line-height: 1.2;
+  height: 72px;
+  width: 309px;
 }
 </style>
-
