@@ -1,30 +1,18 @@
 <template>
   <div class="d-flex container mt-5 report-card py-4 pl-4">
-    <h1 class="report-section-header mb-4">Repository</h1>
+    <h1 class="report-section-header mb-4">{{repoName()}}</h1>
 
     <div class="d-flex pr-section">
-      <div class="d-flex detail-box">
-        <div class="detail-icon-value-container">
-          <img
-            src="../assets/icons/merge-pr.svg"
-            class="detail-icon mb-2 mr-1"
-          />
-          <h4 class="detail-value mb-1">{{mergePR}}</h4>
-        </div>
-        <p>Merged Pull Requests</p>
-
-      </div>
 
       <div class="d-flex detail-box">
         <div class="detail-icon-value-container">
           <img
-            src="../assets/icons/merge-open-pr.svg"
+            src="../assets/icons/new-issues.svg"
             class="detail-icon mb-2 mr-1"
           />
-          <h4 class="detail-value mb-1">{{mergeOpenPR}}</h4>
+          <h4 class="detail-value mb-1">{{report.newIssues}}</h4>
         </div>
-        <p>Open Pull Requests</p>
-
+        <p>New Issues</p>
       </div>
 
       <div class="d-flex detail-box">
@@ -33,7 +21,7 @@
             src="../assets/icons/closed-issues.svg"
             class="detail-icon mb-2 mr-1"
           />
-          <h4 class="detail-value mb-1">{{closedIssues}}</h4>
+          <h4 class="detail-value mb-1">{{report.closedIssues}}</h4>
         </div>
         <p>Closed Issues</p>
       </div>
@@ -41,12 +29,25 @@
       <div class="d-flex detail-box">
         <div class="detail-icon-value-container">
           <img
-            src="../assets/icons/new-issues.svg"
+            src="../assets/icons/merge-open-pr.svg"
             class="detail-icon mb-2 mr-1"
           />
-          <h4 class="detail-value mb-1">{{newIssues}}</h4>
+          <h4 class="detail-value mb-1">{{report.openedPRs}}</h4>
         </div>
-        <p>New Issues</p>
+        <p>Open Pull Requests</p>
+
+      </div>
+
+      <div class="d-flex detail-box">
+        <div class="detail-icon-value-container">
+          <img
+            src="../assets/icons/merge-pr.svg"
+            class="detail-icon mb-2 mr-1"
+          />
+          <h4 class="detail-value mb-1">{{report.mergedPRs}}</h4>
+        </div>
+        <p>Merged Pull Requests</p>
+
       </div>
 
     </div>
@@ -112,57 +113,65 @@
 <script>
 export default {
   props: {
-    mergePR: {
-      type: String,
-      default: "0"
-    },
+    report: {
+      mergedPRs: {
+        type: String,
+        default: "0"
+      },
 
-    mergeOpenPR: {
-      type: String,
-      default: "0"
-    },
+      openedPRs: {
+        type: String,
+        default: "0"
+      },
 
-    newIssues: {
-      type: String,
-      default: "0"
-    },
+      newIssues: {
+        type: String,
+        default: "0"
+      },
 
-    closedIssues: {
-      type: String,
-      default: "0"
-    },
+      closedIssues: {
+        type: String,
+        default: "0"
+      },
 
-    commitsToMaster: {
-      type: String,
-      default: "0"
-    },
+      commitsToMaster: {
+        type: String,
+        default: "0"
+      },
 
-    totalAdditions: {
-      type: String,
-      default: "0"
-    },
+      totalAdditions: {
+        type: String,
+        default: "0"
+      },
 
-    deletions: {
-      type: String,
-      default: "0"
-    },
+      deletions: {
+        type: String,
+        default: "0"
+      },
 
-    authors: {
-      type: String,
-      default: "0"
-    },
+      authors: {
+        type: String,
+        default: "0"
+      },
 
-    startDate: {
-      type: String,
-      default: "August 22, 2020"
-    },
+      startDate: {
+        type: String,
+        default: "August 22, 2020"
+      },
 
-    endDate: {
-      type: String,
-      default: "August 29, 2020"
-    },
-
-  }
+      endDate: {
+        type: String,
+        default: "August 29, 2020"
+      },
+    }
+  },
+  methods: {
+    repoName () {
+      console.log(this.report)
+      const names = this.report.repo.split("-").join(' ')
+      return names
+    }
+  },
 }
 </script>
 
@@ -190,6 +199,7 @@ export default {
 .report-section-header {
   font-size: 28px;
   font-weight: 600;
+  text-transform: capitalize;
 }
 
 .table-date {

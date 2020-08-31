@@ -8,23 +8,26 @@
             Apprentice Program
             <br />
           </h1>
-          <p
-            class="g-hero-tag mb-5"
-          >The apprentice program offers you the opportunity to learn software development by contributing to open source apps as an engineer, designer, or product manager with guidance and structure from a mentor</p>
+          <p class="g-hero-tag mb-5">The apprentice program offers you the opportunity to learn software development by contributing to open source apps as an engineer, designer, or product manager with guidance and structure from a mentor</p>
           <div class="g-hero-cta-container">
             <b-button
-                size="lg"
-                class="mr-4 g-btn-cta"
-                href=""
-                target="_blank"
-              >
-                Apply Now
+              size="lg"
+              class="mr-4 g-btn-cta"
+              href=""
+              target="_blank"
+              v-b-tooltip.hover
+              title="Enrollment opening soon!"
+            >
+              Apply Now
             </b-button>
           </div>
         </div>
 
         <div class="col-md-4">
-          <img class="g-hero-img" src="@/assets/icons/apprentice.svg" />
+          <img
+            class="g-hero-img"
+            src="@/assets/icons/apprentice.svg"
+          />
         </div>
       </div>
     </div>
@@ -44,12 +47,13 @@
       </div>
       <!-- Solutions -->
       <h1 class="mt-5 mb-3 g-hero-heading">Our Solution</h1>
-      <p
-        class="g-hero-tag"
-      >Grey Software developed the apprentice program as an internship alternative to student software developers. You'll collaborate on open source software with structure and guidance from a mentor, and walk away with valuable skills and a public demonstration of your work that you can take anywhere.</p>
+      <p class="g-hero-tag">Grey Software developed the apprentice program as an internship alternative to student software developers. You'll collaborate on open source software with structure and guidance from a mentor, and walk away with valuable skills and a public demonstration of your work that you can take anywhere.</p>
       <div class="g-hero-cta-container mb-3">
         <a href="/projects">
-          <b-button size="lg" class="mr-4 g-btn-cta">Our Apprentice Projects</b-button>
+          <b-button
+            size="lg"
+            class="mr-4 g-btn-cta"
+          >Our Apprentice Projects</b-button>
         </a>
       </div>
       <Rc1X2
@@ -70,7 +74,7 @@
 
 <script>
 export default {
-  data() {
+  data () {
     return {
       problems: [
         {

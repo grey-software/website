@@ -49,11 +49,11 @@ getWeeklyInsights = async (link, repos) => {
       console.log($(elem).find('ul').find('span')[4].children[0].data);
       console.log($(elem).find('ul').find('span')[6].children[0].data);*/
 
-      const mergePR = $(elem)
+      const mergedPRs = $(elem)
         .find("ul")
         .find("svg")
       ["0"].next.data.trim("\n", " ");
-      const mergeOpenPR = $(elem)
+      const openedPRs = $(elem)
         .find("ul")
         .find("svg")
       ["1"].next.data.trim("\n", " ");
@@ -68,8 +68,8 @@ getWeeklyInsights = async (link, repos) => {
 
       repos.push({
         repo: repo,
-        mergePR: mergePR,
-        mergeOpenPR: mergeOpenPR,
+        mergedPRs: mergedPRs,
+        openedPRs: openedPRs,
         newIssues: newIssues,
         closedIssues: closedIssues,
         commitsToMaster: commitsToMaster,
