@@ -17,7 +17,14 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', type: 'text/css', href: 'https://cdn.jsdelivr.net/gh/konpa/devicon@master/devicon.min.css' }
+      {
+        rel: 'stylesheet',
+        href: 'https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap'
+      },
+      {
+        rel: 'stylesheet',
+        href: 'https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap'
+      }
     ],
     script: [
       { src: "https://plausible.io/js/plausible.js", async: true, defer: true, "data-domain": "grey.software" }
@@ -53,6 +60,7 @@ export default {
   modules: [
     // Doc: https://bootstrap-vue.js.org
     '@nuxt/content',
+    '@nuxtjs/axios',
     'bootstrap-vue/nuxt',
     '@nuxtjs/apollo',
     '@nuxtjs/pwa',

@@ -28,6 +28,9 @@
         "graphql": "^15.3.0",
         "jquery": "^3.5.1",
         "nuxt": "^2.14.3",
+        "chromium": "^3.0.1",
+        "code": "^5.2.4",
+        "nodejs": "0.0.0",
         "phantomjs": "^2.1.7",
         "puppeteer": "^5.2.1",
         "request-promise": "^4.2.6"

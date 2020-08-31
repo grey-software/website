@@ -1,6 +1,7 @@
 <template>
   <div>
     <grey-nav-bar></grey-nav-bar>
+    
     <nuxt />
   </div>
 </template>
@@ -23,8 +24,6 @@ export default {
 </script>
 
 <style>
-@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700 &family=Montserrat:wght@400;500&display=swap");
-
 *,
 *:before,
 *:after {
@@ -45,7 +44,7 @@ a:hover {
 :root {
   --color-text: #fcfcfc;
   --color-text-dark: #fcfcfc;
-  --bg: #1f1f1f;
+  --bg: #2d3748;
   --border-color: #ddd;
   --color-gold: #b29a66;
   --color-gold-light: rgba(178, 154, 102, 0.8);

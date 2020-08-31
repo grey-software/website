@@ -1,0 +1,72 @@
+[
+  {
+    "repo": "toonin",
+    "mergePR": "0",
+    "mergeOpenPR": "0",
+    "newIssues": "0",
+    "closedIssues": "0",
+    "commitsToMaster": "",
+    "authors": "",
+    "files": "",
+    "totalAdditions": "",
+    "deletions": "",
+    "startDate": "August 23, 2020",
+    "endDate": "August 30, 2020"
+  },
+  {
+    "repo": "twitter-focus",
+    "mergePR": "1",
+    "mergeOpenPR": "1",
+    "newIssues": "0",
+    "closedIssues": "2",
+    "commitsToMaster": "0",
+    "authors": "1 author",
+    "files": "0 files",
+    "totalAdditions": "0",
+    "deletions": "0",
+    "startDate": "August 23, 2020",
+    "endDate": "August 30, 2020"
+  },
+  {
+    "repo": "grey.software",
+    "mergePR": "2",
+    "mergeOpenPR": "2",
+    "newIssues": "3",
+    "closedIssues": "3",
+    "commitsToMaster": "16",
+    "authors": "5 authors",
+    "files": "0 files",
+    "totalAdditions": "0",
+    "deletions": "0",
+    "startDate": "August 23, 2020",
+    "endDate": "August 30, 2020"
+  },
+  {
+    "repo": "linkedin-focus",
+    "mergePR": "1",
+    "mergeOpenPR": "0",
+    "newIssues": "1",
+    "closedIssues": "0",
+    "commitsToMaster": "2",
+    "authors": "2 authors",
+    "files": "0 files",
+    "totalAdditions": "0",
+    "deletions": "0",
+    "startDate": "August 23, 2020",
+    "endDate": "August 30, 2020"
+  },
+  {
+    "repo": "material-math",
+    "mergePR": "0",
+    "mergeOpenPR": "0",
+    "newIssues": "0",
+    "closedIssues": "0",
+    "commitsToMaster": "",
+    "authors": "",
+    "files": "",
+    "totalAdditions": "",
+    "deletions": "",
+    "startDate": "August 23, 2020",
+    "endDate": "August 30, 2020"
+  }
+]

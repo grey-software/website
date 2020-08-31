@@ -87,7 +87,7 @@
     <section class="container pt-5 pb-5">
       <div class="row mt-5 pl-4">
         <div class="col">
-          <h1 class="g-section-heading">Who are we?</h1>
+          <h1 class="g-section-heading mb-4">Who are we?</h1>
           <h1 class="g-section-subheading">A dedicated group of:</h1>
           <div class="row d-flex pt-5 justify-content-start align-items-center">
             <div class="flex-col align-items-center mx-4">
@@ -130,37 +130,7 @@
 
         </div>
       </div>
-      <b-button
-        size="lg"
-        class="g-btn mr-4 mt-4"
-        target="_blank"
-        href="https://angel.co/company/grey-software/jobs"
-      >
-        <fa-icon
-          class="mr-2"
-          :icon="['fas', 'user-plus']"
-        ></fa-icon>
-        Join us
-      </b-button>
     </section>
-    <!-- Free Software? -->
-    <!-- <section class="mt-5 pt-2 pb-5 bg-gold">
-      <div class="container">
-        <div class="mt-5 pl-4">
-          <h1 class="g-section-heading">Free Software?</h1>
-          <h1 class="g-section-subheading mt-2">For us, 'free' is a matter of liberty, not price!</h1>
-
-          <p
-            class="g-section-body mt-4"
-            style="width: 75%;"
-          >We respect an individual human’s freedom and community by orienting our software to the <a
-              class="link-freedoms"
-              href="https://www.gnu.org/philosophy/free-sw.en.html"
-            >Free Software Foundation's essential freedoms.</a></p>
-
-        </div>
-      </div>
-    </section> -->
     <section class="container pt-5">
       <h1 class="g-section-heading pl-3 mb-5">What have we built?</h1>
       <div class="container px-0 pb-5">
@@ -349,20 +319,20 @@
   height: 88vh;
 }
 .g-hero-heading {
-  font-weight: 800;
+  font-weight: 700;
   font-family: var(--font-heading);
   color: var(--color-text-dark);
-  letter-spacing: -0.025em;
+  letter-spacing: 0.025em;
   font-size: calc(12px + 5vw);
   line-height: 1.05;
   z-index: 1000;
 }
 
 .g-section-heading {
-  font-weight: 800;
+  font-weight: 700;
   font-family: var(--font-heading);
   color: var(--color-text-dark);
-  letter-spacing: -0.025em;
+  letter-spacing: 0.025em;
   font-size: calc(12px + 5vw);
   line-height: 1.05;
   z-index: 1000;

@@ -74,6 +74,16 @@
           <p
             class="three-col-body mt-2"
           >Bring your creative app ideas to life with less chaos and more clarity with the Grey Software Explorer service!</p>
+          <div class="mt-4">
+            <b-button
+                size="sm"
+                variant="outline-primary"
+                class="mr-4 g-btn-alt d-flex align-items-center"
+                target="_blank"
+              >
+              Enrollment Full
+            </b-button>
+          </div>
         </div>
         <div class="col-md" style="height:434px;">
           <img class="three-col-icon" src="@/assets/icons/apprentice.svg" />
@@ -81,6 +91,17 @@
           <p
             class="three-col-body mt-2"
           >Contribute to established open source software with guidance and structure from a Grey Software mentor!</p>
+          <div class="mt-4">
+            <nuxt-link to="/apprentice">
+              <b-button
+                  size="sm"
+                  class="mr-4 g-btn d-flex align-items-center"
+                  target="_blank"
+                >
+                Check it out!
+              </b-button>
+            </nuxt-link>
+          </div>
         </div>
         <div class="col-md" style="height:434px;">
           <img class="three-col-icon" src="@/assets/icons/web-portfolio.svg" />
@@ -88,12 +109,18 @@
           <p
             class="three-col-body mt-2"
           >Learn the technologies that power the web with an instructor as you build a portfoilio of web components!</p>
+          <div class="mt-4">
+            <b-button
+                size="sm"
+                variant="outline-primary"
+                class="mr-4 g-btn-alt d-flex align-items-center"
+                target="_blank"
+              >
+              Enrollment Full
+            </b-button>
+          </div>
         </div>
       </div>
     </section>
   </div>
 </template>
-
-<script>
-export default {};
-</script>

@@ -18,3 +18,14 @@ body {
   color: var(--color);
   transition: background-color 0.3s;
 }
+
+.page-enter-active,
+.page-leave-active {
+  transition: all 0.2s;
+  filter: inherit;
+}
+.page-enter,
+.page-leave-to {
+  opacity: 0;
+  filter: blur(10px);
+}

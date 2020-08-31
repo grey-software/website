@@ -1,159 +1,168 @@
 <template>
-    <div class="d-flex container mt-5">
-        <div class="d-flex overview-header">
-            <h5 class="table-header ml-3">Overview</h5>
-            <h5 class="table-date ml-3">{{startDate}} - {{endDate}}</h5>
-        
-        
-        
+  <div class="d-flex container mt-5 report-card py-4 pl-4">
+    <h1 class="report-section-header mb-4">Repository</h1>
+
+    <div class="d-flex pr-section">
+      <div class="d-flex detail-box">
+        <div class="detail-icon-value-container">
+          <img
+            src="../assets/icons/merge-pr.svg"
+            class="detail-icon mb-2 mr-1"
+          />
+          <h4 class="detail-value mb-1">{{mergePR}}</h4>
         </div>
+        <p>Merged Pull Requests</p>
 
+      </div>
 
-        <div class="d-flex pr-section">
-            <div class="d-flex detail-box">
-                <div class="d-flex img-container">
-                    <img src="../assets/icons/merge-pr.svg" class="mb-2 mr-1"/>
-                    <h4 class="mb-1">{{mergePR}}</h4>
-                </div>
-                <p>Merged Pull Requests</p>
-
-            </div>   
-
-            <div class="d-flex detail-box">
-                <div class="d-flex img-container">
-                    <img src="../assets/icons/merge-open-pr.svg" class="mb-2 mr-1"/>
-                    <h4 class="mb-1">{{mergeOpenPR}}</h4>
-                </div>
-                <p>Open Pull Requests</p>
-
-            </div> 
-
-            <div class="d-flex detail-box">
-                <div class="d-flex img-container">
-                    <img src="../assets/icons/closed-issues.svg" class="mb-2 mr-1"/>
-                    <h4 class="mb-1">{{closedIssues}}</h4>
-                </div>
-                <p>Closed Issues</p>
-            </div> 
-
-            <div class="d-flex detail-box">
-                <div class="d-flex img-container">
-                    <img src="../assets/icons/new-issues.svg" class="mb-2 mr-1"/>
-                    <h4 class="mb-1">{{newIssues}}</h4>
-                </div>
-                <p>New Issues</p>
-            </div>      
-        
-        
+      <div class="d-flex detail-box">
+        <div class="detail-icon-value-container">
+          <img
+            src="../assets/icons/merge-open-pr.svg"
+            class="detail-icon mb-2 mr-1"
+          />
+          <h4 class="detail-value mb-1">{{mergeOpenPR}}</h4>
         </div>
+        <p>Open Pull Requests</p>
 
+      </div>
 
-        <div class="d-flex branches-section">
-            <div class="d-flex branches-title">
-                <div class="d-flex title">
-                    <h5 class="mt-2 mb-2">Master</h5>
-                
-                
-                </div>
-
-            
-            </div>
-
-            <div class="d-flex branches-info">
-
-                <div class="d-flex detail-box">
-                    <h5 class="mt-2 mb-2">{{authors}} Authors</h5>
-
-                </div>   
-
-                <div class="d-flex detail-box">
-                    <h5 class="mt-2 mb-2">{{commitsToMaster}} Commits</h5>
-
-                </div> 
-
-                <div class="d-flex detail-box">
-                    <h5 class="mt-2 mb-2">{{totalAdditions}} Additions</h5>
-                </div> 
-
-                <div class="d-flex detail-box">
-                    <h5 class="mt-2 mb-2">{{deletions}} Deletions</h5>
-                </div> 
-            
-            </div>
-        
-        
+      <div class="d-flex detail-box">
+        <div class="detail-icon-value-container">
+          <img
+            src="../assets/icons/closed-issues.svg"
+            class="detail-icon mb-2 mr-1"
+          />
+          <h4 class="detail-value mb-1">{{closedIssues}}</h4>
         </div>
-    
-    
-    
+        <p>Closed Issues</p>
+      </div>
+
+      <div class="d-flex detail-box">
+        <div class="detail-icon-value-container">
+          <img
+            src="../assets/icons/new-issues.svg"
+            class="detail-icon mb-2 mr-1"
+          />
+          <h4 class="detail-value mb-1">{{newIssues}}</h4>
+        </div>
+        <p>New Issues</p>
+      </div>
+
     </div>
 
+    <!-- <div class="d-flex branches-section mt-4">
+      <h1 class="report-section-header mb-4">Master Branch</h1>
 
+      <div class="d-flex branches-info">
 
+        <div class="d-flex detail-box">
+          <div class="detail-icon-value-container">
+            <img
+              src="../assets/icons/new-issues.svg"
+              class="detail-icon mb-2 mr-1"
+            />
+            <h4 class="detail-value mb-1">{{authors}}</h4>
+          </div>
+          <p>Authors</p>
+        </div>
 
-    
+        <div class="d-flex detail-box">
+          <div class="detail-icon-value-container">
+            <img
+              src="../assets/icons/new-issues.svg"
+              class="detail-icon mb-2 mr-1"
+            />
+            <h4 class="detail-value mb-1">{{commitsToMaster}}</h4>
+          </div>
+          <p>Authors</p>
+        </div>
+
+        <div class="d-flex detail-box">
+          <div class="detail-icon-value-container">
+            <img
+              src="../assets/icons/new-issues.svg"
+              class="detail-icon mb-2 mr-1"
+            />
+            <h4 class="detail-value mb-1">{{totalAdditions}}</h4>
+          </div>
+          <p>Additions</p>
+        </div>
+
+        <div class="d-flex detail-box">
+          <div class="detail-icon-value-container">
+            <img
+              src="../assets/icons/new-issues.svg"
+              class="detail-icon mb-2 mr-1"
+            />
+            <h4 class="detail-value mb-1">{{deletions}}</h4>
+          </div>
+          <p>Deletions</p>
+        </div>
+
+      </div>
+
+    </div> -->
+
+  </div>
+
 </template>
 
 
 <script>
 export default {
-    props: {
-        mergePR: {
-            type: String,
-            default: "0"
-        },
+  props: {
+    mergePR: {
+      type: String,
+      default: "0"
+    },
 
-        mergePR: {
-            type: String,
-            default: "0"
-        },
+    mergeOpenPR: {
+      type: String,
+      default: "0"
+    },
 
-        mergeOpenPR: {
-            type: String,
-            default: "0"
-        },
+    newIssues: {
+      type: String,
+      default: "0"
+    },
 
-        newIssues: {
-            type: String,
-            default: "0"
-        },
+    closedIssues: {
+      type: String,
+      default: "0"
+    },
 
-        closedIssues: {
-            type: String,
-            default: "0"
-        },
+    commitsToMaster: {
+      type: String,
+      default: "0"
+    },
 
-        commitsToMaster: {
-            type: String,
-            default: "0"
-        },
+    totalAdditions: {
+      type: String,
+      default: "0"
+    },
 
-        totalAdditions: {
-            type: String,
-            default: "0"
-        },
+    deletions: {
+      type: String,
+      default: "0"
+    },
 
-        deletions: {
-            type: String,
-            default: "0"
-        },
+    authors: {
+      type: String,
+      default: "0"
+    },
 
-        authors: {
-            type: String,
-            default: "0"
-        },
+    startDate: {
+      type: String,
+      default: "August 22, 2020"
+    },
 
-        startDate: {
-            type: String,
-            default: "August 22, 2020"
-        },
+    endDate: {
+      type: String,
+      default: "August 29, 2020"
+    },
 
-        endDate: {
-            type: String,
-            default: "August 29, 2020"
-        },
-        
-    }
+  }
 
 
 
@@ -162,111 +171,60 @@ export default {
 
 
 <style scoped>
-
-
-
-.container{
-    flex-direction: column;
-    border-color: grey;
-
-
-
-
+.detail-icon-value-container {
+  display: flex;
+  align-items: center;
+}
+.detail-value {
+  font-size: 28px;
+  margin-left: 8px;
+}
+.detail-icon {
+  height: 36px;
+}
+.report-card {
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+.container {
+  flex-direction: column;
+  border-color: grey;
 }
 
-.overview-header{
-    background-color: grey;
-    flex: 1;
-    border-color: grey;
-    border-width: 2px;
-    border-top-right-radius: 5px;
-    border-top-left-radius: 5px;
-    height: 40px;
-    align-items: center;
-    flex-direction: row;
-
-
-
-
+.report-section-header {
+  font-size: 28px;
+  font-weight: 600;
 }
 
-.table-header{
-    color: black;
-    flex: 7
-
-
+.table-date {
+  color: black;
+  flex: 2;
+  font-style: italic;
 }
 
-.table-date{
-    color: black;
-    flex: 2;
-    font-style: italic;
-
-
+.detail-box {
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
-.pr-section{
-    flex: 3;
-    flex-direction: row;
-    border-color: grey;
-    height: 80px;
-    
-
-
-
+.img-container {
+  flex-direction: row;
 }
 
-.detail-box{
-    flex: 1;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-width: 2px;
-    border-color: grey;
-    height: 100%;
-
-
+.branches-section {
+  flex: 3;
+  flex-direction: column;
 }
 
-.img-container{
-    flex-direction: row;
-
-
+.branches-title {
+  flex-direction: row;
 }
 
-
-.branches-section{
-    flex: 3;
-    flex-direction: column;
-    border-color: grey;
-
-
-
+.title {
+  flex: 1;
+  justify-content: center;
+  align-items: center;
 }
-
-.branches-title{
-    flex-direction: row;
-    
-
-}
-
-.title{
-    flex: 1;
-    justify-content: center;
-    align-items: center;
-    border-color: grey;
-    border-width: 2px
-    
-
-
-
-}
-
-div.imgicon {
-    filter: brightness(0) invert(1);
-}
-
-
-
-
 </style>
