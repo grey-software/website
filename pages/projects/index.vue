@@ -1,6 +1,7 @@
 <template>
   <div class="pb-5">
-    <div class="container g-hero mt-5">
+    <HeroGrey title="Our Projects" desc="We're improving the open source ecosystem by creating useful, creative, and free software with the world's latest technology." />
+    <!-- <div class="container g-hero mt-5">
       <div class="row">
         <div class="col-lg-8">
           <h1 class="g-hero-heading">Our Projects</h1>
@@ -18,7 +19,7 @@
           />
 
         </div>
-      </div>
+      </div> -->
 
       <section class="container px-0">
         <div class="project-cards-container">
@@ -33,7 +34,7 @@
       </section>
     </div>
 
-  </div>
+  <!-- </div> -->
 </template>
 
 <script>
