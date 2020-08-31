@@ -96,12 +96,13 @@ getWeeklyInsights = async (link, repos) => {
   const end = new Date() - start;
 };
 
-var links = [
+const links = [
   "https://github.com/grey-software/toonin/pulse",
   "https://github.com/grey-software/material-math/pulse",
   "https://github.com/grey-software/linkedin-focus/pulse",
   "https://github.com/grey-software/twitter-focus/pulse",
-  "https://github.com/grey-software/grey.software/pulse"
+  "https://github.com/grey-software/grey.software/pulse",
+  "https://github.com/grey-software/org/pulse"
 ];
 
 const repos = [];
