@@ -1,0 +1,40 @@
+{
+    "projects": [
+        {
+            "name": "Toonin",
+            "desc": "Share or stream audio and video over the web in real time.",
+            "repo": "https://github.com/grey-software/toonin",
+            "demo": "https://www.toonin.ml",
+            "logo": "/projects/toonin/logo.svg",
+            "link": "/projects/toonin",
+            "status": "Live Beta"
+        },
+        {
+            "name": "Material Math",
+            "desc": "Practice math problems in a fun, beautiful, material experience!",
+            "repo": "https://github.com/grey-software/material-math",
+            "demo": "https://material-math.grey.software",
+            "logo": "/projects/material-math/logo.png",
+            "link": "/projects/material-math",
+            "status": "Live Alpha"
+        },
+        {
+            "name": "Twitter Focus",
+            "desc": "Hide the feed and What's Happening panel on Twitter so you can focus and control your experience!",
+            "logo": "/projects/twitter-focus/logo.png",
+            "repo": "https://github.com/grey-software/Twitter-Focus",
+            "demo": "https://chrome.google.com/webstore/detail/twitter-focus/kmdpomipbibobgdgfeidajmnlecloeml?hl=en&authuser=2",
+            "link": "/projects/twitter-focus",
+            "status": "Live Beta"
+        },
+        {
+            "name": "LinkedIn Focus",
+            "desc": "Hide the news feed and news panel on LinkedIn so you can focus on your career!",
+            "logo": "/projects/linkedin-focus/logo.png",
+            "repo": "https://github.com/grey-software/LinkedIn-Focus",
+            "demo": "https://chrome.google.com/webstore/detail/linkedin-focus/cmafljjdkloacahjddlpaognhjpacdff?hl=en&authuser=2",
+            "link": "/projects/linkedin-focus",
+            "status": "Live Beta"
+        }
+    ]
+}

@@ -133,148 +133,29 @@
     </section>
     <section class="container pt-5">
       <h1 class="g-section-heading pl-3 mb-5">What have we built?</h1>
-      <div class="container px-0 pb-5">
-        <div class="justify-content-space-between align-items-center">
-          <div class="col-lg mb-5">
-            <h1 class="g-section-project-heading">Toonin</h1>
-            <div class="d-flex align-items-center g-section-info">Status: <span
-                style="background-color:#ffcc00;"
-                class="status-dot"
-              ></span>Live Beta</div>
-            <p class="g-section-body mt-4">Technology that allows you to tune in to your friends and family in realtime using peer to peer sharing.</p>
-            <div class="d-flex mt-5">
-              <b-button
-                size="lg"
-                class="g-btn mr-4"
-                target="_blank"
-                href="https://www.toonin.ml"
-              >
-                <fa-icon
-                  class="mr-2"
-                  :icon="['fas', 'play']"
-                ></fa-icon>Live Demo
-              </b-button>
-              <b-button
-                size="lg"
-                class="g-btn-alt"
-                target="_blank"
-                href="https://github.com/grey-software/material-math"
-              >
-                <fa-icon
-                  class="mr-2"
-                  :icon="['fab', 'github']"
-                ></fa-icon>Repository
-              </b-button>
-            </div>
-          </div>
-          <div class="col-lg">
-            <div class="embed-responsive embed-responsive-16by9">
-              <iframe
-                class="embed-responsive-item"
-                src="https://www.youtube.com/embed/ImxxRMPVHzs"
-                frameborder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-              ></iframe>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="container px-0 mt-5">
-        <div class="justify-content-space-between align-items-center">
+      <div class="project-cards-container">
 
-          <div class="col-lg mb-5">
-            <h1 class="g-section-project-heading">Material Math</h1>
-            <div class="d-flex align-items-center g-section-info">Status: <span
-                style="background-color:#FF3366;"
-                class="status-dot"
-              ></span>Live Alpha</div>
-            <p class="g-section-body mt-4">The spiritial successor to Boltz on Android, Material Math brings unlimited mental math practice in a fun, beautiful interface to the web!</p>
-            <div class="d-flex mt-5">
-              <b-button
-                size="lg"
-                class="g-btn mr-4"
-                href="https://material-math.netlify.app"
-                target="_blank"
-              >
-                <fa-icon
-                  class="mr-2"
-                  :icon="['fas', 'play']"
-                ></fa-icon>Live Demo
-              </b-button>
-              <b-button
-                size="lg"
-                class="g-btn-alt"
-                href="https://github.com/grey-software/material-math"
-                target="_blank"
-              >
-                <fa-icon
-                  class="mr-2"
-                  :icon="['fab', 'github']"
-                ></fa-icon>Repository
-              </b-button>
-            </div>
-          </div>
-          <div class="col-lg">
-            <div class="embed-responsive embed-responsive-16by9">
-              <iframe
-                class="embed-responsive-item"
-                src="https://www.youtube.com/embed/ceACiAdXSDc"
-                frameborder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-              ></iframe>
-            </div>
-          </div>
-        </div>
+        <project-card
+          v-for="(project,id) in projects"
+          :key="id"
+          :project="project"
+        />
       </div>
-      <div class="container px-0 mt-5">
-        <div class="justify-content-space-between align-items-center">
 
-          <div class="col-lg mb-5">
-            <h1 class="g-section-project-heading">LinkedInFocus</h1>
-            <div class="d-flex align-items-center g-section-info">Status: <span
-                style="background-color:#ffcc00;"
-                class="status-dot"
-              ></span>Unofficial Release</div>
-            <p class="g-section-body mt-4">A web extension that allows you to hide the news feed and news panel on LinkedIn so you can focus on your career!</p>
-            <div class="d-flex mt-5">
-              <b-button
-                size="lg"
-                class="g-btn mr-4"
-                href="https://github.com/grey-software/LinkedInFocus/releases/tag/0.01"
-                target="_blank"
-              >
-                <fa-icon
-                  class="mr-2"
-                  :icon="['fas', 'box-open']"
-                ></fa-icon>Latest Release
-              </b-button>
-              <b-button
-                size="lg"
-                class="g-btn-alt"
-                href="https://github.com/grey-software/material-math"
-                target="_blank"
-              >
-                <fa-icon
-                  class="mr-2"
-                  :icon="['fab', 'github']"
-                ></fa-icon>Repository
-              </b-button>
-            </div>
-          </div>
-          <div class="col-lg">
-            <img
-              style="width: 100%;"
-              src="https://github.com/grey-software/LinkedInFocus/raw/master/after.png"
-            />
-          </div>
-        </div>
-      </div>
     </section>
 
   </div>
 </template>
+
+<script>
+export default {
+  async asyncData ({ $content, params, error }) {
+    const projectsDataStore = await $content('projects').fetch()
+    const projects = projectsDataStore.projects
+    return { projects }
+  },
+}
+</script>
 
 <style>
 .two-col-heading {
