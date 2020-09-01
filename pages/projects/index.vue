@@ -1,6 +1,17 @@
 <template>
   <div class="pb-5">
-    <HeroGrey title="Our Projects" desc="We're improving the open source ecosystem by creating useful, creative, and free software with the world's latest technology." />
+    <CenteredHero title="Our Projects" desc="We're improving the open source ecosystem by creating useful, creative, and free software with the world's latest technology." 
+    :button2="{
+      link: 'https://github.com/grey-software/',
+      label: 'GitHub',
+      icon: '/projects.svg'
+      }"
+    :button1="{
+      link: 'https://github.com/grey-software/',
+      label: 'GitHub',
+      icon: '/projects.svg'
+      }"
+    />
     <!-- <div class="container g-hero mt-5">
       <div class="row">
         <div class="col-lg-8">
