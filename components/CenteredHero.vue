@@ -1,7 +1,7 @@
 <template>
   <div class="container g-hero mt-5">
     <div class="row d-flex justify-center">
-      <img src="../assets/logo.png" alt="Grey Software's Icon" class="hero-img" />
+      <img :src="icon" alt="Grey Software's Icon" class="hero-img" />
     </div>
     <div class="mt-3 mt-md-4 mt-lg-5 row d-flex flex-column align-items-center">
       <div class="col-lg-10 text-center">
@@ -10,8 +10,31 @@
       </div>
     </div>
     <div class="mt-3 d-flex justify-content-center">
-      <b-button v-if="button1 && button1.link && button1.label" :href="button1.link" :size="gtmd" class="mr-4 btn-cta mb-3">{{ button1.label }}</b-button>
-      <b-button v-if="button2 && button2.link && button2.label" :href="button2.link" :size="gtmd" variant="outline-primary" class="btn-cta-alt mb-3">{{ button2.label }}</b-button>
+      <b-button 
+        v-if="button1 && button1.link && button1.label" 
+        :href="button1.link" 
+        :size="gtmd" 
+        class="mr-4 btn-cta mb-3 d-flex align-items-center">
+          <img
+            v-if="button1.icon"
+            class="btn-icon mx-2"
+            :src="button1.icon"
+          />
+          {{ button1.label }}
+      </b-button>
+      <b-button 
+        v-if="button2 && button2.link && button2.label" 
+        :href="button2.link" 
+        :size="gtmd" 
+        variant="outline-primary" 
+        class="btn-cta-alt mb-3 d-flex align-items-center">
+          <img
+            v-if="button2.icon"
+            class="btn-icon mx-2"
+            :src="button2.icon"
+          />
+          {{ button2.label }}
+      </b-button>
     </div>
     <div class="row d-flex justify-center">
       <img id="arrow" src="/downarrow.png" alt="Down Arrow" />
@@ -22,6 +45,7 @@
 <script>
 export default {
   props: {
+    icon: String,
     desc: String,
     title: String,
     button1:  {
@@ -106,9 +130,12 @@ export default {
   line-height: 1.5;
   margin-top: 32px;
 }
+.btn-icon {
+  width: 24px;
+  height: 24px;
+}
 .hero-img {
-  border-radius: 50%;
-  width: 125px;
+  width: 200px;
 }
 #arrow {
   width: 75px;
