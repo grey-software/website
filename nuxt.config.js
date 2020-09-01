@@ -74,7 +74,20 @@ export default {
         brands: true
       }
     }],
-    '@nuxtjs/device'
+    '@nuxtjs/device',
+    [
+      'nuxt-mq',
+    {
+      // Default breakpoint for SSR
+      defaultBreakpoint: 'xs',
+      breakpoints: {
+        sm: 576,
+        md: 768,
+        lg: 992,
+        xl: 1200
+      }
+    }
+  ]
   ],
   apollo: {
     clientConfigs: {
