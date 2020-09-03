@@ -1,7 +1,7 @@
 {
     "name": "grey.software",
     "version": "1.0.0",
-    "description": "Grey Software&#39;s website",
+    "description": "A not-for-profit, open source software development community where maintainers mentor students and build free software together!",
     "author": "Arsala Bangash",
     "scripts": {
         "dev": "nuxt",
