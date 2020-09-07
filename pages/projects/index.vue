@@ -1,38 +1,22 @@
 <template>
   <div class="pb-5">
-    <CenteredHero title="Our Projects" desc="We're improving the open source ecosystem by creating useful, creative, and free software with the world's latest technology." icon="/projects/projects.svg" />
-    <!-- <div class="container g-hero mt-5">
-      <div class="row">
-        <div class="col-lg-8">
-          <h1 class="g-hero-heading">Our Projects</h1>
-          <p class="g-hero-tag">We're improving the open source ecosystem by creating useful, creative, and free software with the world's latest technology.</p>
-          <a
-            href="https://www.github.com/grey-software"
-            target="_blank"
-          >
-          </a>
-        </div>
-        <div class="col-lg-4 d-flex flex-column mt-3">
-          <img
-            class="g-hero-img"
-            src="@/assets/img/projects.svg"
-          />
+    <CenteredHero
+      title="Our Projects"
+      desc="We're improving the open source ecosystem by creating useful, creative, and free software with the world's latest technology."
+      icon="/icons/projects.svg"
+    />
+    <section class="container px-0">
+      <div class="project-cards-container">
 
-        </div>
-      </div> -->
+        <project-card
+          v-for="(project,id) in projects"
+          :key="id"
+          :project="project"
+        />
+      </div>
 
-      <section class="container px-0">
-        <div class="project-cards-container">
-
-          <project-card
-            v-for="(project,id) in projects"
-            :key="id"
-            :project="project"
-          />
-        </div>
-
-      </section>
-    </div>
+    </section>
+  </div>
 
   <!-- </div> -->
 </template>

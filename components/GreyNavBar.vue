@@ -172,20 +172,24 @@ export default {
   font-size: 18px;
 }
 
+.nav > #nav-check {
+  display: none;
+}
+
 .nav-link {
+  letter-spacing: 0;
   display: inline-block;
   padding: 13px 10px 13px 10px;
   text-decoration: none;
   height: fit-content;
   color: #efefef;
+  transition: all 0.3s ease-out;
 }
 
-.nav-link:hover {
-  background-color: rgba(0, 0, 0, 0.3);
-}
-
-.nav > #nav-check {
-  display: none;
+.nav-link:hover,
+.nav-link:active {
+  letter-spacing: 2px;
+  transform: translateY(-6px);
 }
 
 @media (max-width: 768px) {
@@ -247,4 +251,6 @@ export default {
   width: 132px;
   border-radius: 32px;
 }
+
+
 </style>

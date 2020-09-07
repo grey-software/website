@@ -3,8 +3,8 @@
     <!-- Hero -->
     <div class="container g-hero mt-5">
       <div class="row">
-        <div class="col-md-8">
-          <h1 class="g-hero-heading">Freedom and Collaboration <br />in Software</h1>
+        <div class="col-md-7">
+          <h1 class="g-hero-heading">Free Software <br />By Students</h1>
           <p class="g-hero-tag">We're creating the open source ecosystem of the future where software maintainers mentor students and build free software together!</p>
           <div class="g-hero-cta-container">
             <nuxt-link to="/projects">
@@ -21,6 +21,12 @@
               >Education</b-button>
             </nuxt-link>
           </div>
+        </div>
+        <div class="col-md-5">
+          <img
+            class="g-hero-img"
+            src="@/assets/img/open-source.svg"
+          />
         </div>
       </div>
     </div>
