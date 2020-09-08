@@ -12,7 +12,15 @@
         <div>
           <p class="desc">{{ desc }}</p>
           <div v-if="link != ''">
-            <a :href="link" class="feature-btn">Learn More →</a>
+            <nuxt-link :to="link">
+              <b-button
+                  size="sm"
+                  class="mr-4 g-btn d-flex align-items-center"
+                  target="_blank"
+                >
+                {{ label }}
+              </b-button>
+            </nuxt-link>
           </div>
         </div>
       </div>
@@ -34,6 +42,10 @@ export default {
       type: String,
       default: "",
     },
+    label: {
+      type: String,
+      default: "Check it out!"
+    }
   },
 };
 </script>
