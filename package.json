@@ -5,7 +5,7 @@
     "author": "Arsala Bangash",
     "scripts": {
         "dev": "nuxt",
-        "build": "nuxt build",
+        "build": "nuxt build --target static",
         "start": "nuxt start",
         "generate": "nuxt build --target static && nuxt export",
         "test": "jest"
