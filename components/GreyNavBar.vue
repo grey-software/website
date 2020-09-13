@@ -231,13 +231,23 @@ export default {
     display: block;
     width: 100%;
     padding-left: 16px;
+    transition: none;
   }
+
+  .nav-link:hover,
+  .nav-link:active {
+    letter-spacing: 0;
+    transform: none;
+  }
+
   .nav > #nav-check:not(:checked) ~ .nav-links {
     opacity: 0;
+    z-index: -1;
   }
   .nav > #nav-check:checked ~ .nav-links {
     overflow-y: auto;
     opacity: 1;
+    z-index: 2;
   }
 }
 
