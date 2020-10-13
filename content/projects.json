@@ -39,30 +39,10 @@
         {
             "name": "Sponsorware",
             "desc": "Hide the news feed and news panel on LinkedIn so you can focus on your career!",
-            "logo": "/projects/linkedin-focus/logo.png",
-            "repo": "https://github.com/grey-software/LinkedIn-Focus",
-            "demo": "https://chrome.google.com/webstore/detail/linkedin-focus/cmafljjdkloacahjddlpaognhjpacdff?hl=en&authuser=2",
+            "logo": "/favicon.ico",
+            "repo": "https://github.com/grey-software/sponsorware",
+            "demo": "https://github.com/grey-software/sponsorware",
             "link": "/projects/linkedin-focus",
-            "status": "Live Beta"
-        }
-    ],
-    "external projects": [
-        {
-            "name": "CSSC Website",
-            "desc": "The Computer Science Student Community (CSSC) is an open space for Computer Science students to come in and ask questions about their university and post-university career.",
-            "logo": "/",
-            "repo": "https://github.com/utm-cssc/website",
-            "demo": "https://cssc.utm.utoronto.ca/",
-            "link": "/",
-            "status": "Live Beta"
-        },
-        {
-            "name": "Futurist Websites",
-            "desc": "The Futurist Foundation is an organization that allows individuals like you to propose, fund, and work on the technologies of the future.",
-            "logo": "/",
-            "repo": "https://github.com/grey-software/futurist.network",
-            "demo": "https://thefuturistfoundation.com/",
-            "link": "/",
             "status": "Live Beta"
         }
     ],
@@ -82,6 +62,23 @@
             "repo": "https://github.com/maticzav/label-sync",
             "demo": "https://label-sync.com/",
             "link": "https://label-sync.com/"
+        },
+        {
+            "name": "CSSC Website",
+            "desc": "The CSSC is an open space for Computer Science students to come in and ask questions about their university and post-university career.",
+            "logo": "/logos/projects/cssc.png",
+            "repo": "https://github.com/utm-cssc/website",
+            "demo": "https://cssc.utm.utoronto.ca/",
+            "link": "/logos/projects/cssc.png"
+        }
+    ],
+    "student": [
+        {
+            "name": "Downloads Cleaner",
+            "logo": "/logos/projects/cleaner.png",
+            "desc": "A python based script used to keep your download folder organized for Mac and Linux.",
+            "repo": "https://github.com/milindvishnoi/Download-Folder-Organizer",
+            "demo": "https://github.com/milindvishnoi/Download-Folder-Organizer"
         }
     ]
 }

@@ -14,11 +14,21 @@
         />
       </div>
     </section>
-     <section class="container px-0">
+    <section class="container px-0">
       <h1 class="g-section-heading mb-5">External Projects</h1>
       <div class="project-cards-container">
         <project-card
           v-for="(project,id) in externalProjects"
+          :key="id"
+          :project="project"
+        />
+      </div>
+    </section>
+    <section class="container px-0">
+      <h1 class="g-section-heading mb-5">Student Projects</h1>
+      <div class="project-cards-container">
+        <project-card
+          v-for="(project,id) in studentProjects"
           :key="id"
           :project="project"
         />
@@ -34,7 +44,8 @@ export default {
     const projectsDataStore = await $content('projects').fetch()
     const projects = projectsDataStore.projects
     const externalProjects = projectsDataStore.external
-    return { projects, externalProjects }
+    const studentProjects = projectsDataStore.student
+    return { projects, externalProjects, studentProjects }
   },
   components: {
     ProjectCard,
