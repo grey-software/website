@@ -14,8 +14,8 @@
           <div v-if="link != ''">
             <nuxt-link :to="link">
               <b-button
-                  size="sm"
-                  class="mr-4 g-btn d-flex align-items-center"
+                  size="md"
+                  class="mr-4 mt-4 g-btn d-flex align-items-center"
                   target="_blank"
                 >
                 {{ label }}
@@ -72,7 +72,7 @@ export default {
   font-weight: 300;
   line-height: 1.75rem;
   opacity: 0.9;
-  font-size: 28px;
+  font-size: 24px;
   margin-top: 20px;
 }
 

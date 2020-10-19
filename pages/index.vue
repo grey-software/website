@@ -7,7 +7,7 @@
           <h1 class="g-hero-heading">Free Software <br />By Students</h1>
           <p class="g-hero-tag">
             We're creating the open source ecosystem of the future where
-            software maintainers mentor students and build free software
+            mentors and students build free software
             together!
           </p>
           <div class="g-hero-cta-container">
