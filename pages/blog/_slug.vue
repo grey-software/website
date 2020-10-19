@@ -23,25 +23,3 @@ export default {
   }
 };
 </script>
-
-<style>
-.nuxt-content h1 {
-  color: #f7fafc;
-}
-
-.nuxt-content h2 {
-  color: #f7fafc;
-}
-
-.nuxt-content h3 {
-  color: #f7fafc;
-}
-
-.nuxt-content p {
-  color: white;
-}
-
-.nuxt-content a {
-  color: white;
-}
-</style>

@@ -66,7 +66,6 @@ export default {
     '@nuxt/content',
     '@nuxtjs/axios',
     'bootstrap-vue/nuxt',
-    '@nuxtjs/apollo',
     '@nuxtjs/pwa',
     // Doc: https://github.com/nuxt-community/dotenv-module
     '@nuxtjs/dotenv',
@@ -93,13 +92,6 @@ export default {
     }
   ]
   ],
-  apollo: {
-    clientConfigs: {
-      default: {
-        httpEndpoint: process.env.GRAPHQL_URL
-      }
-    }
-  },
   /*
   ** Build configuration
   */

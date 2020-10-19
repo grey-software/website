@@ -34,14 +34,15 @@
       >Projects</nuxt-link>
       <nuxt-link
         @click.native="checked = false"
-        to="/education"
+        to="/faq"
         class="g-nav-link nav-link mr-4"
-      >Education</nuxt-link>
-      <nuxt-link
+      >FAQ</nuxt-link>
+      <a
         @click.native="checked = false"
-        to="/blog"
+        target="_blank"
+        href="http://community.grey.software"
         class="g-nav-link nav-link mr-4"
-      >Blog</nuxt-link>
+      >Community</a>
       <a
         target="_blank"
         href="https://github.com/sponsors/grey-software"
@@ -219,7 +220,7 @@ export default {
   .nav-links {
     position: absolute;
     display: block;
-    width: 42%%;
+    width: 42%;
     background-color: #333;
     border-radius: 6px;
     transition: all 0.2s ease-out;
@@ -257,8 +258,8 @@ export default {
 }
 
 .paypal-btn {
-  height: 52px;
-  width: 132px;
+  height: 42px;
+  width: 136px;
   border-radius: 32px;
 }
 
