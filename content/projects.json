@@ -38,11 +38,11 @@
         },
         {
             "name": "Sponsorware",
-            "desc": "Hide the news feed and news panel on LinkedIn so you can focus on your career!",
-            "logo": "/favicon.ico",
+            "desc": "Technical guidance and tooling to allow open source developers to distribute software to their Github Sponsors!",
+            "logo": "/logo.png",
             "repo": "https://github.com/grey-software/sponsorware",
             "demo": "https://github.com/grey-software/sponsorware",
-            "link": "/projects/linkedin-focus",
+            "link": "https://github.com/grey-software/sponsorware",
             "status": "Live Beta"
         }
     ],
