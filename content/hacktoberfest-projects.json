@@ -1,0 +1,34 @@
+{
+    "projects": [
+        {
+            "name": "Toonin",
+            "desc": "Share or stream audio and video over the web in real time.",
+            "repo": "https://github.com/grey-software/toonin/issues?q=is%3Aopen+is%3Aissue+label%3Ahacktoberfest-accepted",
+            "logo": "/projects/toonin/logo.svg"
+        },
+        {
+            "name": "Material Math",
+            "desc": "Practice math problems in a fun, beautiful, material experience!",
+            "repo": "https://github.com/grey-software/material-math/issues?q=is%3Aopen+is%3Aissue+label%3Ahacktoberfest-accepted",
+            "logo": "/projects/material-math/logo.png"
+        },
+        {
+            "name": "Twitter Focus",
+            "desc": "Hide the feed and What's Happening panel on Twitter so you can focus and control your experience!",
+            "logo": "/projects/twitter-focus/logo.png",
+            "repo": "https://github.com/grey-software/Twitter-Focus/issues?q=is%3Aopen+is%3Aissue+label%3Ahacktoberfest-accepted"
+        },
+        {
+            "name": "LinkedIn Focus",
+            "desc": "Hide the news feed and news panel on LinkedIn so you can focus on your career!",
+            "logo": "/projects/linkedin-focus/logo.png",
+            "repo": "https://github.com/grey-software/LinkedIn-Focus/issues?q=is%3Aopen+is%3Aissue+label%3Ahacktoberfest-accepted"
+        },
+        {
+            "name": "Futurist Network",
+            "desc": "An online community for futurists to propose, fund and work on ",
+            "logo": "/logos/projects/futurist-network.png",
+            "repo": "https://github.com/grey-software/futurist.network/issues?q=is%3Aopen+is%3Aissue+label%3Ahacktoberfest-accepted"
+        }
+    ]
+}
