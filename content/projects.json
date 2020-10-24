@@ -48,12 +48,12 @@
     ],
     "external": [
         {
-            "name": "Futurist Network",
-            "desc": "An online community for futurists to propose, fund and work on ",
+            "name": "The Futurist Foundation",
+            "desc": "An organization for futurists to propose, fund and work on the projects of the future!",
             "logo": "/logos/projects/futurist-network.png",
             "repo": "https://github.com/grey-software/futurist.network",
-            "demo": "http://www.futurist.network",
-            "link": "http://www.futurist.network"
+            "demo": "https://www.thefuturistfoundation.com",
+            "link": "https://www.thefuturistfoundation.com"
         },
         {
             "name": "Label Sync",
