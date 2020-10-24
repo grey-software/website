@@ -1,6 +1,12 @@
 {
     "projects": [
         {
+            "name": "grey.software",
+            "desc": "A not-for-profit organization that promotes freedom and collaboration in software!",
+            "repo": "https://github.com/grey-software/grey.software/issues?q=is%3Aopen+is%3Aissue+label%3Ahacktoberfest-accepted",
+            "logo": "/logo.png"
+        },
+        {
             "name": "Toonin",
             "desc": "Share or stream audio and video over the web in real time.",
             "repo": "https://github.com/grey-software/toonin/issues?q=is%3Aopen+is%3Aissue+label%3Ahacktoberfest-accepted",
@@ -25,8 +31,8 @@
             "repo": "https://github.com/grey-software/LinkedIn-Focus/issues?q=is%3Aopen+is%3Aissue+label%3Ahacktoberfest-accepted"
         },
         {
-            "name": "Futurist Network",
-            "desc": "An online community for futurists to propose, fund and work on ",
+            "name": "The Futurist Foundation",
+            "desc": "An organization for futurists to propose, fund and work on the projects of the future!",
             "logo": "/logos/projects/futurist-network.png",
             "repo": "https://github.com/grey-software/futurist.network/issues?q=is%3Aopen+is%3Aissue+label%3Ahacktoberfest-accepted"
         }
