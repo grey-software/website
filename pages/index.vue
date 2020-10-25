@@ -381,6 +381,12 @@ export default {
   color: var(--color-gold-light);
 }
 
+.project-cards-container{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
 @media screen and (max-width: 768px) {
   .g-hero {
     min-height: 100vh;
@@ -425,6 +431,10 @@ export default {
     font-size: 24px;
     line-height: 1.2;
   }
+
+  .project-cards-container{
+  justify-content: center;
+}
 }
 
 @media screen and (max-width: 992px) {
