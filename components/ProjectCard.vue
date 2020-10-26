@@ -1,5 +1,5 @@
 <template>
-  <div class="project-card pl-4 p-2 mr-4 mb-4">
+  <div class="project-card pl-4 p-2  mb-4">
     <span
       :style="`background-color:${getStatusColor(project.status)}`"
       class="status ml-auto mb-2"
@@ -108,6 +108,7 @@ export default {
   justify-content: flex-start;
   align-content: flex-start;
   flex-direction: column;
+  margin-right: 2rem;
 }
 
 .logo {
@@ -125,5 +126,12 @@ export default {
   line-height: 1.2;
   height: 72px;
   width: 309px;
+}
+
+
+@media screen and (max-width: 768px) {
+  .project-card {
+    margin-right: 0;
+}
 }
 </style>

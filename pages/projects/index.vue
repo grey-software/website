@@ -15,7 +15,7 @@
       </div>
     </section>
     <section class="container px-0">
-      <h1 class="g-section-heading mb-5">External Projects</h1>
+      <h1 class="g-section-heading m-2 mb-5">External Projects</h1>
       <div class="project-cards-container">
         <project-card
           v-for="(project,id) in externalProjects"
@@ -64,5 +64,17 @@ export default {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+}
+/* 
+.g-section-heading {
+  margin: 0 auto;
+  margin-bottom: 4rem;
+} */
+
+
+@media screen and (max-width: 768px) {
+.g-section-heading {
+  text-align: center;
+}
 }
 </style>
