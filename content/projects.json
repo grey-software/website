@@ -4,7 +4,7 @@
             "name": "Toonin",
             "desc": "Share or stream audio and video over the web in real time.",
             "repo": "https://github.com/grey-software/toonin",
-            "demo": "https://www.toonin.ml",
+            "demo": "https://toonin.grey.software",
             "logo": "/projects/toonin/logo.svg",
             "link": "/projects/toonin",
             "status": "Live Beta"
