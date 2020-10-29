@@ -32,7 +32,7 @@
         <br />students have <br />to say?
       </h1>
       <div class="row mt-5">
-        <div class="col" style="padding-left: 20px">
+        <div class="col" style="padding-left: 20px;">
           <h1 style="max-width: 84%;" class="g-text-testimonial mt-5">
             “I have been programming on the side for the past year now, mainly
             using online resources to pair program... yet one session with my
@@ -45,7 +45,7 @@
         </div>
       </div>
       <div class="row mt-5">
-        <div class="col" style="padding-right: 20px;text-align:right;">
+        <div class="col" style="padding-right: 20px; text-align: right;">
           <h1 class="g-text-testimonial mt-5">
             “I got to experience what it was like being onboarded into a
             codebase and collaborating with a skilled developer and designer. I
@@ -58,7 +58,7 @@
         </div>
       </div>
       <div class="row mt-5">
-        <div class="col" style="padding-left: 20px">
+        <div class="col" style="padding-left: 20px;">
           <h1 style="max-width: 84%;" class="g-text-testimonial mt-5">
             “I built a collection of real web components that I would see when
             browsing the web. I was empowered to be a web developer and start
@@ -74,9 +74,9 @@
     <section class="container mt-5 pb-5 pl-4">
       <h1 class="g-section-heading">What we offer</h1>
       <div class="row mt-5">
-        <div class="col-md" style="height:434px;">
+        <div class="col-md" style="height: 434px;">
           <img class="three-col-icon" src="@/assets/icons/explorer.svg" />
-          <h1 class="three-col-heading mt-5" style="height:88px;">Explorer</h1>
+          <h1 class="three-col-heading mt-5" style="height: 88px;">Explorer</h1>
           <p class="three-col-body mt-2">
             Bring your creative app ideas to life with less chaos and more
             clarity with the Grey Software Explorer service!
@@ -92,9 +92,9 @@
             </b-button>
           </div>
         </div>
-        <div class="col-md" style="height:434px;">
+        <div class="col-md" style="height: 434px;">
           <img class="three-col-icon" src="@/assets/icons/apprentice.svg" />
-          <h1 class="three-col-heading mt-5" style="height:88px;">
+          <h1 class="three-col-heading mt-5" style="height: 88px;">
             Apprentice
           </h1>
           <p class="three-col-body mt-2">
@@ -113,9 +113,9 @@
             </nuxt-link>
           </div>
         </div>
-        <div class="col-md" style="height:434px;">
+        <div class="col-md" style="height: 434px;">
           <img class="three-col-icon" src="@/assets/icons/web-portfolio.svg" />
-          <h1 class="three-col-heading mt-5" style="height:88px;">
+          <h1 class="three-col-heading mt-5" style="height: 88px;">
             Web Portfolio
           </h1>
           <p class="three-col-body mt-2">

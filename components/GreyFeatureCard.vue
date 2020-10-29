@@ -41,18 +41,20 @@ export default {
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
   height: 392px;
 }
+
 .feature-icon-container {
   height: 108px;
   width: 108px;
   border-radius: 50%;
   background: var(--color-gold);
-  fill: #ffffff;
+  fill: #fff;
 }
 
 .feature-icon {
   width: 64px;
   height: 64px;
 }
+
 .card-heading {
   color: var(--color-gold);
 }

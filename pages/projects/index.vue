@@ -65,7 +65,8 @@ export default {
   flex-wrap: wrap;
   align-items: center;
 }
-/* 
+
+/*
 .g-section-heading {
   margin: 0 auto;
   margin-bottom: 4rem;

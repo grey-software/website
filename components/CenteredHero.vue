@@ -67,16 +67,19 @@ export default {
   outline: none;
   font-size: 1.42rem;
 }
+
 .btn-cta:active {
   background-color: var(--color-gold) !important;
   border-color: var(--color-gold) !important;
 }
+
 .btn:hover,
 .btn-cta:hover {
   color: var(--color-gold-light) !important;
   background-color: var(--bg) !important;
   border-color: var(--color-light) !important;
 }
+
 .btn-cta-alt {
   color: var(--color-gold) !important;
   background-color: var(--bg) !important;
@@ -84,10 +87,12 @@ export default {
   outline: none;
   font-size: 1.42rem;
 }
+
 .g-btn-cta-alt:hover {
   background-color: var(--color-gold) !important;
-  color: #ffffff !important;
+  color: #fff !important;
 }
+
 .hero-heading {
   font-weight: 700;
   font-family: var(--font-heading);
@@ -96,6 +101,7 @@ export default {
   font-size: calc(12px + 4vw);
   line-height: 1.05;
 }
+
 .hero-tag {
   font-size: 32px;
   color: var(--color-text);
@@ -103,30 +109,37 @@ export default {
   line-height: 1.5;
   margin-top: 32px;
 }
+
 .btn-icon {
   width: 24px;
   height: 24px;
 }
+
 .hero-img {
   width: 200px;
 }
+
 #arrow {
   width: 75px;
   position: absolute;
   bottom: 50px;
 }
+
 @media screen and (max-width: 992px) {
   .hero-heading {
     font-size: calc(12px + 8vw);
     line-height: 1.05;
     z-index: 1000;
   }
+
   .hero-tag {
     font-size: 20px;
   }
+
   .hero-img {
     width: 100px;
   }
+
   #arrow {
     width: 50px;
     bottom: 25px;

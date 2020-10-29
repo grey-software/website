@@ -51,12 +51,14 @@ export default {
   padding: 20px 0 30px 40px;
   position: relative;
 }
+
 .date-item {
   margin: 0;
   text-transform: uppercase;
   font-size: 16px;
   letter-spacing: 2px;
 }
+
 .title-item {
   margin: 0;
   padding: 5px 0;
@@ -64,10 +66,12 @@ export default {
   font-weight: 500;
   color: var(--color-gold);
 }
+
 .description-item {
   font-weight: 100;
   margin: 0;
 }
+
 .dot {
   display: block;
   position: absolute;

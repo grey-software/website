@@ -1,32 +1,16 @@
 <template>
   <div>
-    <grey-nav-bar></grey-nav-bar>
+    <nav-bar v-if="$mq === 'lg' || $mq === 'xl'"></nav-bar>
+    <nav-bar-mobile v-else></nav-bar-mobile>
 
     <nuxt />
   </div>
 </template>
 
-<script>
-export default {
-  created() {
-    if (process.client) {
-      document.addEventListener('keyup', e => {
-        if (e.key == 'd') {
-          ;[].forEach.call(document.querySelectorAll('*'), function(a) {
-            a.style.outline =
-              '1px solid #' + (~~(Math.random() * (1 << 24))).toString(16)
-          })
-        }
-      })
-    }
-  },
-}
-</script>
-
 <style>
 *,
-*:before,
-*:after {
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
 }
@@ -116,7 +100,7 @@ h6 {
 .g-btn-alt:hover,
 .g-btn-cta-alt:hover {
   background-color: var(--color-gold) !important;
-  color: #ffffff !important;
+  color: #fff !important;
 }
 
 .flex-col {

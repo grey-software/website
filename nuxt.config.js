@@ -1,7 +1,6 @@
 require('dotenv').config()
 
 export default {
-  mode: 'universal',
   env: {
     apiUrl: process.env.API_URL,
   },
@@ -65,6 +64,7 @@ export default {
     // Doc: https://github.com/nuxt-community/stylelint-module
     '@nuxtjs/stylelint-module',
     '@nuxtjs/tailwindcss',
+    '@nuxtjs/svg'
   ],
   /*
    ** Nuxt.js modules

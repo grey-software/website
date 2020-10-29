@@ -74,7 +74,6 @@ export default {
   font-weight: 300;
   line-height: 1.75rem;
   opacity: 0.9;
-  font-size: 24px;
   margin-top: 20px;
 }
 

@@ -35,6 +35,7 @@ img {
   height: 72px;
   border-radius: 50%;
 }
+
 .name {
   font-family: var(--font-heading);
   letter-spacing: 0.07em;
@@ -42,11 +43,13 @@ img {
   line-height: 1.05;
   text-transform: uppercase;
 }
+
 .desc {
   font-family: var(--font-heading);
   font-size: 20px;
   font-style: italic;
 }
+
 .about-person {
   font-family: var(--font-body);
   font-size: 18px;

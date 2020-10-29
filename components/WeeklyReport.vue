@@ -173,16 +173,20 @@ export default {
   display: flex;
   align-items: center;
 }
+
 .detail-value {
   font-size: 28px;
   margin-left: 8px;
 }
+
 .detail-icon {
   height: 36px;
 }
+
 .report-card {
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
 }
+
 .container {
   flex-direction: column;
   border-color: grey;

@@ -7,7 +7,7 @@
           <h1 class="g-hero-heading">Material Math</h1>
           <div class="d-flex align-items-center g-hero-tag">
             Status:
-            <span style="background-color:#FF3366;" class="status-dot"></span>In
+            <span style="background-color: #f36;" class="status-dot"></span>In
             Development
           </div>
           <p class="g-hero-tag">

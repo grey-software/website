@@ -85,11 +85,13 @@ export default {
 .g-header {
   height: 12vh;
 }
+
 .logo {
   height: 48px;
   width: 48px;
   margin-right: 16px;
 }
+
 .logo-text {
   font-size: 26px;
   color: var(--color-text);
@@ -111,7 +113,8 @@ export default {
   color: #24292e;
   background-color: #fafbfc;
   border-color: rgba(27, 31, 35, 0.15) !important;
-  box-shadow: 0 1px 0 rgba(27, 31, 35, 0.04),
+  box-shadow:
+    0 1px 0 rgba(27, 31, 35, 0.04),
     inset 0 1px 0 hsla(0, 0%, 100%, 0.25);
   transition: background-color 0.2s cubic-bezier(0.3, 0, 0.5, 1);
   position: relative;
@@ -129,7 +132,7 @@ export default {
   border: 1px solid;
   border-radius: 6px;
   appearance: none;
-  font-family: BlinkMacSystemFont, Segoe UI, Helvetica, Arial;
+  font-family: -apple-system, BlinkMacSystemFont, Arial, sans-serif;
 }
 
 .btn-github-sponsors:hover {
@@ -198,6 +201,7 @@ export default {
     align-self: end;
     margin-left: auto;
   }
+
   .nav > .nav-btn > label {
     display: inline-block;
     width: 50px;
@@ -205,16 +209,19 @@ export default {
     padding: 13px;
     border-radius: 8px;
   }
+
   .nav > .nav-btn > label:hover,
   .nav #nav-check:checked ~ .nav-btn > label {
     background-color: rgba(0, 0, 0, 0.3);
   }
+
   .nav > .nav-btn > label > span {
     display: block;
     width: 25px;
     height: 10px;
     border-top: 2px solid #eee;
   }
+
   .nav-links {
     position: absolute;
     display: block;
@@ -226,6 +233,7 @@ export default {
     top: 50px;
     right: 50px;
   }
+
   .nav-link {
     display: block;
     width: 100%;
@@ -243,6 +251,7 @@ export default {
     opacity: 0;
     z-index: -1;
   }
+
   .nav > #nav-check:checked ~ .nav-links {
     overflow-y: auto;
     opacity: 1;

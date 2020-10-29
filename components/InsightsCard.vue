@@ -9,22 +9,22 @@
 
     <div class="d-flex card-details">
       <div class="name-container">
-        <a style="color:#0cb0c9">
+        <a style="color: #0cb0c9;">
           ArsalaBangash
         </a>
       </div>
 
       <div class="d-flex insights-container">
         <div class="commits mr-2">
-          <p class="activity-text" style="color:black">34 commits</p>
+          <p class="activity-text" style="color: black;">34 commits</p>
         </div>
 
         <div class="additions">
-          <p class="activity-text" style="color:green">1000 ++</p>
+          <p class="activity-text" style="color: green;">1000 ++</p>
         </div>
 
         <div class="deletions">
-          <p class="activity-text" style="color:red">1000 --</p>
+          <p class="activity-text" style="color: red;">1000 --</p>
         </div>
       </div>
     </div>

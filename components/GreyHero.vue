@@ -17,16 +17,10 @@
       <div class="col" sm="12" md="8">
         <img
           class="g-hero-img"
-          style="float:right;"
+          style="float: right;"
           src="@/assets/img/open-source.svg"
         />
       </div>
     </div>
   </div>
 </template>
-
-<script>
-export default {}
-</script>
-
-<style></style>
