@@ -31,7 +31,8 @@
         "nuxt-mq": "^2.0.1",
         "phantomjs": "^2.1.7",
         "puppeteer": "^5.2.1",
-        "request-promise": "^4.2.6"
+        "request-promise": "^4.2.6",
+        "stylelint-config-standard": "^20.0.0"
     },
     "devDependencies": {
         "@fortawesome/free-brands-svg-icons": "^5.14.0",
@@ -41,6 +42,10 @@
         "@nuxtjs/tailwindcss": "^3.1.0",
         "@vue/test-utils": "^1.0.0-beta.27",
         "babel-jest": "^24.1.0",
+        "eslint": "^7.12.1",
+        "eslint-config-airbnb-base": "^14.2.0",
+        "eslint-plugin-import": "^2.22.1",
+        "eslint-plugin-vue": "^7.1.0",
         "jest": "^24.1.0",
         "prettier": "2.1.2",
         "stylelint": "^10.1.0",
