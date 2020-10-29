@@ -8,7 +8,7 @@
     <section class="container px-0">
       <div class="project-cards-container">
         <project-card
-          v-for="(project,id) in projects"
+          v-for="(project, id) in projects"
           :key="id"
           :project="project"
         />
@@ -18,7 +18,7 @@
       <h1 class="g-section-heading m-2 mb-5">External Projects</h1>
       <div class="project-cards-container">
         <project-card
-          v-for="(project,id) in externalProjects"
+          v-for="(project, id) in externalProjects"
           :key="id"
           :project="project"
         />
@@ -28,7 +28,7 @@
       <h1 class="g-section-heading mb-5">Student Projects</h1>
       <div class="project-cards-container">
         <project-card
-          v-for="(project,id) in studentProjects"
+          v-for="(project, id) in studentProjects"
           :key="id"
           :project="project"
         />
@@ -38,19 +38,19 @@
 </template>
 
 <script>
-import ProjectCard from "../../components/ProjectCard.vue";
+import ProjectCard from '../../components/ProjectCard.vue'
 export default {
-  async asyncData ({ $content, params, error }) {
+  async asyncData({$content, params, error}) {
     const projectsDataStore = await $content('projects').fetch()
     const projects = projectsDataStore.projects
     const externalProjects = projectsDataStore.external
     const studentProjects = projectsDataStore.student
-    return { projects, externalProjects, studentProjects }
+    return {projects, externalProjects, studentProjects}
   },
   components: {
     ProjectCard,
   },
-};
+}
 </script>
 
 <style>
@@ -71,10 +71,9 @@ export default {
   margin-bottom: 4rem;
 } */
 
-
 @media screen and (max-width: 768px) {
-.g-section-heading {
-  text-align: center;
-}
+  .g-section-heading {
+    text-align: center;
+  }
 }
 </style>

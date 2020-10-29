@@ -8,20 +8,14 @@
     ></span>
 
     <div class="flex align-items-center mb-4">
-      <img
-        class="logo justify-start"
-        :src="project.logo"
-      />
+      <img class="logo justify-start" :src="project.logo" />
       <div class="ml-3">
-        <h5 class="project-heading">{{project.name}}</h5>
-
+        <h5 class="project-heading">{{ project.name }}</h5>
       </div>
-
     </div>
 
     <div class="description">
-      <p>{{project.desc}}</p>
-
+      <p>{{ project.desc }}</p>
     </div>
 
     <div class="calls-to-action d-flex mt-4">
@@ -31,28 +25,14 @@
         :href="project.repo"
         target="_blank"
       >
-        <fa-icon
-          class="mr-2"
-          :icon="['fab', 'github']"
-        ></fa-icon>Repo
+        <fa-icon class="mr-2" :icon="['fab', 'github']"></fa-icon>Repo
       </b-button>
-      <b-button
-        size="lg"
-        class="g-btn"
-        :href="project.demo"
-        target="_blank"
-      >
-        <fa-icon
-          class="mr-2"
-          :icon="['fas', 'play']"
-        ></fa-icon>Demo
+      <b-button size="lg" class="g-btn" :href="project.demo" target="_blank">
+        <fa-icon class="mr-2" :icon="['fas', 'play']"></fa-icon>Demo
       </b-button>
     </div>
-
   </div>
-
 </template>
-
 
 <script>
 export default {
@@ -64,22 +44,22 @@ export default {
       logo: String,
       demo: String,
       trailer: String,
-      status: String
-    }
+      status: String,
+    },
   },
   methods: {
-    getStatusColor: function (status) {
+    getStatusColor: function(status) {
       switch (status) {
-        case "Live Alpha": {
-          return "Red"
+        case 'Live Alpha': {
+          return 'Red'
         }
-        case "Live Beta": {
-          return "Yellow"
+        case 'Live Beta': {
+          return 'Yellow'
         }
       }
-    }
+    },
   },
-};
+}
 </script>
 
 <style scoped>
@@ -128,10 +108,9 @@ export default {
   width: 309px;
 }
 
-
 @media screen and (max-width: 768px) {
   .project-card {
     margin-right: 0;
-}
+  }
 }
 </style>

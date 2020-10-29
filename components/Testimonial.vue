@@ -19,7 +19,7 @@ export default {
     imgSrc: String,
     name: String,
   },
-};
+}
 </script>
 
 <style scoped>

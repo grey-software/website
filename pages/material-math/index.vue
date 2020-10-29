@@ -7,11 +7,13 @@
           <h1 class="g-hero-heading">Material Math</h1>
           <div class="d-flex align-items-center g-hero-tag">
             Status:
-            <span style="background-color:#FF3366;" class="status-dot"></span>In Development
+            <span style="background-color:#FF3366;" class="status-dot"></span>In
+            Development
           </div>
-          <p
-            class="g-hero-tag"
-          >Material Math brings unlimited mental math practice in a fun, beautiful interface to the web!</p>
+          <p class="g-hero-tag">
+            Material Math brings unlimited mental math practice in a fun,
+            beautiful interface to the web!
+          </p>
           <div class="g-hero-cta-container">
             <b-button
               size="lg"
@@ -28,7 +30,8 @@
               href="https://github.com/grey-software/material-math"
               target="_blank"
             >
-              <fa-icon class="mr-2" :icon="['fab', 'github']"></fa-icon>Repository
+              <fa-icon class="mr-2" :icon="['fab', 'github']"></fa-icon
+              >Repository
             </b-button>
           </div>
         </div>
@@ -67,9 +70,12 @@
       <h1 class="g-section-heading mb-5 text-center">Inspiration</h1>
       <div class="row align-items-center">
         <div class="column col-md-6 col-12">
-          <p
-            class="g-hero-tag"
-          >Material Math is the spiritual successor to Boltz, a mental math app for Android. Grey software is building off of Boltz's great work, and bringing Boltz's principles of unlimited fun math practice, interleaved concepts, and spaced repition to the web!</p>
+          <p class="g-hero-tag">
+            Material Math is the spiritual successor to Boltz, a mental math app
+            for Android. Grey software is building off of Boltz's great work,
+            and bringing Boltz's principles of unlimited fun math practice,
+            interleaved concepts, and spaced repition to the web!
+          </p>
         </div>
         <div class="column col-md-6 col-12">
           <div class="container">
@@ -120,22 +126,22 @@
 <script>
 export default {
   data: () => ({
-    messageWhenNoItems: "There are not items",
+    messageWhenNoItems: 'There are not items',
     logos: [
-      "devicon-html5-plain-wordmark",
-      "devicon-css3-plain-wordmark",
-      "devicon-vuejs-plain",
-      "devicon-javascript-plain",
-      "devicon-typescript-plain"
+      'devicon-html5-plain-wordmark',
+      'devicon-css3-plain-wordmark',
+      'devicon-vuejs-plain',
+      'devicon-javascript-plain',
+      'devicon-typescript-plain',
     ],
     timelineItems: [
       {
         from: new Date(2020, 6),
-        title: "Live Alpha",
+        title: 'Live Alpha',
         description:
-          "Designed and created a new UI. Added a module to customise practice session allowing users to practice questions of their choice. Created a more interactive user experience by adding features in practice session including a timer and streak counter."
-      }
-    ]
-  })
-};
+          'Designed and created a new UI. Added a module to customise practice session allowing users to practice questions of their choice. Created a more interactive user experience by adding features in practice session including a timer and streak counter.',
+      },
+    ],
+  }),
+}
 </script>

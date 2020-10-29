@@ -1,25 +1,25 @@
 <template>
   <div>
     <grey-nav-bar></grey-nav-bar>
-    
+
     <nuxt />
   </div>
 </template>
 
 <script>
 export default {
-  created () {
+  created() {
     if (process.client) {
-      document.addEventListener("keyup", e => {
-        if (e.key == "d") {
-          [].forEach.call(document.querySelectorAll("*"), function (a) {
+      document.addEventListener('keyup', e => {
+        if (e.key == 'd') {
+          ;[].forEach.call(document.querySelectorAll('*'), function(a) {
             a.style.outline =
-              "1px solid #" + (~~(Math.random() * (1 << 24))).toString(16);
-          });
+              '1px solid #' + (~~(Math.random() * (1 << 24))).toString(16)
+          })
         }
-      });
+      })
     }
-  }
+  },
 }
 </script>
 
@@ -48,8 +48,8 @@ a:hover {
   --border-color: #ddd;
   --color-gold: #b29a66;
   --color-gold-light: rgba(178, 154, 102, 0.8);
-  --font-heading: "Montserrat", sans-serif;
-  --font-body: "Nunito Sans", sans-serif;
+  --font-heading: 'Montserrat', sans-serif;
+  --font-body: 'Nunito Sans', sans-serif;
 }
 
 body {
@@ -124,5 +124,3 @@ h6 {
   flex-direction: column;
 }
 </style>
-
-

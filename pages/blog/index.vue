@@ -1,41 +1,32 @@
 <template>
   <div class="prose prose-sm sm:prose lg:prose-lg xl:prose-2xl mx-auto mt-5">
     <h1>Blog Posts</h1>
-    <div
-      v-for="article of articles"
-      :key="article.slug"
-      class="mb-5"
-    >
-      <NuxtLink :to="{ name: 'blog-slug', params: { slug: article.slug } }">
+    <div v-for="article of articles" :key="article.slug" class="mb-5">
+      <NuxtLink :to="{name: 'blog-slug', params: {slug: article.slug}}">
         <div class="article-card d-flex justify-space-between">
           <div class="flex-col mr-2">
             <h2>{{ article.title }}</h2>
             <p>{{ article.description }}</p>
           </div>
-          <img
-            class="img-article"
-            :src="article.img"
-          />
-
+          <img class="img-article" :src="article.img" />
         </div>
       </NuxtLink>
     </div>
   </div>
 </template>
 
-
 <script>
 export default {
-  async asyncData ({ $content, params }) {
+  async asyncData({$content, params}) {
     const articles = await $content('blog', params.slug)
       .only(['title', 'description', 'img', 'slug'])
       .sortBy('createdAt', 'asc')
       .fetch()
 
     return {
-      articles
+      articles,
     }
-  }
+  },
 }
 </script>
 
@@ -73,10 +64,8 @@ a {
 }
 
 @media (max-width: 600px) {
-.img-article {
-  height: 108px;
+  .img-article {
+    height: 108px;
+  }
 }
-}
-
-
 </style>

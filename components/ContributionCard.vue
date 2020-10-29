@@ -7,57 +7,34 @@
             src="https://avatars0.githubusercontent.com/u/19757203?s=60&v=4"
             class="avatar"
           />
-
         </a>
 
-        <span class="f5 text-normal text-gray-light float-right">
+        <span class="f5 text-normal text-gray-light float-right"> </span>
 
-        </span>
-
-        <a class="username-tag">
-
-        </a>
+        <a class="username-tag"> </a>
 
         <span class="f6 d-block text-gray-light">
           <span class="cmeta">
-            <span class="link-gray text-normal">
+            <span class="link-gray text-normal"> </span>
 
-            </span>
+            <span class="text-green text-normal"> </span>
 
-            <span class="text-green text-normal">
-
-            </span>
-
-            <span class="text-red text-normal">
-
-            </span>
-
+            <span class="text-red text-normal"> </span>
           </span>
-
         </span>
-
       </h3>
     </span>
-
   </div>
-
 </template>
-
-
 
 <script>
 export default {
   props: {
     user: {
-      type: Object
-
-
-    }
-  }
-
+      type: Object,
+    },
+  },
 }
-
-
 </script>
 
 <style scoped>

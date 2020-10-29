@@ -6,9 +6,8 @@
         <div class="col-md-7">
           <h1 class="g-hero-heading">Free Software <br />By Students</h1>
           <p class="g-hero-tag">
-            We're creating the open source ecosystem of the future where
-            mentors and students build free software
-            together!
+            We're creating the open source ecosystem of the future where mentors
+            and students build free software together!
           </p>
           <div class="g-hero-cta-container">
             <nuxt-link to="/projects">
@@ -235,7 +234,12 @@
       </div>
       <p class="g-text-testimonial mt-5">
         See more success stories
-        <nuxt-link to="/success-stories" style="color: var(--color-gold);" class="font-italic">here!</nuxt-link>
+        <nuxt-link
+          to="/success-stories"
+          style="color: var(--color-gold);"
+          class="font-italic"
+          >here!</nuxt-link
+        >
       </p>
     </section>
   </div>
@@ -243,12 +247,12 @@
 
 <script>
 export default {
-  async asyncData({ $content, params, error }) {
-    const projectsDataStore = await $content("projects").fetch();
-    const projects = projectsDataStore.projects;
-    return { projects };
+  async asyncData({$content, params, error}) {
+    const projectsDataStore = await $content('projects').fetch()
+    const projects = projectsDataStore.projects
+    return {projects}
   },
-};
+}
 </script>
 
 <style>
@@ -381,7 +385,7 @@ export default {
   color: var(--color-gold-light);
 }
 
-.project-cards-container{
+.project-cards-container {
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -432,9 +436,9 @@ export default {
     line-height: 1.2;
   }
 
-  .project-cards-container{
-  justify-content: center;
-}
+  .project-cards-container {
+    justify-content: center;
+  }
 }
 
 @media screen and (max-width: 992px) {

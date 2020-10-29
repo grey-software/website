@@ -12,9 +12,9 @@
 <script>
 export default {
   props: {
-    logos: Array
-  }
-};
+    logos: Array,
+  },
+}
 </script>
 
 <style scoped>

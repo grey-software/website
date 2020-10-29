@@ -10,8 +10,8 @@
       </div>
     </div>
     <a href="#projects" class="row d-flex justify-center">
-        <img class="bounce" id="arrow" src="/icons/arrow.svg" alt="Down Arrow"
-      /></a>
+      <img class="bounce" id="arrow" src="/icons/arrow.svg" alt="Down Arrow"
+    /></a>
   </div>
 </template>
 
@@ -24,40 +24,40 @@ export default {
     button1: {
       label: {
         type: String,
-        default: "",
+        default: '',
       },
       link: {
         type: String,
-        default: "",
+        default: '',
       },
       icon: {
         type: String,
-        default: "",
+        default: '',
       },
     },
     button2: {
       label: {
         type: String,
-        default: "",
+        default: '',
       },
       link: {
         type: String,
-        default: "",
+        default: '',
       },
       icon: {
         type: String,
-        default: "",
+        default: '',
       },
     },
   },
   computed: {
     gtmd() {
-      if (this.$mq === "sm" || this.$mq === "xs" || this.$mq === "md")
-        return "md";
-      return "lg";
+      if (this.$mq === 'sm' || this.$mq === 'xs' || this.$mq === 'md')
+        return 'md'
+      return 'lg'
     },
   },
-};
+}
 </script>
 
 <style scoped>

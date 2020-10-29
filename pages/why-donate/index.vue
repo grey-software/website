@@ -1,9 +1,6 @@
 <template>
   <div class="pb-5">
-    <CenteredHero
-      title="Why Donate?"
-      icon="/icons/donate.svg"
-    />
+    <CenteredHero title="Why Donate?" icon="/icons/donate.svg" />
     <section class="container px-0">
       <Rc1X2
         title="To help R&D Grey Software's Apps"
@@ -25,14 +22,13 @@
         desc="We aim to hire full-time software engineers and teachers to staff our creation and education teams."
         imgSrc="/apprentice/mentor.svg"
       />
-      
+
       <Rc1X2
         title="To provide financial aid"
         desc="Many of our students are university undergraduates who are looking for paid internships to help them pay off their student loan debt!"
         imgSrc="/icons/financial-aid.svg"
         reverse="true"
       />
-
     </section>
   </div>
 
@@ -40,18 +36,17 @@
 </template>
 
 <script>
-import ProjectCard from "../../components/ProjectCard.vue";
+import ProjectCard from '../../components/ProjectCard.vue'
 export default {
-  async asyncData ({ $content, params, error }) {
+  async asyncData({$content, params, error}) {
     const projectsDataStore = await $content('projects').fetch()
     const projects = projectsDataStore.projects
-    return { projects }
+    return {projects}
   },
   components: {
     ProjectCard,
   },
-};
+}
 </script>
 
-<style>
-</style>
+<style></style>

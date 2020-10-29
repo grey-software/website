@@ -11,38 +11,38 @@
 
 <script>
 export default {
-  name: "TimelineItem",
+  name: 'TimelineItem',
   props: {
     itemTimeline: {
       type: Object,
-      default: () => ({})
+      default: () => ({}),
     },
     colorDots: {
       type: String,
-      default: ""
+      default: '',
     },
     dateLocale: {
       type: String,
-      default: ""
-    }
+      default: '',
+    },
   },
   methods: {
     getBackgroundColour(color) {
-      return color ? `background:${color}` : `background:${this.colorDots}`;
+      return color ? `background:${color}` : `background:${this.colorDots}`
     },
     getFormattedDate(item) {
-      if( this.dateLocale != '') {
+      if (this.dateLocale != '') {
         const locale = this.dateLocale || navigator.language
-        const nameMonth = item.from.toLocaleDateString(locale, { month: 'long' })
+        const nameMonth = item.from.toLocaleDateString(locale, {month: 'long'})
         if (item.showDayAndMonth) {
-            const day = item.from.getDate()
-            return `${day}. ${nameMonth}`
+          const day = item.from.getDate()
+          return `${day}. ${nameMonth}`
         }
         return nameMonth
       }
-    }
-  }
-};
+    },
+  },
+}
 </script>
 
 <style scoped>
