@@ -11,7 +11,7 @@
         "test": "jest",
         "fix": "yarn prettier --write .",
         "fix:js": "yarn run eslint .",
-        "fix:css": "yarn stylelint *",
+        "fix:css": "yarn stylelint *"
     },
     "dependencies": {
         "@nuxt/content": "^1.10.0",
