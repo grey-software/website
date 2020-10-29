@@ -7,17 +7,19 @@
       >
         <img class="feature-img" :src="imgSrc" />
       </div>
-      <div class="col-md-6 d-flex justify-content-center flex-column text-container">
+      <div
+        class="col-md-6 d-flex justify-content-center flex-column text-container"
+      >
         <h3 class="feature-title">{{ title }}</h3>
         <div>
           <p class="desc">{{ desc }}</p>
           <div v-if="link != ''">
             <nuxt-link :to="link">
               <b-button
-                  size="md"
-                  class="mr-4 mt-4 g-btn d-flex align-items-center"
-                  target="_blank"
-                >
+                size="md"
+                class="mr-4 mt-4 g-btn d-flex align-items-center"
+                target="_blank"
+              >
                 {{ label }}
               </b-button>
             </nuxt-link>
@@ -40,14 +42,14 @@ export default {
     },
     link: {
       type: String,
-      default: "",
+      default: '',
     },
     label: {
       type: String,
-      default: "Check it out!"
-    }
+      default: 'Check it out!',
+    },
   },
-};
+}
 </script>
 
 <style scoped>

@@ -9,9 +9,9 @@
 
 <script>
 export default {
-async asyncData ({ $content, params, error }) {
+  async asyncData({$content, params, error}) {
     const faqPage = await $content('faq').fetch()
-    return { faqPage }
+    return {faqPage}
   },
 }
 </script>

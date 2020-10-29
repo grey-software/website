@@ -13,12 +13,12 @@ export default {
   props: {
     title: {
       type: String,
-      default: ''
+      default: '',
     },
     icon: String,
-    desc: String
-  }
-};
+    desc: String,
+  },
+}
 </script>
 
 <style scoped>

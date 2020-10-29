@@ -1,11 +1,12 @@
 <template>
-  <div class="col-lg-3 mt-3 justify-content-center align-content-center card-container">
+  <div
+    class="col-lg-3 mt-3 justify-content-center align-content-center card-container"
+  >
     <div class="row justify-content-center align-items-space-between">
-      <div class="d-flex justify-content-center feature-icon-container align-items-center m-5">
-        <img
-          class="feature-icon"
-          :src="icon"
-        />
+      <div
+        class="d-flex justify-content-center feature-icon-container align-items-center m-5"
+      >
+        <img class="feature-icon" :src="icon" />
       </div>
     </div>
     <div>
@@ -20,17 +21,17 @@ export default {
   props: {
     icon: {
       type: String,
-      required: true
+      required: true,
     },
     title: {
-      type: String
+      type: String,
     },
     text: {
       type: String,
-      required: true
-    }
-  }
-};
+      required: true,
+    },
+  },
+}
 </script>
 
 <style scoped>

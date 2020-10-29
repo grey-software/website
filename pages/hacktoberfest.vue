@@ -19,17 +19,17 @@
 </template>
 
 <script>
-import HacktoberfestCard from "@/components/HacktoberfestCard.vue";
+import HacktoberfestCard from '@/components/HacktoberfestCard.vue'
 export default {
-  async asyncData({ $content, params, error }) {
-    const projectsDataStore = await $content("hacktoberfest-projects").fetch();
-    const projects = projectsDataStore.projects;
-    return { projects };
+  async asyncData({$content, params, error}) {
+    const projectsDataStore = await $content('hacktoberfest-projects').fetch()
+    const projects = projectsDataStore.projects
+    return {projects}
   },
   components: {
     HacktoberfestCard,
   },
-};
+}
 </script>
 
 <style>
