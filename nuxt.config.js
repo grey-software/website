@@ -18,7 +18,7 @@ export default {
         content: process.env.npm_package_description || '',
       },
       {hid: 'og:title', name: 'og:title', content: 'Grey Software'},
-      {hid: 'og:image', name: 'og:image', content: '../assets/logo.png'},
+      {hid: 'og:image', name: 'og:image', content: '/logo.png'},
       {hid: 'og:url', name: 'og:url', content: 'https://grey.software/'},
       {hid: 'og:type', name: 'og:type', content: 'website'},
     ],
@@ -95,10 +95,10 @@ export default {
         // Default breakpoint for SSR
         defaultBreakpoint: 'xs',
         breakpoints: {
-          sm: 576,
-          md: 768,
-          lg: 992,
-          xl: 1200,
+          sm: 600,
+          md: 900,
+          lg: 1200,
+          xl: 1600,
         },
       },
     ],

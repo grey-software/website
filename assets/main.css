@@ -110,6 +110,10 @@ h6 {
   filter: blur(10px);
 }
 
+.nuxt-content-container {
+  padding: 0 16px;
+}
+
 .nuxt-content h1 {
   color: #f7fafc;
 }

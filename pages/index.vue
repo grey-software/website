@@ -4,10 +4,9 @@
     <div class="container g-hero mt-5">
       <div class="row">
         <div class="col-md-7">
-          <h1 class="g-hero-heading">Free Software <br />By Students</h1>
+          <h1 class="g-hero-heading">Build and Learn<br />From Open Source</h1>
           <p class="g-hero-tag">
-            We're creating the open source ecosystem of the future where mentors
-            and students build free software together!
+            Grey Software is a not-for-profit organization that empowers students to build open-source software for their communities and societies.
           </p>
           <div class="g-hero-cta-container">
             <nuxt-link to="/projects">
@@ -303,7 +302,7 @@ export default {
   font-family: var(--font-heading);
   color: var(--color-text-dark);
   letter-spacing: 0.025em;
-  font-size: calc(12px + 5vw);
+  font-size: calc(12px + 4vw);
   line-height: 1.05;
   z-index: 1000;
 }
