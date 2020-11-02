@@ -1,27 +1,36 @@
+# Frequently Asked Questions
+
 ## What is Grey Software’s vision?
 
-Grey Software envisions an open source future where mentors and
-students build free software together.
+Grey Software envisions an open source future where mentors and students build
+free software together.
 
 ## Why is Grey Software a not-for-profit organization?
 
-Grey Software was founded around a mission to build the software ecosystem of the future.
+Grey Software was founded around a mission to build the software ecosystem of
+the future.
 
-To ensure that the organization’s future revenues went towards our mission instead of the pockets of shareholders, we founded the organization as a not-for-profit.
+To ensure that the organization’s future revenues went towards our mission
+instead of the pockets of shareholders, we founded the organization as a
+not-for-profit.
 
 ## How are Grey Software’s products connected to its students?
 
-Our students learn software development by collaborating with the creators of the products they're working on.
+Our students learn software development by collaborating with the creators of
+the products they're working on.
 
 ## How do I join Grey Software?
 
 ### Join our community
 
-We host an active community on Discord, where we community.grey.software. 
+We host an active community on Discord, where our mentors and students
+collectively build software. You can join us by visiting
+community.grey.software!
 
 ### Join our apprentice program
 
-You can also join as an apprentice on a project, where you get to collaborate with a mentor as a software engineer, designer, or product.
+You can also join as an apprentice on a project, where you get to collaborate
+with a mentor as a software engineer, designer, or product.
 
 Learn more at https://grey.software/apprentice
 
@@ -43,24 +52,29 @@ contributions at grey.software/report-card
 
 ## How is Grey Software different from other educational sites, such as Udemy, Udacity, and Coursera?
 
-These websites host educational content that many rely on, including Grey Software's mentors and students.
+These websites host educational content that many rely on, including Grey
+Software's mentors and students.
 
-Our mentors teach by collaborating with individuals or small groups on real-world projects using the same open-source technologies that are used in the industry. 
+Our mentors teach by collaborating with individuals or small groups on
+real-world projects using the same open-source technologies that are used in the
+industry.
 
 ## How does Grey Software deliver its educational content?
 
+Grey Software hosts students who collaborate with mentors to build our open
+-source products in a real-world software development environment with mentors.
 
-Grey Software hosts students who collaborate with mentors to build our open -source products in a real-world software development environment
-with mentors.
-
-Since we create our apps and teach students how to develop them simultaneously, it’s hard to define a structured curriculum and predict learning outcomes.
+Since we create our apps and teach students how to develop them simultaneously,
+it’s hard to define a structured curriculum and predict learning outcomes.
 
 We therefore propose that each project have creation teams and education teams.
 
-The creation team evolves our products using the latest, most productive technologies and trends in software development.
+The creation team evolves our products using the latest, most productive
+technologies and trends in software development.
 
-The education team turns our products into projects that students can learn from. This team abstracts away certain software complexities, allowing students to gradually make their way to working with production code.
-
+The education team turns our products into projects that students can learn
+from. This team abstracts away certain software complexities, allowing students
+to gradually make their way to working with production code.
 
 ## How does Grey Software make money?
 
@@ -87,8 +101,3 @@ and Github Sponsors.
 
 Open sourcing your software doesn’t prevent competitors from creating software
 similar in functionality but different in implementation.
-
-
-
-
-

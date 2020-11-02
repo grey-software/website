@@ -1,6 +1,6 @@
 *,
-*:before,
-*:after {
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
 }
@@ -90,7 +90,7 @@ h6 {
 .g-btn-alt:hover,
 .g-btn-cta-alt:hover {
   background-color: var(--color-gold) !important;
-  color: #ffffff !important;
+  color: #fff !important;
 }
 
 .flex-col {
@@ -98,25 +98,21 @@ h6 {
   flex-direction: column;
 }
 
-
-body {
-  font-family: var(--font-body) !important;
-  background-color: var(--bg);
-  color: var(--color);
-  transition: background-color 0.3s;
-}
-
 .page-enter-active,
 .page-leave-active {
   transition: all 0.2s;
   filter: inherit;
 }
+
 .page-enter,
 .page-leave-to {
   opacity: 0;
   filter: blur(10px);
 }
 
+.nuxt-content-container {
+  padding: 0 16px;
+}
 
 .nuxt-content h1 {
   color: #f7fafc;

@@ -20,6 +20,7 @@
     "@nuxtjs/device": "^1.2.7",
     "@nuxtjs/dotenv": "^1.4.1",
     "@nuxtjs/pwa": "^3.2.2",
+    "@nuxtjs/svg": "^0.1.12",
     "@tailwindcss/typography": "^0.2.0",
     "bootstrap": "^4.5.3",
     "bootstrap-vue": "^2.17.3",
@@ -35,7 +36,8 @@
     "phantomjs": "^2.1.7",
     "puppeteer": "^5.2.1",
     "request-promise": "^4.2.6",
-    "stylelint-config-standard": "^20.0.0"
+    "stylelint-config-standard": "^20.0.0",
+    "vue-svg-loader": "^0.16.0"
   },
   "devDependencies": {
     "@fortawesome/free-brands-svg-icons": "^5.14.0",
