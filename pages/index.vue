@@ -4,7 +4,7 @@
     <div class="container g-hero mt-5">
       <div class="row">
         <div class="col-md-7">
-          <h1 class="g-hero-heading">Build and Learn<br />From Open Source</h1>
+          <h1 class="g-hero-heading">Build & Learn<br />From Open Source</h1>
           <p class="g-hero-tag">
             Grey Software is a not-for-profit organization that empowers students to build open-source software for their communities and societies.
           </p>
@@ -33,7 +33,7 @@
     <section class="container pb-5 pl-4">
       <div class="row">
         <div class="col" cols="4">
-          <h1 class="g-section-heading ml-3">What do we do?</h1>
+          <h1 class="g-section-heading">What do we do?</h1>
         </div>
       </div>
       <div class="row mt-5 justify-content-center align-items-center">
@@ -449,13 +449,13 @@ export default {
   }
 
   .g-hero-heading {
-    font-size: calc(12px + 8vw);
+    font-size: calc(12px + 6vw);
     line-height: 1.05;
     z-index: 1000;
   }
 
   .g-section-heading {
-    font-size: calc(12px + 8vw);
+    font-size: calc(12px + 6vw);
     line-height: 1.05;
     z-index: 1000;
   }
