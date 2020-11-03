@@ -1,5 +1,5 @@
 <template>
-  <div class="nav container flex pt-4 px-0 align-items-center">
+  <div class="nav container flex pt-4 px-2 lg:px-0 align-items-center">
     <div class="nav-logo flex align-items-center">
       <nuxt-link
         class="flex align-items-center"
@@ -9,22 +9,20 @@
         <img class="logo" src="/logo.png" />
       </nuxt-link>
       <div class="nav-internal">
-        <nuxt-link
-          @click.native="checked = false"
-          to="/vision"
-          class="nav-link mr-1"
+        <nuxt-link @click.native="checked = false" to="/vision" class="nav-link"
           >Vision</nuxt-link
         >
         <nuxt-link
           @click.native="checked = false"
           to="/projects"
-          class="nav-link mr-1"
+          class="nav-link"
           >Projects</nuxt-link
         >
         <nuxt-link
           @click.native="checked = false"
           to="/apprentice"
-          class="nav-link mr-1"
+          class="nav-link"
+          v-if="$mq === 'lg' || $mq === 'xl'"
           >Apprentice</nuxt-link
         >
       </div>
@@ -34,11 +32,20 @@
       <a
         @click.native="checked = false"
         target="_blank"
-        href="http://community.grey.software"
-        class="nav-link icon-label-link mr-2 flex"
+        href="https://github.com/grey-software"
+        class="nav-link icon-label-link flex"
         id="github"
         ><github-logo class="nav-link-icon mr-2" />
         <div>Contribute</div></a
+      >
+      <a
+        @click.native="checked = false"
+        target="_blank"
+        href="http://community.grey.software"
+        class="nav-link icon-label-link flex"
+        id="github"
+        ><discord-logo class="nav-link-icon mr-2" />
+        <div>Discuss</div></a
       >
       <div
         @click.native="checked = false"
@@ -46,7 +53,7 @@
         class="nav-link icon-label-link"
         id="donate"
       >
-        <donate-icon class="nav-link-icon mr-2" /> Donate
+        <donate-icon class="nav-link-icon mr-1" /> Donate
         <div class="donate-menu absolute hidden text-gray-700 pt-1">
           <a
             class="rounded-t donate-link py-2 px-2"
@@ -71,6 +78,7 @@
 
 <script>
 import GithubLogo from '@/assets/icons/github.svg?inline'
+import DiscordLogo from '@/assets/icons/discord.svg?inline'
 import DonateIcon from '@/assets/icons/donate.svg?inline'
 import GithubSponsorsLogo from '@/assets/icons/github-sponsors.svg?inline'
 import PaypalLogo from '@/assets/icons/paypal.svg?inline'
@@ -83,6 +91,7 @@ export default {
     GithubSponsorsLogo,
     PaypalLogo,
     OpenCollectiveLogo,
+    DiscordLogo,
   },
 }
 </script>
@@ -118,7 +127,14 @@ export default {
   display: inline-block;
   text-decoration: none;
   height: fit-content;
-  font-size: 24px;
+  font-size: 22px;
+  padding: 8px;
+}
+
+@media (max-width: 1200px) {
+  .nav-link {
+    font-size: 18px;
+  }
 }
 
 .nav-internal {
@@ -206,10 +222,6 @@ export default {
     font-weight: 500;
     font-family: var(--font-heading);
     text-transform: uppercase;
-  }
-
-  .icon-label-link {
-    width: 156px;
   }
 }
 </style>
