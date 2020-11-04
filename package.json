@@ -1,8 +1,8 @@
 {
   "name": "grey.software",
   "version": "1.0.0",
-  "description": "A not-for-profit, open source software development community where maintainers mentor students and build free software together!",
-  "author": "Arsala Bangash",
+  "description": "Grey Software is a not-for-profit organization that empowers students to build open-source software for their communities and societies.",
+  "author": "Arsala Grey",
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build --target static",
@@ -30,6 +30,7 @@
     "code": "^5.2.4",
     "core-js": "^3.6.5",
     "jquery": "^3.5.1",
+    "node-fetch": "^2.6.1",
     "nodejs": "0.0.0",
     "nuxt": "^2.14.7",
     "nuxt-mq": "^2.0.1",
