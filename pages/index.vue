@@ -6,7 +6,9 @@
         <div class="col-md-7">
           <h1 class="g-hero-heading">Build & Learn<br />From Open Source</h1>
           <p class="g-hero-tag">
-            Grey Software is a not-for-profit organization that empowers students to build open-source software for their communities and societies.
+            Grey Software is a not-for-profit organization that empowers
+            students to build open-source software for their communities and
+            societies.
           </p>
           <div class="g-hero-cta-container">
             <nuxt-link to="/projects">
@@ -108,6 +110,16 @@
             using our intellect and spirit to build a beautiful, open source
             future!
           </h1>
+        </div>
+        <div class="px-3">
+          <h1 class="g-section-subheading mt-5 mb-3">
+            Meet our contributors
+          </h1>
+         <div class="flex flex-wrap">
+          <div class="m-3" v-for="contributor in contributors" :key="contributor.username">
+            <contributor :contributor="contributor" />
+          </div>
+        </div>
         </div>
       </div>
     </section>
@@ -245,13 +257,29 @@
 </template>
 
 <script>
+import Contributor from '@/components/Contributor'
+
 export default {
+  components: {
+    Contributor,
+  },
   async asyncData({$content, params, error}) {
     const projectsDataStore = await $content('projects').fetch()
     const projects = projectsDataStore.projects
-    return {projects}
+    const contributorsDataStore = await $content('contributors').fetch()
+
+    const contributors = Object.keys(contributorsDataStore.contributors).map(username => {
+      const user = contributorsDataStore.contributors[username]
+      return {
+        username: user.username,
+        avatar: user.avatar,
+        link: user.link
+      }
+    })
+    return {projects, contributors}
   },
 }
+</script>
 </script>
 
 <style>
