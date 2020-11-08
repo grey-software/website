@@ -70,15 +70,35 @@
             "repo": "https://github.com/utm-cssc/website",
             "demo": "https://cssc.utm.utoronto.ca/",
             "link": "/logos/projects/cssc.png"
-        }
-    ],
-    "student": [
+        },
         {
             "name": "Downloads Cleaner",
             "logo": "/logos/projects/cleaner.png",
             "desc": "A python based script used to keep your download folder organized for Mac and Linux.",
             "repo": "https://github.com/milindvishnoi/Download-Folder-Organizer",
             "demo": "https://github.com/milindvishnoi/Download-Folder-Organizer"
+        },
+        {
+            "name": "The Physics Hub",
+            "logo": "/logos/projects/the-physics-hub.svg",
+            "desc": "A python based script used to keep your download folder organized for Mac and Linux.",
+            "repo": "https://github.com/ThePhysHub/ThePhysicsHub",
+            "demo": "https://physicshub.herokuapp.com/"
+        },
+        {
+            "name": "Tab Brightness Control",
+            "logo": "/logos/projects/tab-brightness-control.svg",
+            "desc": "A python based script used to keep your download folder organized for Mac and Linux.",
+            "repo": "https://github.com/Lakshya2610/tab-brightness-control",
+            "demo": "https://chrome.google.com/webstore/detail/tab-brightness-control/emdjkjjpeognjdnapljkfnihhgblekde"
+        }
+    ],
+    "concept": [
+        {
+            "name": "Family Tree Explorer",
+            "logo": "/logos/projects/family-tree-explorer.png",
+            "desc": "A beautiful interface for your family tree that allows you to navigate your network of family relationships.",
+            "repo": "https://github.com/grey-software/family-tree-explorer"
         }
     ]
 }

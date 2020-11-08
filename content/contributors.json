@@ -4,12 +4,12 @@
     "avatar": "https://avatars0.githubusercontent.com/u/19757203?v=4",
     "link": "https://github.com/ArsalaBangash",
     "repos": [
-      "futurist.network",
-      "material-math",
-      "toonin",
-      "twitter-focus",
-      "linkedin-focus",
-      "grey.software"
+      {"name": "futurist.network", "contributions": 41},
+      {"name": "material-math", "contributions": 56},
+      {"name": "toonin", "contributions": 215},
+      {"name": "twitter-focus", "contributions": 24},
+      {"name": "linkedin-focus", "contributions": 48},
+      {"name": "grey.software", "contributions": 73}
     ]
   },
   "milindvishnoi": {
@@ -17,119 +17,149 @@
     "avatar": "https://avatars2.githubusercontent.com/u/48028572?v=4",
     "link": "https://github.com/milindvishnoi",
     "repos": [
-      "futurist.network",
-      "material-math",
-      "twitter-focus",
-      "linkedin-focus",
-      "grey.software"
+      {"name": "futurist.network", "contributions": 20},
+      {"name": "material-math", "contributions": 46},
+      {"name": "twitter-focus", "contributions": 1},
+      {"name": "linkedin-focus", "contributions": 2},
+      {"name": "grey.software", "contributions": 44}
     ]
   },
   "ninaricci29": {
     "username": "ninaricci29",
     "avatar": "https://avatars3.githubusercontent.com/u/53316653?v=4",
     "link": "https://github.com/ninaricci29",
-    "repos": ["futurist.network", "grey.software"]
+    "repos": [
+      {"name": "futurist.network", "contributions": 4},
+      {"name": "grey.software", "contributions": 2}
+    ]
   },
   "Manuel-Suarez-Abascal": {
     "username": "Manuel-Suarez-Abascal",
     "avatar": "https://avatars2.githubusercontent.com/u/32891808?v=4",
     "link": "https://github.com/Manuel-Suarez-Abascal",
-    "repos": ["grey.software"]
+    "repos": [{"name": "grey.software", "contributions": 1}]
   },
   "olaszm": {
     "username": "olaszm",
     "avatar": "https://avatars1.githubusercontent.com/u/55301348?v=4",
     "link": "https://github.com/olaszm",
-    "repos": ["grey.software"]
+    "repos": [{"name": "grey.software", "contributions": 1}]
   },
   "hazanncv": {
     "username": "hazanncv",
     "avatar": "https://avatars2.githubusercontent.com/u/45823673?v=4",
     "link": "https://github.com/hazanncv",
-    "repos": ["grey.software"]
+    "repos": [{"name": "grey.software", "contributions": 1}]
   },
   "ishaaa-ai": {
     "username": "ishaaa-ai",
     "avatar": "https://avatars2.githubusercontent.com/u/56453971?v=4",
     "link": "https://github.com/ishaaa-ai",
-    "repos": ["twitter-focus", "linkedin-focus"]
+    "repos": [
+      {"name": "twitter-focus", "contributions": 3},
+      {"name": "linkedin-focus", "contributions": 18}
+    ]
   },
   "aseidma": {
     "username": "aseidma",
     "avatar": "https://avatars3.githubusercontent.com/u/40206670?v=4",
     "link": "https://github.com/aseidma",
-    "repos": ["futurist.network", "linkedin-focus"]
+    "repos": [
+      {"name": "futurist.network", "contributions": 5},
+      {"name": "linkedin-focus", "contributions": 2}
+    ]
   },
   "varunpappu": {
     "username": "varunpappu",
     "avatar": "https://avatars1.githubusercontent.com/u/10454067?v=4",
     "link": "https://github.com/varunpappu",
-    "repos": ["linkedin-focus"]
+    "repos": [{"name": "linkedin-focus", "contributions": 2}]
   },
   "Owen000": {
     "username": "Owen000",
     "avatar": "https://avatars2.githubusercontent.com/u/67721175?v=4",
     "link": "https://github.com/Owen000",
-    "repos": ["linkedin-focus"]
+    "repos": [{"name": "linkedin-focus", "contributions": 1}]
   },
   "RohanPoojary1107": {
     "username": "RohanPoojary1107",
     "avatar": "https://avatars0.githubusercontent.com/u/47334631?v=4",
     "link": "https://github.com/RohanPoojary1107",
-    "repos": ["linkedin-focus"]
+    "repos": [{"name": "linkedin-focus", "contributions": 1}]
   },
   "daveavi": {
     "username": "daveavi",
     "avatar": "https://avatars2.githubusercontent.com/u/20130700?v=4",
     "link": "https://github.com/daveavi",
-    "repos": ["twitter-focus"]
+    "repos": [{"name": "twitter-focus", "contributions": 52}]
+  },
+  "Sacramentix": {
+    "username": "Sacramentix",
+    "avatar": "https://avatars0.githubusercontent.com/u/35272156?v=4",
+    "link": "https://github.com/Sacramentix",
+    "repos": [{"name": "twitter-focus", "contributions": 7}]
+  },
+  "karl01101101": {
+    "username": "karl01101101",
+    "avatar": "https://avatars0.githubusercontent.com/u/51362523?v=4",
+    "link": "https://github.com/karl01101101",
+    "repos": [{"name": "twitter-focus", "contributions": 1}]
   },
   "alir128": {
     "username": "alir128",
     "avatar": "https://avatars2.githubusercontent.com/u/22705846?v=4",
     "link": "https://github.com/alir128",
-    "repos": ["toonin"]
+    "repos": [{"name": "toonin", "contributions": 164}]
   },
   "Lakshya2610": {
     "username": "Lakshya2610",
     "avatar": "https://avatars0.githubusercontent.com/u/46510358?v=4",
     "link": "https://github.com/Lakshya2610",
-    "repos": ["toonin"]
+    "repos": [{"name": "toonin", "contributions": 160}]
   },
   "luu-alex": {
     "username": "luu-alex",
     "avatar": "https://avatars0.githubusercontent.com/u/29740020?v=4",
     "link": "https://github.com/luu-alex",
-    "repos": ["toonin"]
+    "repos": [{"name": "toonin", "contributions": 17}]
   },
   "patrickmonteiro": {
     "username": "patrickmonteiro",
     "avatar": "https://avatars3.githubusercontent.com/u/13258255?v=4",
     "link": "https://github.com/patrickmonteiro",
-    "repos": ["toonin"]
+    "repos": [{"name": "toonin", "contributions": 4}]
+  },
+  "diracs-delta": {
+    "username": "diracs-delta",
+    "avatar": "https://avatars2.githubusercontent.com/u/44106031?v=4",
+    "link": "https://github.com/diracs-delta",
+    "repos": [
+      {"name": "material-math", "contributions": 28},
+      {"name": "toonin", "contributions": 3}
+    ]
   },
   "soumyankar": {
     "username": "soumyankar",
     "avatar": "https://avatars1.githubusercontent.com/u/10772786?v=4",
     "link": "https://github.com/soumyankar",
-    "repos": ["material-math"]
+    "repos": [{"name": "material-math", "contributions": 2}]
   },
   "AaronCGoidel": {
     "username": "AaronCGoidel",
     "avatar": "https://avatars0.githubusercontent.com/u/11858650?v=4",
     "link": "https://github.com/AaronCGoidel",
-    "repos": ["sponsorware"]
+    "repos": [{"name": "sponsorware", "contributions": 7}]
   },
   "OsamaSaleh289": {
     "username": "OsamaSaleh289",
     "avatar": "https://avatars0.githubusercontent.com/u/50718021?v=4",
     "link": "https://github.com/OsamaSaleh289",
-    "repos": ["sponsorware"]
+    "repos": [{"name": "sponsorware", "contributions": 1}]
   },
   "Giovanni-Tedesco": {
     "username": "Giovanni-Tedesco",
     "avatar": "https://avatars1.githubusercontent.com/u/33903307?v=4",
     "link": "https://github.com/Giovanni-Tedesco",
-    "repos": ["futurist.network"]
+    "repos": [{"name": "futurist.network", "contributions": 1}]
   }
 }

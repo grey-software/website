@@ -5,7 +5,7 @@
       desc="We're improving the open source ecosystem by creating useful, creative, and free software with the world's latest technology."
       icon="/icons/projects.svg"
     />
-    <section class="container px-0">
+    <section id="projects" class="container px-0">
       <div class="project-cards-container">
         <project-card
           v-for="(project, id) in projects"
@@ -25,10 +25,10 @@
       </div>
     </section>
     <section class="container px-0">
-      <h1 class="g-section-heading mb-5">Student Projects</h1>
+      <h1 class="g-section-heading mb-5">Project Concepts</h1>
       <div class="project-cards-container">
         <project-card
-          v-for="(project, id) in studentProjects"
+          v-for="(project, id) in projectConcepts"
           :key="id"
           :project="project"
         />
@@ -44,8 +44,8 @@ export default {
     const projectsDataStore = await $content('projects').fetch()
     const projects = projectsDataStore.projects
     const externalProjects = projectsDataStore.external
-    const studentProjects = projectsDataStore.student
-    return {projects, externalProjects, studentProjects}
+    const projectConcepts = projectsDataStore.concept
+    return {projects, externalProjects, projectConcepts}
   },
   components: {
     ProjectCard,

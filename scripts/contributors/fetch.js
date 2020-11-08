@@ -23,7 +23,7 @@ const fetchRepoContributors = async (repoName) => {
         username: contributor.login,
         avatar: contributor.avatar_url,
         link: contributor.html_url,
-        repos: [repoName],
+        repos: [{name: repoName, contributions: contributor.contributions}],
       }
     })
 }
