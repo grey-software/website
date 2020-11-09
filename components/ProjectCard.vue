@@ -1,13 +1,6 @@
 <template>
-  <div class="project-card pl-4 p-2  mb-4">
-    <span
-      :style="`background-color:${getStatusColor(project.status)}`"
-      class="status ml-auto mb-2"
-      v-b-tooltip.hover
-      :title="project.status"
-    ></span>
-
-    <div class="flex align-items-center mb-4">
+  <div class="project-card pl-4 p-2 mb-4">
+    <div class="flex align-items-center my-4">
       <img class="logo justify-start" :src="project.logo" />
       <div class="ml-3">
         <h5 class="project-heading">{{ project.name }}</h5>
@@ -42,23 +35,9 @@ export default {
       desc: String,
       repo: String,
       logo: String,
-      demo: String,
-      trailer: String,
-      status: String,
+      demo: String
     },
-  },
-  methods: {
-    getStatusColor: function(status) {
-      switch (status) {
-        case 'Live Alpha': {
-          return 'Red'
-        }
-        case 'Live Beta': {
-          return 'Yellow'
-        }
-      }
-    },
-  },
+  }
 }
 </script>
 

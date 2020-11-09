@@ -415,6 +415,7 @@ export default {
 
 .project-cards-container {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: flex-start;
 }

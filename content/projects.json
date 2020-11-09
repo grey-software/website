@@ -6,8 +6,7 @@
             "repo": "https://github.com/grey-software/toonin",
             "demo": "https://toonin.grey.software",
             "logo": "/projects/toonin/logo.svg",
-            "link": "/projects/toonin",
-            "status": "Live Beta"
+            "link": "/projects/toonin"
         },
         {
             "name": "Material Math",
@@ -15,8 +14,7 @@
             "repo": "https://github.com/grey-software/material-math",
             "demo": "https://material-math.grey.software",
             "logo": "/projects/material-math/logo.png",
-            "link": "/projects/material-math",
-            "status": "Live Alpha"
+            "link": "/projects/material-math"
         },
         {
             "name": "Twitter Focus",
@@ -24,8 +22,7 @@
             "logo": "/projects/twitter-focus/logo.png",
             "repo": "https://github.com/grey-software/Twitter-Focus",
             "demo": "https://chrome.google.com/webstore/detail/twitter-focus/kmdpomipbibobgdgfeidajmnlecloeml?hl=en&authuser=2",
-            "link": "/projects/twitter-focus",
-            "status": "Live Beta"
+            "link": "/projects/twitter-focus"
         },
         {
             "name": "LinkedIn Focus",
@@ -33,8 +30,7 @@
             "logo": "/projects/linkedin-focus/logo.png",
             "repo": "https://github.com/grey-software/LinkedIn-Focus",
             "demo": "https://chrome.google.com/webstore/detail/linkedin-focus/cmafljjdkloacahjddlpaognhjpacdff?hl=en&authuser=2",
-            "link": "/projects/linkedin-focus",
-            "status": "Live Beta"
+            "link": "/projects/linkedin-focus"
         },
         {
             "name": "Sponsorware",
@@ -42,8 +38,7 @@
             "logo": "/logo.png",
             "repo": "https://github.com/grey-software/sponsorware",
             "demo": "https://github.com/grey-software/sponsorware",
-            "link": "https://github.com/grey-software/sponsorware",
-            "status": "Live Beta"
+            "link": "https://github.com/grey-software/sponsorware"
         }
     ],
     "external": [
@@ -81,16 +76,30 @@
         {
             "name": "The Physics Hub",
             "logo": "/logos/projects/the-physics-hub.svg",
-            "desc": "A python based script used to keep your download folder organized for Mac and Linux.",
+            "desc": "A web-app to view all the simulations in physics.",
             "repo": "https://github.com/ThePhysHub/ThePhysicsHub",
             "demo": "https://physicshub.herokuapp.com/"
         },
         {
-            "name": "Tab Brightness Control",
+            "name": "Control Tab Brightness",
             "logo": "/logos/projects/tab-brightness-control.svg",
-            "desc": "A python based script used to keep your download folder organized for Mac and Linux.",
+            "desc": "A web extension that allows you to control brightness of individual chrome tabs.",
             "repo": "https://github.com/Lakshya2610/tab-brightness-control",
             "demo": "https://chrome.google.com/webstore/detail/tab-brightness-control/emdjkjjpeognjdnapljkfnihhgblekde"
+        },
+        {
+            "name": "Bento",
+            "logo": "/logos/projects/tab-brightness-control.svg",
+            "desc": "An elegant and simple startpage for minimalists!",
+            "repo": "https://github.com/MiguelRAvila/Bento",
+            "demo": "https://miguelravila.github.io/Bento/"
+        },
+        {
+            "name": "Modfy.Video",
+            "logo": "/logos/projects/modfy.video.svg",
+            "desc": "A free tool that transcodes and converts videos right in your browser while protecting your privacy!",
+            "repo": "https://github.com/modfy/modfy.video",
+            "demo": "https://app.modfy.video/"
         }
     ],
     "concept": [
