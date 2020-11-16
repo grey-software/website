@@ -340,7 +340,7 @@ export default {
   font-family: var(--font-heading);
   color: var(--color-text-dark);
   letter-spacing: 0.025em;
-  font-size: calc(12px + 5vw);
+  font-size: calc(12px + 4vw);
   line-height: 1.05;
   z-index: 1000;
 }
@@ -360,7 +360,7 @@ export default {
   font-family: var(--font-heading);
   color: var(--color-text-dark);
   letter-spacing: -0.025em;
-  font-size: calc(12px + 2vw);
+  font-size: calc(12px + 1.5vw);
   line-height: 1.05;
   z-index: 1000;
   max-width: 72%;

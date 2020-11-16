@@ -107,7 +107,15 @@
             "name": "Family Tree Explorer",
             "logo": "/logos/projects/family-tree-explorer.png",
             "desc": "A beautiful interface for your family tree that allows you to navigate your network of family relationships.",
-            "repo": "https://github.com/grey-software/family-tree-explorer"
+            "repo": "https://github.com/grey-software/family-tree-explorer",
+            "demo": "https://github.com/grey-software/family-tree-explorer"
+        },
+        {
+            "name": "Community Cleanup",
+            "logo": "/logos/projects/community-cleanup-logo.svg",
+            "desc": "Software that allows citizens and their governments to effectively coordinate community cleanup and garbage collection efforts.",
+            "repo": "https://github.com/grey-software/community-cleanup",
+            "demo": "https://github.com/grey-software/community-cleanup"
         }
     ]
 }
