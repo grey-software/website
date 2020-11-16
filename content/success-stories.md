@@ -2,7 +2,7 @@
 
 ## [Osama](https://github.com/OsamaSaleh289)
 
-Osama joined apprenticed under Arsala as an explorer, and recently secured an internship at [Flinks](https://flinks.io) as a software engineer. Here's what he had to say about his experience.
+Osama joined Grey Software as an explorer, and recently secured an internship at [Flinks](https://flinks.io) as a software engineer.
 
 ### Flinks
 ![Flinks Image](https://flinks.io/wp-content/uploads/2019/09/2_image_2.png)
