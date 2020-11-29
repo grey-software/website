@@ -51,7 +51,7 @@ export default {
   /*
    ** Global CSS
    */
-  css: ['@/assets/main.css'],
+  css: ['@/assets/styles/main.css'],
   /*
    ** Plugins to load before mounting the App
    */
@@ -64,7 +64,28 @@ export default {
     // Doc: https://github.com/nuxt-community/stylelint-module
     '@nuxtjs/stylelint-module',
     '@nuxtjs/tailwindcss',
-    '@nuxtjs/svg'
+    '@nuxtjs/svg',
+    [
+      '@nuxtjs/vuetify',
+      {
+        customVariables: ['@/assets/styles/variables.scss'],
+    treeShake: true,
+        theme: {
+          dark: true,
+          themes: {
+            dark: {
+              primary: '#b29a66',
+              secondary: '#424242',
+              accent: '#82B1FF',
+              error: '#F04747',
+              info: '#2196F3',
+              success: '#43b581',
+              warning: '#FAA61A',
+            },
+          },
+        },
+      },
+    ],
   ],
   /*
    ** Nuxt.js modules

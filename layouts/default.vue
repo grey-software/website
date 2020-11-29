@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <v-app dark>
     <nav-bar v-if="$mq === 'lg' || $mq === 'xl'"></nav-bar>
     <div v-else>
       <nav-bar-mobile></nav-bar-mobile>
@@ -11,7 +11,7 @@
       </aside>
     </div>
     <nuxt />
-  </div>
+  </v-app>
 </template>
 
 <script>
@@ -29,6 +29,8 @@ export default {
 </script>
 
 <style>
+@import '@/assets/styles/customize-vuetify.css';
+
 .flex-col {
   display: flex;
   flex-direction: column;

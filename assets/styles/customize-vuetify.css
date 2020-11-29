@@ -1,0 +1,7 @@
+.theme--dark.v-application {
+    background: var(--bg) !important;
+}
+
+.theme--dark.v-text-field--solo > .v-input__control > .v-input__slot {
+    background: unset !important;
+}

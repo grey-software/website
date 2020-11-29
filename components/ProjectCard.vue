@@ -1,28 +1,31 @@
 <template>
-  <div class="project-card pl-4 p-2 mb-4">
-    <div class="flex align-items-center my-4">
-      <img class="logo justify-start" :src="project.logo" />
-      <div class="ml-3">
-        <h5 class="project-heading">{{ project.name }}</h5>
+  <div class="project-card p-4 mb-4">
+    <div>
+      <div class="flex align-items-center my-4">
+        <img class="logo justify-start" :src="project.logo" />
+        <div class="ml-3">
+          <h5 class="text-2xl font-bold">{{ project.name }}</h5>
+        </div>
+      </div>
+
+      <div class="description">
+        <p class="text-xl">{{ project.desc }}</p>
       </div>
     </div>
 
-    <div class="description">
-      <p>{{ project.desc }}</p>
-    </div>
-
-    <div class="calls-to-action d-flex mt-4">
-      <b-button
-        size="lg"
-        class="g-btn mr-4"
+    <div class="flex mt-4">
+      <v-btn
+        x-large
+        color="primary"
         :href="project.repo"
         target="_blank"
+        class="mr-4"
       >
-        <fa-icon class="mr-2" :icon="['fab', 'github']"></fa-icon>Repo
-      </b-button>
-      <b-button size="lg" class="g-btn" :href="project.demo" target="_blank">
-        <fa-icon class="mr-2" :icon="['fas', 'play']"></fa-icon>Demo
-      </b-button>
+        <v-icon left large class="mr-3"> mdi-github </v-icon>Repo
+      </v-btn>
+      <v-btn x-large color="primary" :href="project.demo" target="_blank">
+        <v-icon left large class="mr-3"> mdi-play </v-icon>Demo
+      </v-btn>
     </div>
   </div>
 </template>
@@ -35,9 +38,9 @@ export default {
       desc: String,
       repo: String,
       logo: String,
-      demo: String
+      demo: String,
     },
-  }
+  },
 }
 </script>
 
@@ -59,19 +62,18 @@ export default {
 
 .project-card {
   width: 369px;
-  height: 309px;
   border-radius: 12px;
   background: var(--bg);
   box-shadow: 12px 24px 72px -12px rgba(0, 0, 0, 0.25);
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-content: flex-start;
   flex-direction: column;
   margin-right: 2rem;
 }
 
 .logo {
-  height: 72px;
+  height: 48px;
 }
 
 .project-heading {
@@ -81,9 +83,6 @@ export default {
 }
 
 .description {
-  font-size: 18px;
-  line-height: 1.2;
-  height: 72px;
   width: 309px;
 }
 

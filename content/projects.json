@@ -18,7 +18,7 @@
         },
         {
             "name": "Twitter Focus",
-            "desc": "Hide the feed and What's Happening panel on Twitter so you can focus and control your experience!",
+            "desc": "Hide the news & advertising on Twitter so you can focus your experience!",
             "logo": "/projects/twitter-focus/logo.png",
             "repo": "https://github.com/grey-software/Twitter-Focus",
             "demo": "https://chrome.google.com/webstore/detail/twitter-focus/kmdpomipbibobgdgfeidajmnlecloeml?hl=en&authuser=2",
@@ -26,19 +26,11 @@
         },
         {
             "name": "LinkedIn Focus",
-            "desc": "Hide the news feed and news panel on LinkedIn so you can focus on your career!",
+            "desc": "Hide the news & advertising on LinkedIn so you can focus on your career!",
             "logo": "/projects/linkedin-focus/logo.png",
             "repo": "https://github.com/grey-software/LinkedIn-Focus",
             "demo": "https://chrome.google.com/webstore/detail/linkedin-focus/cmafljjdkloacahjddlpaognhjpacdff?hl=en&authuser=2",
             "link": "/projects/linkedin-focus"
-        },
-        {
-            "name": "Sponsorware",
-            "desc": "Technical guidance and tooling to allow open source developers to distribute software to their Github Sponsors!",
-            "logo": "/logo.png",
-            "repo": "https://github.com/grey-software/sponsorware",
-            "demo": "https://github.com/grey-software/sponsorware",
-            "link": "https://github.com/grey-software/sponsorware"
         }
     ],
     "external": [

@@ -1,14 +1,14 @@
 <template>
   <div class="nav container flex pt-4 px-2 lg:px-0 align-items-center">
     <div class="nav-logo flex align-items-center">
-      <nuxt-link
-        class="flex align-items-center"
-        to="/"
-        @click.native="checked = false"
-      >
-        <img class="logo" src="/logo.png" />
-      </nuxt-link>
-      <div class="nav-internal">
+      <div class="nav-internal mr-auto">
+        <nuxt-link
+          class="flex align-items-center"
+          to="/"
+          @click.native="checked = false"
+        >
+          <img class="logo" src="/logo.png" />
+        </nuxt-link>
         <nuxt-link @click.native="checked = false" to="/vision" class="nav-link"
           >Vision</nuxt-link
         >
@@ -18,17 +18,21 @@
           class="nav-link"
           >Projects</nuxt-link
         >
-        <nuxt-link
-          @click.native="checked = false"
-          to="/apprentice"
-          class="nav-link"
-          v-if="$mq === 'lg' || $mq === 'xl'"
-          >Apprentice</nuxt-link
-        >
       </div>
     </div>
-    <div class="navbar-spacer"></div>
-    <div class="nav-external ml-auto">
+    <div class="navbar-spacer flex justify-center"></div>
+    <div class="nav-external flex align-items-center ml-auto">
+      <v-autocomplete
+        v-model="values"
+        :items="items"
+        label="Resources & Projects"
+        solo
+        hide-details="true"
+        prepend-inner-icon="mdi-magnify"
+        hide-no-data
+        :append-icon="false"
+        class="mr-4"
+      ></v-autocomplete>
       <a
         @click.native="checked = false"
         target="_blank"

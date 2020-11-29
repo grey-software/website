@@ -1,41 +1,40 @@
 <template>
-  <div class="pb-5">
+  <div class="container pb-5">
     <!-- Hero -->
-    <div class="container g-hero mt-5">
-      <div class="row">
-        <div class="col-md-7">
-          <h1 class="g-hero-heading">Build & Learn<br />From Open Source</h1>
-          <p class="g-hero-tag">
+    <div class="grid place-items-center h-88vh">
+      <div class="lg:flex justify-between">
+        <div class="lg:w-2/5 flex flex-col">
+          <h1 class="text-5xl font-bold">
+            Learn by Building<br />Open Source Software
+          </h1>
+          <p class="g-hero-tag text-2xl">
             Grey Software is a not-for-profit organization that empowers
             students to build open-source software for their communities and
             societies.
           </p>
-          <div class="g-hero-cta-container">
+          <div class="mt-4">
             <nuxt-link to="/projects">
-              <b-button size="lg" class="mr-4 g-btn-cta mb-3"
-                >Projects</b-button
+              <v-btn elevation="4" x-large color="primary" class="mr-4"
+                >Projects</v-btn
               >
             </nuxt-link>
             <nuxt-link to="/education">
-              <b-button
-                size="lg"
-                variant="outline-primary"
-                class="g-btn-cta-alt mb-3"
-                >Education</b-button
+              <v-btn elevation="4" x-large outlined color="primary"
+                >Education</v-btn
               >
             </nuxt-link>
           </div>
         </div>
-        <div class="col-md-5">
-          <img class="g-hero-img" src="@/assets/img/open-source.svg" />
+        <div class="md:w-1/2 pl-5 -mt-5">
+          <img class="float-right" src="@/assets/img/open-source.svg" />
         </div>
       </div>
     </div>
     <!-- What we do -->
-    <section class="container pb-5 pl-4">
+    <section class="h-screen container pb-5 pl-4">
       <div class="row">
         <div class="col" cols="4">
-          <h1 class="g-section-heading">What do we do?</h1>
+          <h1 class="text-5xl font-bold">What do we do?</h1>
         </div>
       </div>
       <div class="row mt-5 justify-content-center align-items-center">
@@ -76,56 +75,27 @@
       </div>
     </section>
     <!-- Who are we? -->
-    <section class="container pt-5 pb-5">
-      <div class="row mt-5 pl-4">
-        <div class="col">
-          <h1 class="g-section-heading mb-4">Who are we?</h1>
-          <h1 class="g-section-subheading">A dedicated group of:</h1>
-          <div class="row d-flex pt-5 justify-content-start align-items-center">
-            <div class="flex-col align-items-center mx-4">
-              <img class="icon-who-we-are" src="@/assets/icons/engineers.svg" />
-              <h4 class="g-section-info">Engineers</h4>
-            </div>
-            <div class="flex-col align-items-center mx-4">
-              <img class="icon-who-we-are" src="@/assets/icons/designers.svg" />
-              <h4 class="g-section-info">Designers</h4>
-            </div>
-            <div class="flex-col align-items-center mx-4">
-              <img class="icon-who-we-are" src="@/assets/icons/educators.svg" />
-              <h4 class="g-section-info">Educators</h4>
-            </div>
-            <div class="flex-col align-items-center mx-4">
-              <img class="icon-who-we-are" src="@/assets/icons/creatives.svg" />
-              <h4 class="g-section-info">Creatives</h4>
-            </div>
-            <div class="flex-col align-items-center mx-4">
-              <img
-                class="icon-who-we-are"
-                src="@/assets/icons/strategists.svg"
-              />
-              <h4 class="g-section-info">Strategists</h4>
-            </div>
-          </div>
-          <h1 class="g-section-subheading mt-5">
-            using our intellect and spirit to build a beautiful, open source
-            future!
-          </h1>
-        </div>
-        <div class="px-3">
-          <h1 class="g-section-subheading mt-5 mb-3">
-            Meet our contributors
-          </h1>
-         <div class="flex flex-wrap">
-          <div class="m-3" v-for="contributor in contributors" :key="contributor.username">
-            <contributor :contributor="contributor" />
-          </div>
-        </div>
+    <section class="h-screen pt-10 pb-10">
+      <h1 class="text-5xl font-bold mb-4">
+        Volunteer with us! Were looking for
+      </h1>
+      <div class="flex pt-5 justify-space-between align-items-center">
+        <div
+          v-for="role in roles"
+          :key="role.label"
+          class="flex-col align-items-center w-1/5"
+        >
+          <img class="icon-who-we-are" :src="role.icon" />
+          <h4 class="text-xl mt-4">{{ role.label }}</h4>
         </div>
       </div>
+      <h1 class="text-2xl font-bold mt-8">
+        to join us as we build a beautiful, open source future!
+      </h1>
     </section>
-    <section class="container pt-5">
-      <h1 class="g-section-heading pl-3 mb-5">What have we built?</h1>
-      <div class="project-cards-container">
+    <section class="h-screen container pt-5">
+      <h1 class="text-5xl font-bold pl-3 mb-5">What have we built?</h1>
+      <div class="flex flex-wrap">
         <project-card
           v-for="(project, id) in projects"
           :key="id"
@@ -134,12 +104,12 @@
       </div>
     </section>
 
-    <section class="container mt-5 pb-5 pl-4">
-      <h1 class="g-section-heading">What we offer</h1>
+    <!-- <section class="container mt-5 pb-5 pl-4">
+      <h1 class="text-4xl font-bold">What we offer</h1>
       <div class="row mt-5">
-        <div class="col-md" style="height: 434px;">
+        <div class="col-md" style="height: 434px">
           <img class="three-col-icon" src="@/assets/icons/explorer.svg" />
-          <h1 class="three-col-heading mt-5" style="height: 88px;">Explorer</h1>
+          <h1 class="three-col-heading mt-5" style="height: 88px">Explorer</h1>
           <p class="three-col-body mt-2">
             Bring your creative app ideas to life with less chaos and more
             clarity with the Grey Software Explorer service!
@@ -155,9 +125,9 @@
             </b-button>
           </div>
         </div>
-        <div class="col-md" style="height: 434px;">
+        <div class="col-md" style="height: 434px">
           <img class="three-col-icon" src="@/assets/icons/apprentice.svg" />
-          <h1 class="three-col-heading mt-5" style="height: 88px;">
+          <h1 class="three-col-heading mt-5" style="height: 88px">
             Apprentice
           </h1>
           <p class="three-col-body mt-2">
@@ -176,9 +146,9 @@
             </nuxt-link>
           </div>
         </div>
-        <div class="col-md" style="height: 434px;">
+        <div class="col-md" style="height: 434px">
           <img class="three-col-icon" src="@/assets/icons/web-portfolio.svg" />
-          <h1 class="three-col-heading mt-5" style="height: 88px;">
+          <h1 class="three-col-heading mt-5" style="height: 88px">
             Web Portfolio
           </h1>
           <p class="three-col-body mt-2">
@@ -197,16 +167,16 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
-    <section class="container mt-5 pl-4 pb-5">
-      <h1 class="g-section-heading">
+    <!-- <section class="container mt-5 pl-4 pb-5">
+      <h1 class="text-4xl font-bold">
         What do our
         <br />students have <br />to say?
       </h1>
       <div class="row mt-5">
-        <div class="col" style="padding-left: 20px;">
-          <h1 style="max-width: 84%;" class="g-text-testimonial mt-5">
+        <div class="col" style="padding-left: 20px">
+          <h1 style="max-width: 84%" class="g-text-testimonial mt-5">
             “I have been programming on the side for the past year now, mainly
             using online resources to pair program... yet one session with my
             mentor was more enriching than hours spent on these side tutorials.”
@@ -218,21 +188,21 @@
         </div>
       </div>
       <div class="row mt-5">
-        <div class="col" style="padding-right: 20px; text-align: right;">
+        <div class="col" style="padding-right: 20px; text-align: right">
           <h1 class="g-text-testimonial mt-5">
             “I got to experience what it was like being onboarded into a
             codebase and collaborating with a skilled developer and designer. I
             got the software development education I was looking for."
           </h1>
-          <p class="g-section-body mt-4" style="max-width: 100%;">
+          <p class="g-section-body mt-4" style="max-width: 100%">
             Milind -
             <span class="font-italic">Grey Software Apprentice</span>
           </p>
         </div>
       </div>
       <div class="row mt-5">
-        <div class="col" style="padding-left: 20px;">
-          <h1 style="max-width: 84%;" class="g-text-testimonial mt-5">
+        <div class="col" style="padding-left: 20px">
+          <h1 style="max-width: 84%" class="g-text-testimonial mt-5">
             “I built a collection of real web components that I would see when
             browsing the web. I was empowered to be a web developer and start
             creating my own websites.”
@@ -247,12 +217,12 @@
         See more success stories
         <nuxt-link
           to="/success-stories"
-          style="color: var(--color-gold);"
+          style="color: var(--color-gold)"
           class="font-italic"
           >here!</nuxt-link
         >
       </p>
-    </section>
+    </section> -->
   </div>
 </template>
 
@@ -268,15 +238,43 @@ export default {
     const projects = projectsDataStore.projects
     const contributorsDataStore = await $content('contributors').fetch()
 
-    const contributors = Object.keys(contributorsDataStore.contributors).map(username => {
-      const user = contributorsDataStore.contributors[username]
-      return {
-        username: user.username,
-        avatar: user.avatar,
-        link: user.link
-      }
-    })
+    const contributors = Object.keys(contributorsDataStore.contributors).map(
+      (username) => {
+        const user = contributorsDataStore.contributors[username]
+        return {
+          username: user.username,
+          avatar: user.avatar,
+          link: user.link,
+        }
+      },
+    )
     return {projects, contributors}
+  },
+  data() {
+    return {
+      roles: [
+        {
+          label: 'Engineers',
+          icon: '/icons/engineers.svg',
+        },
+        {
+          label: 'Designers',
+          icon: '/icons/designers.svg',
+        },
+        {
+          label: 'Educators',
+          icon: '/icons/educators.svg',
+        },
+        {
+          label: 'Creatives',
+          icon: '/icons/creatives.svg',
+        },
+        {
+          label: 'Strategists',
+          icon: '/icons/strategists.svg',
+        },
+      ],
+    }
   },
 }
 </script>
@@ -321,20 +319,6 @@ export default {
   line-height: 1.2;
 }
 
-.g-hero {
-  height: 88vh;
-}
-
-.g-hero-heading {
-  font-weight: 700;
-  font-family: var(--font-heading);
-  color: var(--color-text-dark);
-  letter-spacing: 0.025em;
-  font-size: calc(12px + 4vw);
-  line-height: 1.05;
-  z-index: 1000;
-}
-
 .g-section-heading {
   font-weight: 700;
   font-family: var(--font-heading);
@@ -366,13 +350,6 @@ export default {
   max-width: 72%;
 }
 
-.g-section-info {
-  font-family: var(--font-heading);
-  margin-top: 20px;
-  font-size: 28px;
-  font-weight: 600;
-}
-
 .g-text-testimonial {
   font-family: var(--font-heading);
   margin-top: 20px;
@@ -381,22 +358,10 @@ export default {
 }
 
 .g-hero-tag {
-  font-size: 32px;
   color: var(--color-text);
   letter-spacing: -0.032em;
   line-height: 1.5;
   margin-top: 32px;
-}
-
-.g-hero-img {
-  height: 343px;
-  max-width: 100%;
-  margin-right: -42px;
-  float: right;
-}
-
-.g-hero-cta-container {
-  margin-top: 48px;
 }
 
 .icon-who-we-are {
@@ -413,22 +378,7 @@ export default {
   color: var(--color-gold-light);
 }
 
-.project-cards-container {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: flex-start;
-}
-
 @media screen and (max-width: 768px) {
-  .g-hero {
-    min-height: 100vh;
-  }
-
-  .g-hero-img {
-    float: left;
-  }
-
   .icon-who-we-are {
     height: 64px;
   }
@@ -464,25 +414,9 @@ export default {
     font-size: 24px;
     line-height: 1.2;
   }
-
-  .project-cards-container {
-    justify-content: center;
-  }
 }
 
 @media screen and (max-width: 992px) {
-  .g-hero-img {
-    height: 236px;
-    opacity: 0.96;
-    margin-right: -42px;
-  }
-
-  .g-hero-heading {
-    font-size: calc(12px + 6vw);
-    line-height: 1.05;
-    z-index: 1000;
-  }
-
   .g-section-heading {
     font-size: calc(12px + 6vw);
     line-height: 1.05;
@@ -490,7 +424,7 @@ export default {
   }
 
   .g-section-project-heading {
-    font-size: calc(12px + 6.5vw);
+    font-size: 64px;
     line-height: 1.05;
     z-index: 1000;
   }
