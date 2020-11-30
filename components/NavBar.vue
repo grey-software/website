@@ -22,7 +22,7 @@
     </div>
     <div class="navbar-spacer flex justify-center"></div>
     <div class="nav-external flex align-items-center ml-auto">
-      <v-autocomplete
+      <!-- <v-autocomplete
         v-model="values"
         :items="items"
         label="Resources & Projects"
@@ -32,7 +32,7 @@
         hide-no-data
         :append-icon="false"
         class="mr-4"
-      ></v-autocomplete>
+      ></v-autocomplete> -->
       <a
         @click.native="checked = false"
         target="_blank"

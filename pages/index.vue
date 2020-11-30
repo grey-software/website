@@ -31,7 +31,7 @@
       </div>
     </div>
     <!-- What we do -->
-    <section class="h-screen container pb-5 pl-4">
+    <section class="container pb-5 pl-4">
       <div class="row">
         <div class="col" cols="4">
           <h1 class="text-5xl font-bold">What do we do?</h1>
@@ -75,7 +75,7 @@
       </div>
     </section>
     <!-- Who are we? -->
-    <section class="h-screen pt-10 pb-10">
+    <section class="pt-10 pb-10">
       <h1 class="text-5xl font-bold mb-4">
         Volunteer with us! Were looking for
       </h1>
@@ -93,7 +93,7 @@
         to join us as we build a beautiful, open source future!
       </h1>
     </section>
-    <section class="h-screen container pt-5">
+    <section class="container pt-5">
       <h1 class="text-5xl font-bold pl-3 mb-5">What have we built?</h1>
       <div class="flex flex-wrap">
         <project-card
