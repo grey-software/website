@@ -10,7 +10,8 @@
 <script>
 export default {
   async asyncData({$content, params, error}) {
-    const visionPage = await $content('vision').fetch()
+    const visionContent = await $content('vision').fetch()
+    const visionPage = visionContent[0]
     return { visionPage }
   },
 }

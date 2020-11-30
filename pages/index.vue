@@ -25,13 +25,13 @@
             </nuxt-link>
           </div>
         </div>
-        <div class="md:w-1/2 pl-5 -mt-5">
+        <div class="md:w-1/2 pl-5 mt-5 lg:-mt-5">
           <img class="float-right" src="@/assets/img/open-source.svg" />
         </div>
       </div>
     </div>
     <!-- What we do -->
-    <section class="container pb-5 pl-4">
+    <section class="container py-8">
       <div class="row">
         <div class="col" cols="4">
           <h1 class="text-5xl font-bold">What do we do?</h1>
@@ -75,7 +75,7 @@
       </div>
     </section>
     <!-- Who are we? -->
-    <section class="pt-10 pb-10">
+    <section class="py-12">
       <h1 class="text-5xl font-bold mb-4">
         Volunteer with us! Were looking for
       </h1>
@@ -92,8 +92,17 @@
       <h1 class="text-2xl font-bold mt-8">
         to join us as we build a beautiful, open source future!
       </h1>
+      <div class="flex mt-5">
+        <nuxt-link to="/projects">
+              <v-btn elevation="4" x-large color="primary" class="mr-4"
+                ><v-icon>mdi-discord</v-icon>Join the Community</v-btn
+              >
+            </nuxt-link>
+              <v-btn link to="http://meet.grey.software" elevation="4" x-large outlined color="primary"
+                ><v-icon>mdi-message-video</v-icon>Volunteer Onboarding</v-btn>
+      </div>
     </section>
-    <section class="container pt-5">
+    <section class="container py-8">
       <h1 class="text-5xl font-bold pl-3 mb-5">What have we built?</h1>
       <div class="flex flex-wrap">
         <project-card
