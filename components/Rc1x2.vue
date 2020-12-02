@@ -17,7 +17,7 @@
             <nuxt-link :to="link">
               <b-button
                 size="md"
-                class="mr-4 mt-4 g-btn d-flex align-items-center"
+                class="mr-4 mt-4 g-btn d-flex align--center"
                 target="_blank"
               >
                 {{ label }}

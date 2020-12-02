@@ -1,6 +1,6 @@
 <template>
   <div class="grid place-items-center h-88vh">
-    <div class="flex flex-col align-items-center">
+    <div class="flex flex-col align--center">
       <img :src="icon" alt="Grey Software's Icon" class="w-2/5" />
         <h1 class="text-5xl text-center font-bold mt-5">{{ title }}</h1>
         <p class="text-xl text-center font-bold w-3/5 mt-3">{{ desc }}</p>

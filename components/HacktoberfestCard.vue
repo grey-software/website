@@ -7,7 +7,7 @@
       :title="project.status"
     ></span>
 
-    <div class="flex align-items-center mb-4">
+    <div class="flex align--center mb-4">
       <img class="logo justify-start" :src="project.logo" />
       <div class="ml-3">
         <h5 class="project-heading">{{ project.name }}</h5>

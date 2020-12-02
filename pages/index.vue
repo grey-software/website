@@ -1,5 +1,5 @@
 <template>
-  <div class="container pb-5">
+  <div class="container mx-auto pb-5">
     <!-- Hero -->
     <div class="grid place-items-center h-88vh">
       <div class="lg:flex justify-between">
@@ -25,20 +25,20 @@
             </nuxt-link>
           </div>
         </div>
-        <div class="md:w-1/2 pl-5 mt-5 lg:-mt-5">
+        <div class="md:w-4/5 lg:w-1/2 pl-5 mt-5 lg:-mt-5">
           <img class="float-right" src="@/assets/img/open-source.svg" />
         </div>
       </div>
     </div>
     <!-- What we do -->
-    <section class="container py-8">
-      <div class="row">
-        <div class="col" cols="4">
+    <section class="container mx-auto py-8">
+      <div class="flex">
+        <div>
           <h1 class="text-5xl font-bold">What do we do?</h1>
         </div>
       </div>
-      <div class="row mt-5 justify-content-center align-items-center">
-        <div class="col-md mb-4">
+      <div class="flex mt-5 align--center">
+        <div class="mb-5 mr-12">
           <img class="two-col-icon" src="@/assets/icons/create.svg" />
           <h1 class="two-col-heading mt-4">Create</h1>
           <p class="two-col-body mt-4">
@@ -55,7 +55,7 @@
             </nuxt-link>
           </div>
         </div>
-        <div class="col-md mb-4">
+        <div class="mb-4">
           <img class="two-col-icon" src="@/assets/icons/educate.svg" />
           <h1 class="two-col-heading mt-4">Educate</h1>
           <p class="two-col-body mt-4">
@@ -79,11 +79,11 @@
       <h1 class="text-5xl font-bold mb-4">
         Volunteer with us! Were looking for
       </h1>
-      <div class="flex pt-5 justify-space-between align-items-center">
+      <div class="flex pt-5 justify-space-between align--center">
         <div
           v-for="role in roles"
           :key="role.label"
-          class="flex-col align-items-center w-1/5"
+          class="flex-col align-center w-1/5"
         >
           <img class="icon-who-we-are" :src="role.icon" />
           <h4 class="text-xl mt-4">{{ role.label }}</h4>
@@ -127,7 +127,7 @@
             <b-button
               size="sm"
               variant="outline-primary"
-              class="mr-4 g-btn-alt d-flex align-items-center"
+              class="mr-4 g-btn-alt d-flex align--center"
               target="_blank"
             >
               Enrollment Full
@@ -147,7 +147,7 @@
             <nuxt-link to="/apprentice">
               <b-button
                 size="sm"
-                class="mr-4 g-btn d-flex align-items-center"
+                class="mr-4 g-btn d-flex align--center"
                 target="_blank"
               >
                 Check it out!
@@ -168,7 +168,7 @@
             <b-button
               size="sm"
               variant="outline-primary"
-              class="mr-4 g-btn-alt d-flex align-items-center"
+              class="mr-4 g-btn-alt d-flex align--center"
               target="_blank"
             >
               Enrollment Full

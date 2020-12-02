@@ -1,6 +1,6 @@
 <template>
   <a target="_blank" :href="contributor.link">
-    <div class="flex flex-col align-items-center">
+    <div class="flex flex-col align--center">
       <img
         class="avatar rounded-full mb-2"
         :src="contributor.avatar"

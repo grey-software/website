@@ -5,7 +5,7 @@
       <div class="row mt-5 g-hero" align-v="center">
         <div class="col-md-8">
           <h1 class="g-hero-heading">Material Math</h1>
-          <div class="d-flex align-items-center g-hero-tag">
+          <div class="d-flex align--center g-hero-tag">
             Status:
             <span style="background-color: #f36;" class="status-dot"></span>In
             Development
@@ -46,7 +46,7 @@
         <div class="text-center">
           <h1 class="g-section-heading mb-5">Math is for everybody!</h1>
         </div>
-        <div class="row justify-content-around align-items-stretch">
+        <div class="row justify-content-around align--stretch">
           <GreyFeatureCard
             icon="/projects/material-math/concepts.svg"
             title="Tailor Your Practice!"
@@ -68,7 +68,7 @@
     <!-- Project Details -->
     <section class="container pt-5 pb-5" align-v="center">
       <h1 class="g-section-heading mb-5 text-center">Inspiration</h1>
-      <div class="row align-items-center">
+      <div class="row align--center">
         <div class="column col-md-6 col-12">
           <p class="g-hero-tag">
             Material Math is the spiritual successor to Boltz, a mental math app
@@ -111,7 +111,7 @@
       <div class="text-center">
         <h1 class="g-hero-heading mb-5">Road Map</h1>
       </div>
-      <div class="d-flex flex-column align-items-center">
+      <div class="d-flex flex-column align--center">
         <Timeline
           :timeline-items="timelineItems"
           :message-when-no-items="messageWhenNoItems"

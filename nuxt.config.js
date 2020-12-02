@@ -69,7 +69,7 @@ export default {
       '@nuxtjs/vuetify',
       {
         customVariables: ['@/assets/styles/variables.scss'],
-    treeShake: true,
+        treeShake: true,
         theme: {
           dark: true,
           themes: {
@@ -94,21 +94,9 @@ export default {
     // Doc: https://bootstrap-vue.js.org
     '@nuxt/content',
     '@nuxtjs/axios',
-    'bootstrap-vue/nuxt',
     '@nuxtjs/pwa',
     // Doc: https://github.com/nuxt-community/dotenv-module
     '@nuxtjs/dotenv',
-    [
-      '@nuxtjs/fontawesome',
-      {
-        component: 'fa',
-        suffix: true,
-        icons: {
-          solid: true,
-          brands: true,
-        },
-      },
-    ],
     '@nuxtjs/device',
     [
       'nuxt-mq',

@@ -6,7 +6,7 @@
     >
       <v-timeline-item
         v-for="phase in phases"
-        :key="phase"
+        :key="phase.title"
       >
         <v-card class="elevation-2">
           <v-card-title class="headline">

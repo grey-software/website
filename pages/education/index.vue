@@ -85,7 +85,7 @@
             <b-button
               size="sm"
               variant="outline-primary"
-              class="mr-4 g-btn-alt d-flex align-items-center"
+              class="mr-4 g-btn-alt d-flex align--center"
               target="_blank"
             >
               Enrollment Full
@@ -105,7 +105,7 @@
             <nuxt-link to="/apprentice">
               <b-button
                 size="sm"
-                class="mr-4 g-btn d-flex align-items-center"
+                class="mr-4 g-btn d-flex align--center"
                 target="_blank"
               >
                 Check it out!
@@ -126,7 +126,7 @@
             <b-button
               size="sm"
               variant="outline-primary"
-              class="mr-4 g-btn-alt d-flex align-items-center"
+              class="mr-4 g-btn-alt d-flex align--center"
               target="_blank"
             >
               Enrollment Full

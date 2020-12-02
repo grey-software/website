@@ -1,9 +1,9 @@
 <template>
-  <div class="nav container flex pt-4 px-2 lg:px-0 align-items-center">
-    <div class="nav-logo flex align-items-center">
+  <div class="nav flex pt-2 px-8 align-center">
+    <div class="nav-logo flex align-center">
       <div class="nav-internal mr-auto">
         <nuxt-link
-          class="flex align-items-center"
+          class="flex align--center"
           to="/"
           @click.native="checked = false"
         >
@@ -21,7 +21,7 @@
       </div>
     </div>
     <div class="navbar-spacer flex justify-center"></div>
-    <div class="nav-external flex align-items-center ml-auto">
+    <div class="nav-external flex align--center ml-auto">
       <!-- <v-autocomplete
         v-model="values"
         :items="items"
