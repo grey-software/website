@@ -8,21 +8,22 @@
             Learn by Building<br />Open Source Software
           </h1>
           <p class="g-hero-tag text-2xl">
-            Grey Software is a not-for-profit organization that empowers
-            students to build open-source software for their communities and
-            societies.
+            We're on a mission to empower people to create open-source software
+            for their communities and societies!
           </p>
           <div class="mt-4">
             <nuxt-link to="/projects">
-              <v-btn elevation="4" x-large color="primary" class="mr-4"
-                >Projects</v-btn
+              <v-btn elevation="4" x-large outlined color="primary" class="mr-4"
+                ><v-icon large class="mr-2">mdi-lightbulb</v-icon>Projects</v-btn
               >
             </nuxt-link>
-            <nuxt-link to="/education">
-              <v-btn elevation="4" x-large outlined color="primary"
-                >Education</v-btn
-              >
-            </nuxt-link>
+            <v-btn
+              href="http://meet.grey.software"
+              elevation="4"
+              x-large
+              color="primary"
+              ><v-icon large class="mr-2">mdi-calendar-plus</v-icon> Book our Time!</v-btn
+            >
           </div>
         </div>
         <div class="md:w-4/5 lg:w-1/2 pl-5 mt-5 lg:-mt-5">
@@ -94,12 +95,19 @@
       </h1>
       <div class="flex mt-5">
         <nuxt-link to="/projects">
-              <v-btn elevation="4" x-large color="primary" class="mr-4"
-                ><v-icon>mdi-discord</v-icon>Join the Community</v-btn
-              >
-            </nuxt-link>
-              <v-btn link to="http://meet.grey.software" elevation="4" x-large outlined color="primary"
-                ><v-icon>mdi-message-video</v-icon>Volunteer Onboarding</v-btn>
+          <v-btn elevation="4" x-large color="primary" class="mr-4"
+            ><v-icon>mdi-discord</v-icon>Join the Community</v-btn
+          >
+        </nuxt-link>
+        <v-btn
+          link
+          to="http://meet.grey.software"
+          elevation="4"
+          x-large
+          outlined
+          color="primary"
+          ><v-icon>mdi-message-video</v-icon>Volunteer Onboarding</v-btn
+        >
       </div>
     </section>
     <section class="container py-8">

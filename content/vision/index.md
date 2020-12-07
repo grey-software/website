@@ -1,5 +1,17 @@
 # Vision
 
+## Our Mission
+
+To empower people to create the open-source software for their communities and societies!
+
+## Our Objectives
+
+To create open source software products that serve humanity and 
+
+To design our products and development practices around maximizing our educational impact. 
+
+### Our Project Description
+
 Imagine if tech organizations prioritized involving communities in their development process as much as they prioritized creating unique, world-class software products. Grey Software is a not-for-profit that aims to be such an organization.
 
 Our approach is centered around involving students in our open-source product-development since they desire real-world software experience so they can get hired in tech or bring their own ideas to life.
