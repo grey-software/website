@@ -1,7 +1,7 @@
 <template>
   <div class="project-card p-4 mb-4">
     <div>
-      <div class="flex align--center my-4">
+      <div class="flex items-center my-4">
         <img class="logo justify-start" :src="project.logo" />
         <div class="ml-3">
           <h5 class="text-2xl font-bold">{{ project.name }}</h5>

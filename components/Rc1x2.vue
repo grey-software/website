@@ -1,14 +1,14 @@
 <template>
   <div class="my-5">
-    <div class="row d-flex justify-content-between">
+    <div class="row flex justify-content-between">
       <div
-        class="col-md-5 py-5 px-4 d-flex justify-content-center"
+        class="col-md-5 py-5 px-4 flex justify-content-center"
         :class="{'order-md-last': !reverse}"
       >
         <img class="feature-img" :src="imgSrc" />
       </div>
       <div
-        class="col-md-6 d-flex justify-content-center flex-column text-container"
+        class="col-md-6 flex justify-content-center flex-column text-container"
       >
         <h3 class="feature-title">{{ title }}</h3>
         <div>
@@ -17,7 +17,7 @@
             <nuxt-link :to="link">
               <b-button
                 size="md"
-                class="mr-4 mt-4 g-btn d-flex align--center"
+                class="mr-4 mt-4 g-btn flex items-center"
                 target="_blank"
               >
                 {{ label }}

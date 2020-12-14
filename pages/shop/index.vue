@@ -6,7 +6,7 @@
       icon="/icons/shop.svg"
     >
     <template v-slot:content>
-      <div class="flex align--center justify-center">
+      <div class="flex items-center justify-center">
       <v-btn color="primary" ><v-icon class="mr-4">mdi-email-alert</v-icon>Join the waitlist</v-btn>
       </div>
       <a target="_blank" href="https://www.fairware.com" class="flex align-center justify-center mt-4">

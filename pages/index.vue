@@ -1,20 +1,28 @@
 <template>
-  <div class="container mx-auto pb-5">
+  <div class="t-container t-mx-auto t-px-6 t-pb-5">
     <!-- Hero -->
-    <div class="grid place-items-center h-88vh">
-      <div class="lg:flex justify-between">
-        <div class="lg:w-2/5 flex flex-col">
-          <h1 class="text-5xl font-bold">
-            Learn by Building<br />Open Source Software
+    <div class="t-grid t-place-items-center t-h-88vh">
+      <div class="t-screen-tablet-landscape:t-flex t-justify-between">
+        <div class="w-full t-screen-tablet-landscape:t-w-2/5 flex flex-col">
+          <h1
+            class="t-text-3xl t-screen-tablet-landscape:t-text-4xl t-screen-pc:t-text-6xl t-font-bold"
+          >
+            Learn by Building Open Source Software
           </h1>
-          <p class="g-hero-tag text-2xl">
+          <p class="t-text-xl">
             We're on a mission to empower people to create open-source software
             for their communities and societies!
           </p>
-          <div class="mt-4">
+          <div class="flex t-items-center t-mt-4">
             <nuxt-link to="/projects">
-              <v-btn elevation="4" x-large outlined color="primary" class="mr-4"
-                ><v-icon large class="mr-2">mdi-lightbulb</v-icon>Projects</v-btn
+              <v-btn
+                elevation="4"
+                x-large
+                outlined
+                color="primary"
+                class="t-mr-4"
+                ><v-icon large class="t-mr-2">mdi-lightbulb</v-icon
+                >Projects</v-btn
               >
             </nuxt-link>
             <v-btn
@@ -22,24 +30,27 @@
               elevation="4"
               x-large
               color="primary"
-              ><v-icon large class="mr-2">mdi-calendar-plus</v-icon> Book our Time!</v-btn
+              ><v-icon large class="t-mr-2">mdi-calendar-plus</v-icon> Book our
+              Time!</v-btn
             >
           </div>
         </div>
-        <div class="md:w-4/5 lg:w-1/2 pl-5 mt-5 lg:-mt-5">
-          <img class="float-right" src="@/assets/img/open-source.svg" />
+        <div
+          class="t-phone-only:t-w-4/5 t-tablet-landscape-up:t-w-1/2 t-w-1/2 t-pl-5 t-mt-5 t-tablet-landscape-up:-mt-5"
+        >
+          <img class="t-float-right" src="@/assets/img/open-source.svg" />
         </div>
       </div>
     </div>
     <!-- What we do -->
-    <section class="container mx-auto py-8">
-      <div class="flex">
+    <section class="t-container t-mx-auto t-py-8">
+      <div class="t-flex">
         <div>
-          <h1 class="text-5xl font-bold">What do we do?</h1>
+          <h1 class="t-text-5xl t-font-bold">What do we do?</h1>
         </div>
       </div>
-      <div class="flex mt-5 align--center">
-        <div class="mb-5 mr-12">
+      <div class="t-flex t-mt-5 t-align-center">
+        <div class="t-mb-5 t-mr-12">
           <img class="two-col-icon" src="@/assets/icons/create.svg" />
           <h1 class="two-col-heading mt-4">Create</h1>
           <p class="two-col-body mt-4">
@@ -49,10 +60,7 @@
           <div class="mt-4">
             <nuxt-link to="/projects" class="arrow-link"
               >Our projects
-              <fa-icon
-                class="ml-2 mt-2"
-                :icon="['fas', 'long-arrow-alt-right']"
-              ></fa-icon>
+              <v-icon class="t-ml-2">mdi-arrow-right</v-icon>
             </nuxt-link>
           </div>
         </div>
@@ -63,13 +71,10 @@
             We help students learn software engineering through collaborating
             with a mentor.
           </p>
-          <div class="mt-4">
+          <div class="t-mt-4">
             <nuxt-link to="/education" class="arrow-link"
               >Learn more
-              <fa-icon
-                class="ml-2 mt-2"
-                :icon="['fas', 'long-arrow-alt-right']"
-              ></fa-icon>
+              <v-icon class="t-ml-2">mdi-arrow-right</v-icon>
             </nuxt-link>
           </div>
         </div>
@@ -80,7 +85,7 @@
       <h1 class="text-5xl font-bold mb-4">
         Volunteer with us! Were looking for
       </h1>
-      <div class="flex pt-5 justify-space-between align--center">
+      <div class="flex pt-5 justify-space-between items-center">
         <div
           v-for="role in roles"
           :key="role.label"
@@ -118,6 +123,11 @@
           :key="id"
           :project="project"
         />
+        <new-project-card
+          v-for="(project, id) in projects"
+          :key="id"
+          :project="project"
+        />
       </div>
     </section>
 
@@ -135,7 +145,7 @@
             <b-button
               size="sm"
               variant="outline-primary"
-              class="mr-4 g-btn-alt d-flex align--center"
+              class="mr-4 g-btn-alt flex items-center"
               target="_blank"
             >
               Enrollment Full
@@ -155,7 +165,7 @@
             <nuxt-link to="/apprentice">
               <b-button
                 size="sm"
-                class="mr-4 g-btn d-flex align--center"
+                class="mr-4 g-btn flex items-center"
                 target="_blank"
               >
                 Check it out!
@@ -176,7 +186,7 @@
             <b-button
               size="sm"
               variant="outline-primary"
-              class="mr-4 g-btn-alt d-flex align--center"
+              class="mr-4 g-btn-alt flex items-center"
               target="_blank"
             >
               Enrollment Full

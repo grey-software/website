@@ -1,10 +1,10 @@
 <template>
   <div
-    class="nav container flex pt-4 px-2 align--center justify-space-between"
+    class="nav container flex pt-4 px-2 items-center justify-space-between"
   >
-    <div class="nav-logo flex align--center mr-auto">
+    <div class="nav-logo flex items-center mr-auto">
       <nuxt-link
-        class="flex align--center"
+        class="flex items-center"
         to="/"
         @click.native="checked = false"
       >

@@ -2,9 +2,9 @@
   <div
     class="col-lg-3 mt-3 justify-content-center align-content-center card-container"
   >
-    <div class="row justify-content-center align--space-between">
+    <div class="row justify-content-center items-space-between">
       <div
-        class="d-flex justify-content-center feature-icon-container align--center m-5"
+        class="flex justify-content-center feature-icon-container items-center m-5"
       >
         <img class="feature-icon" :src="icon" />
       </div>

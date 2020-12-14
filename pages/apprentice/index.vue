@@ -37,7 +37,7 @@
       <!-- Problems -->
       <h1 class="mt-5 mb-3 g-hero-heading">The Problem</h1>
       <Rc1X3 :children="problems"></Rc1X3>
-      <div class="d-flex flex-wrap">
+      <div class="flex flex-wrap">
         <Testimonial
           v-for="testimonial in testimonials"
           :key="testimonial.name"

@@ -42,55 +42,8 @@ h6 {
   font-family: var(--font-heading);
 }
 
-.g-btn {
-  background-color: var(--color-gold) !important;
-  border-color: var(--color-gold) !important;
-  outline: none;
-  font-size: 1.2rem;
-}
-
-.g-btn-alt {
-  color: var(--color-gold) !important;
-  background-color: var(--bg) !important;
-  border-color: var(--color-light) !important;
-  outline: none;
-  font-size: 1.2rem;
-}
-
-.g-btn-cta {
-  background-color: var(--color-gold) !important;
-  border-color: var(--color-gold) !important;
-  outline: none;
-  padding: 1rem 2.5rem;
-  font-size: 1.42rem;
-}
-
-.g-btn:active,
-.g-btn-cta:active {
-  background-color: var(--color-gold) !important;
-  border-color: var(--color-gold) !important;
-}
-
-.g-btn:hover,
-.g-btn-cta:hover {
-  color: var(--color-gold-light) !important;
-  background-color: var(--bg) !important;
-  border-color: var(--color-light) !important;
-}
-
-.g-btn-cta-alt {
-  color: var(--color-gold) !important;
-  background-color: var(--bg) !important;
-  border-color: var(--color-light) !important;
-  outline: none;
-  padding: 1rem 2.5rem;
-  font-size: 1.42rem;
-}
-
-.g-btn-alt:hover,
-.g-btn-cta-alt:hover {
-  background-color: var(--color-gold) !important;
-  color: #fff !important;
+.flex {
+  display: flex;
 }
 
 .flex-col {

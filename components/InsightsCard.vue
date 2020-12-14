@@ -1,5 +1,5 @@
 <template>
-  <div class="d-flex main-insights-card mt-2">
+  <div class="flex main-insights-card mt-2">
     <span class="img-box ml-2 mr-2">
       <img
         class="avatar mt-1"
@@ -7,14 +7,14 @@
       />
     </span>
 
-    <div class="d-flex card-details">
+    <div class="flex card-details">
       <div class="name-container">
         <a style="color: #0cb0c9;">
           ArsalaBangash
         </a>
       </div>
 
-      <div class="d-flex insights-container">
+      <div class="flex insights-container">
         <div class="commits mr-2">
           <p class="activity-text" style="color: black;">34 commits</p>
         </div>
