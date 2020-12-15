@@ -1,13 +1,5 @@
 {
-  "projects": [
-    {
-      "name": "Toonin",
-      "desc": "Share or stream audio and video over the web in real time.",
-      "repo": "https://github.com/grey-software/toonin",
-      "demo": "https://toonin.grey.software",
-      "logo": "/projects/logos/toonin.svg",
-      "link": "/projects/toonin"
-    },
+  "active": [
     {
       "name": "Material Math",
       "desc": "Practice math problems in a fun, beautiful, material experience!",
@@ -15,6 +7,32 @@
       "demo": "https://material-math.grey.software",
       "logo": "/projects/logos/material-math.png",
       "link": "/projects/material-math"
+    },
+    {
+      "name": "Open Governance",
+      "desc": "Open Governance is a suite of modern technologies to reform and digitize local governance.!",
+      "logo": "/projects/logos/open-gov.svg",
+      "repo": "https://github.com/grey-software/open-gov",
+      "demo": "https://open-gov.grey.software",
+      "link": "/projects/open-gov"
+    },
+    {
+      "name": "Sponsorware",
+      "desc": "Tools for OSS developers to distribute software to their Sponsors and generate sustainable revenue before open-sourcing their code.",
+      "logo": "/projects/logos/sponsorware.svg",
+      "repo": "https://github.com/grey-software/sponsorware",
+      "demo": "https://www.npmjs.com/package/sponsorsme",
+      "link": "/projects/open-gov"
+    }
+  ],
+  "standby": [
+    {
+      "name": "Toonin",
+      "desc": "Share or stream audio and video over the web in real time.",
+      "repo": "https://github.com/grey-software/toonin",
+      "demo": "https://toonin.grey.software",
+      "logo": "/projects/logos/toonin.svg",
+      "link": "/projects/toonin"
     },
     {
       "name": "Twitter Focus",
@@ -31,14 +49,6 @@
       "repo": "https://github.com/grey-software/LinkedIn-Focus",
       "demo": "https://chrome.google.com/webstore/detail/linkedin-focus/cmafljjdkloacahjddlpaognhjpacdff?hl=en&authuser=2",
       "link": "/projects/linkedin-focus"
-    },
-    {
-      "name": "Open Governance",
-      "desc": "Hide the news & advertising on LinkedIn so you can focus on your career!",
-      "logo": "/projects/logos/open-gov.svg",
-      "repo": "https://github.com/grey-software/open-gov",
-      "demo": "https://chrome.google.com/webstore/detail/linkedin-focus/cmafljjdkloacahjddlpaognhjpacdff?hl=en&authuser=2",
-      "link": "/projects/open-gov"
     }
   ],
   "external": [
@@ -60,7 +70,7 @@
     },
     {
       "name": "CSSC Website",
-      "desc": "The CSSC is an open space for Computer Science students to come in and ask questions about their university and post-university career.",
+      "desc": "The website for the University of Toronto Mississauga's Computer Science Student Society.",
       "logo": "/projects/logos/cssc.png",
       "repo": "https://github.com/utm-cssc/website",
       "demo": "https://cssc.utm.utoronto.ca/",
@@ -89,7 +99,7 @@
     },
     {
       "name": "Bento",
-      "logo": "/projects/logos/tab-brightness-control.svg",
+      "logo": "/projects/logos/bento.svg",
       "desc": "An elegant and simple startpage for minimalists!",
       "repo": "https://github.com/MiguelRAvila/Bento",
       "demo": "https://miguelravila.github.io/Bento/"
@@ -113,7 +123,7 @@
     {
       "name": "Community Cleanup",
       "logo": "/projects/logos/community-cleanup-logo.svg",
-      "desc": "Software that allows citizens and their governments to effectively coordinate community cleanup and garbage collection efforts.",
+      "desc": "Software that allows citizens and their governments to effectively coordinate community garbage cleanup.",
       "repo": "https://github.com/grey-software/community-cleanup",
       "demo": "https://github.com/grey-software/community-cleanup"
     }

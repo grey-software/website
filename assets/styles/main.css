@@ -22,8 +22,8 @@ a:hover {
   --border-color: #ddd;
   --color-gold: #b29a66;
   --color-gold-light: rgba(178, 154, 102, 0.8);
-  --font-heading: "Montserrat", sans-serif;
-  --font-body: "Nunito Sans", sans-serif;
+  --font-heading: 'Montserrat', sans-serif;
+  --font-body: 'Nunito Sans', sans-serif;
 }
 
 body {
@@ -85,4 +85,27 @@ h6 {
 
 .nuxt-content a {
   color: white;
+}
+
+.shadowed-image {
+  -webkit-filter: drop-shadow(0 0 4px #bbb);
+  filter: drop-shadow(0 0 4px #bbb);
+  transition: filter -webkit-filter 0.2s ease-out;
+}
+
+.shadowed-image:hover {
+  -webkit-filter: drop-shadow(0 0 8px #bbb);
+  filter: drop-shadow(0 0 8px #bbb);
+}
+
+.btn-xl {
+  height: 48px;
+  min-width: 92px;
+  padding: 0 24px;
+}
+
+.btn-lg {
+  height: 42px;
+  min-width: 78px;
+  padding: 0 20px;
 }

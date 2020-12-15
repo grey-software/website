@@ -9,3 +9,15 @@
 .theme--dark.v-toolbar.v-sheet {
     background: var(--bg) !important;
 }
+
+.theme--dark.v-sheet {
+    background: var(--bg) !important;
+}
+
+.theme--dark.v-list {
+    background: var(--bg) !important;
+}
+
+.v-toolbar__content, .v-toolbar__extension {
+    padding: 4px 0;
+}

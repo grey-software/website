@@ -9,51 +9,54 @@
             </nuxt-link>
             <nuxt-link
               to="/vision"
-              class="t-mx-4 t-text-color-gray-600 t-text-2xl t-font-bold"
+              class="t-hidden t-screen-tablet-landscape:t-block t-mx-4 header-link"
               >Vision</nuxt-link
             >
             <nuxt-link
               to="/projects"
-              class="t-mx-4 t-text-color-gray-600 t-text-2xl t-font-bold"
+              class="t-hidden t-screen-tablet-landscape:t-block t-mx-4 header-link"
               >Projects</nuxt-link
             >
           </div>
         </div>
-        <div class="navbar-spacer t-mx-auto"></div>
+        <div class="t-mx-auto"></div>
 
-        <v-menu open-on-hover offset-y>
-          <template v-slot:activator="{on, attrs}">
-            <v-btn
-              class="t-mx-4"
-              large
-              rounded
-              color="primary"
-              dark
-              v-bind="attrs"
-              v-on="on"
-            >
-              <v-icon x-large>mdi-charity</v-icon>
-              Donate
-            </v-btn>
-          </template>
-          <v-list>
-            <v-list-item
-              v-for="donationLink in donationLinks"
-              :key="donationLink.name"
-            >
-              <a class="t-text-xl flex t-items-center" target="_blank" :href="donationLink.link"
-                ><img
-                  :src="donationLink.icon"
-                  class="t-h-24px t-w-24px t-mr-3"
-                /><span>{{ donationLink.name }}</span></a
-              >
-            </v-list-item>
-          </v-list>
-        </v-menu>
-
-        <div class="t-flex t-align-center">
+        <div class="t-flex t-items-center">
           <!-- TODO: Implement RTL Functionality -->
           <!-- <v-switch dense hide-details v-model="rtlSwitch"> </v-switch> -->
+          <a href="http://meet.grey.software" class="t-mx-4">
+            <v-icon class="shadowed-image" large>mdi-discord</v-icon>
+          </a>
+          <a href="https://github.com/grey-software" class="t-mx-4">
+            <v-icon class="shadowed-image" large>mdi-github</v-icon>
+          </a>
+          <v-menu open-on-hover offset-y>
+            <template v-slot:activator="{on, attrs}">
+              <v-icon
+                class="t-mx-4 shadowed-image"
+                v-bind="attrs"
+                v-on="on"
+                large
+                >mdi-charity</v-icon
+              >
+            </template>
+            <v-list>
+              <v-list-item
+                v-for="donationLink in donationLinks"
+                :key="donationLink.name"
+              >
+                <a
+                  class="t-text-xl flex t-items-center header-link"
+                  target="_blank"
+                  :href="donationLink.link"
+                  ><img
+                    :src="donationLink.icon"
+                    class="t-h-24px t-w-24px t-mr-3"
+                  /><span>{{ donationLink.name }}</span></a
+                >
+              </v-list-item>
+            </v-list>
+          </v-menu>
           <menu-icon
             class="t-mx-2 t-h-48px t-w-48px"
             @click="drawerOpen = !drawerOpen"
@@ -132,119 +135,14 @@ export default {
 }
 </script>
 
-<style scoped>
-.nav {
-  height: 12vh;
-  color: #efefef;
-  position: relative;
-  z-index: 9999;
+<style lang="postcss">
+.header-link {
+  @apply t-text-grey-100 t-text-xl !important;
+
+  transition: all 0.13s ease-out;
 }
 
-.navbar-spacer {
-  flex-grow: 1;
-  max-width: 72px;
-}
-
-.logo {
-  height: 48px;
-  width: 48px;
-  margin-right: 16px;
-}
-
-.logo-text {
-  font-size: 22px;
-  color: var(--color-text);
-  font-weight: 500;
-  font-family: var(--font-heading);
-  text-transform: uppercase;
-}
-
-.nav-internal {
-  display: flex;
-}
-
-.icon-label-link {
-  display: inline-flex;
-  align-items: center;
-}
-
-.nav-external {
-  display: inline-flex;
-  align-items: center;
-  position: relative;
-}
-
-.donate-menu {
-  right: 0;
-  top: 6vh;
-  transition: all 1s ease-out;
-  opacity: 0;
-  width: min-content;
-}
-
-.donate-link {
-  background: #efefef;
-  color: var(--color-bg);
-  fill: var(--color-bg);
-  display: inline-flex;
-  align-items: center;
-  position: relative;
-  width: 232px;
-}
-
-.donate-link:hover {
-  background: var(--color-bg);
-  color: #efefef;
-  fill: #efefef;
-  cursor: pointer;
-}
-
-#donate:hover {
-  cursor: pointer;
-}
-
-#donate:hover .donate-menu {
-  display: block;
-  opacity: 1;
-}
-
-.donate-icon {
-  height: 24px;
-  width: 24px;
-}
-
-.donate-link:hover .donate-icon {
-  fill: #fff;
-}
-
-.nav-link-icon {
-  min-width: 24px;
-  height: 24px;
-  width: 24px;
+.header-link:hover {
+  @apply t-text-grey-600 !important;
 }
 </style>
-
-<style scoped>
-@media (max-width: 1200px) {
-  .nav-link-icon {
-    min-width: 20px;
-    height: 20px;
-    width: 20px;
-  }
-
-  .logo {
-    height: 36px;
-    width: 36px;
-    margin-right: 16px;
-  }
-
-  .logo-text {
-    font-size: 18px;
-    color: var(--color-text);
-    font-weight: 500;
-    font-family: var(--font-heading);
-    text-transform: uppercase;
-  }
-}
-</style>
-

@@ -1,15 +1,16 @@
 <template>
   <div class="t-container t-mx-auto t-px-6 t-pb-5">
     <!-- Hero -->
-    <div class="t-grid t-place-items-center t-h-88vh">
+    <section class="t-grid t-place-items-center t-h-88vh">
       <div class="t-screen-tablet-landscape:t-flex t-justify-between">
         <div class="w-full t-screen-tablet-landscape:t-w-2/5 flex flex-col">
           <h1
-            class="t-text-3xl t-screen-tablet-landscape:t-text-4xl t-screen-pc:t-text-6xl t-font-bold"
+            class="t-text-3xl t-screen-tablet-landscape:t-text-4xl t-screen-pc:t-text-5xl t-font-bold"
           >
-            Learn by Building Open Source Software
+            Learn by Building <br />
+            Open Source Software
           </h1>
-          <p class="t-text-xl">
+          <p class="t-text-xl t-mt-4">
             We're on a mission to empower people to create open-source software
             for their communities and societies!
           </p>
@@ -17,62 +18,82 @@
             <nuxt-link to="/projects">
               <v-btn
                 elevation="4"
-                x-large
                 outlined
                 color="primary"
-                class="t-mr-4"
-                ><v-icon large class="t-mr-2">mdi-lightbulb</v-icon
-                >Projects</v-btn
+                class="t-mr-4 t-font-bold t-bg-green-400"
+                large
+                ><v-icon class="t-mr-2">mdi-lightbulb</v-icon>Projects</v-btn
               >
             </nuxt-link>
             <v-btn
               href="http://meet.grey.software"
               elevation="4"
-              x-large
               color="primary"
-              ><v-icon large class="t-mr-2">mdi-calendar-plus</v-icon> Book our
-              Time!</v-btn
+              large
+              class="t-font-bold"
+              ><v-icon class="t-mr-2">mdi-calendar-plus</v-icon>Get Mentorship</v-btn
             >
           </div>
         </div>
         <div
-          class="t-phone-only:t-w-4/5 t-tablet-landscape-up:t-w-1/2 t-w-1/2 t-pl-5 t-mt-5 t-tablet-landscape-up:-mt-5"
+          class="t-screen-phone:t-w-4/5 t-screen-tablet-landscape:t-w-1/2 t-pl-5 t-mt-5"
         >
-          <img class="t-float-right" src="@/assets/img/open-source.svg" />
+          <img
+            class="t-screen-phone:t-mx-auto t-screen-tablet-landscape:t-float-right"
+            src="@/assets/img/open-source.svg"
+          />
         </div>
       </div>
-    </div>
+    </section>
     <!-- What we do -->
-    <section class="t-container t-mx-auto t-py-8">
-      <div class="t-flex">
-        <div>
-          <h1 class="t-text-5xl t-font-bold">What do we do?</h1>
-        </div>
-      </div>
-      <div class="t-flex t-mt-5 t-align-center">
-        <div class="t-mb-5 t-mr-12">
-          <img class="two-col-icon" src="@/assets/icons/create.svg" />
-          <h1 class="two-col-heading mt-4">Create</h1>
-          <p class="two-col-body mt-4">
+    <section class="t-h-88vh t-py-8">
+      <h1
+        class="t-text-3xl t-screen-tablet-landscape:t-text-4xl t-screen-pc:t-text-5xl t-font-bold"
+      >
+        What we do
+      </h1>
+      <div class="flex t-mt-5 t-items-center t-justify-between">
+        <div class="t-w-1/2">
+          <img
+            class="t-screen-phone:t-h-48px t-screen-tablet-portrait:t-h-96px"
+            src="@/assets/icons/create.svg"
+          />
+          <h1
+            class="t-text-xl t-screen-tablet-landscape:t-text-2xl t-screen-pc:t-text-3xl t-font-bold mt-4"
+          >
+            Create
+          </h1>
+          <p
+            class="t-text-lg t-screen-tablet-landscape:t-text-xl t-screen-pc:t-text-2xl t-font-bold mt-4"
+          >
             We create free apps and tools to improve the open source software
             ecosystem.
           </p>
-          <div class="mt-4">
-            <nuxt-link to="/projects" class="arrow-link"
+          <div class="t-mt-4">
+            <nuxt-link to="/projects"
               >Our projects
               <v-icon class="t-ml-2">mdi-arrow-right</v-icon>
             </nuxt-link>
           </div>
         </div>
-        <div class="mb-4">
-          <img class="two-col-icon" src="@/assets/icons/educate.svg" />
-          <h1 class="two-col-heading mt-4">Educate</h1>
-          <p class="two-col-body mt-4">
+        <div class="t-w-1/2">
+          <img
+            class="t-screen-phone:t-h-48px t-screen-tablet-portrait:t-h-96px"
+            src="@/assets/icons/educate.svg"
+          />
+          <h1
+            class="t-text-xl t-screen-tablet-landscape:t-text-2xl t-screen-pc:t-text-3xl t-font-bold mt-4"
+          >
+            Educate
+          </h1>
+          <p
+            class="t-text-lg t-screen-tablet-landscape:t-text-xl t-screen-pc:t-text-2xl t-font-bold mt-4"
+          >
             We help students learn software engineering through collaborating
             with a mentor.
           </p>
           <div class="t-mt-4">
-            <nuxt-link to="/education" class="arrow-link"
+            <nuxt-link to="/education"
               >Learn more
               <v-icon class="t-ml-2">mdi-arrow-right</v-icon>
             </nuxt-link>
@@ -119,11 +140,6 @@
       <h1 class="text-5xl font-bold pl-3 mb-5">What have we built?</h1>
       <div class="flex flex-wrap">
         <project-card
-          v-for="(project, id) in projects"
-          :key="id"
-          :project="project"
-        />
-        <new-project-card
           v-for="(project, id) in projects"
           :key="id"
           :project="project"
@@ -395,16 +411,6 @@ export default {
   height: 108px;
 }
 
-.arrow-link {
-  color: var(--color-gold);
-  font-size: 28px;
-  transition: color 0.2s ease-out;
-}
-
-.arrow-link:hover {
-  color: var(--color-gold-light);
-}
-
 @media screen and (max-width: 768px) {
   .icon-who-we-are {
     height: 64px;
@@ -431,10 +437,6 @@ export default {
   .two-col-body {
     font-size: 20px;
     max-width: 434px;
-  }
-
-  .arrow-link {
-    font-size: 20px;
   }
 
   .g-section-body {

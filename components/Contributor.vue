@@ -1,8 +1,8 @@
 <template>
   <a target="_blank" :href="contributor.link">
-    <div class="flex flex-col items-center">
+    <div class="flex flex-col t-items-center">
       <img
-        class="avatar rounded-full mb-2"
+        class="avatar t-rounded-full t-mb-2"
         :src="contributor.avatar"
         :alt="getImageAlt(contributor.login)"
       />

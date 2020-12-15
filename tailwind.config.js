@@ -4,27 +4,35 @@
  ** Docs: https://tailwindcss.com/docs/configuration
  ** Default: https://github.com/tailwindcss/tailwindcss/blob/master/stubs/defaultConfig.stub.js
  */
+const colors = require('tailwindcss/colors')
+
 module.exports = {
   theme: {
+    extend: {
+      colors: {
+        // Build your palette here
+        grey: colors.blueGray,
+      },
+    },
     spacing: {
       1: '2px',
       2: '4px',
       3: '8px',
       4: '12px',
       5: '16px',
-      4: '24px',
-      5: '32px',
-      6: '48px',
-      7: '64px',
-      8: '72px',
-      9: '96px',
-      10: '128px',
-      11: '192px',
-      12: '256px',
-      13: '384px',
-      14: '512px',
-      15: '640px',
-      16: '768px',
+      6: '24px',
+      7: '32px',
+      8: '48px',
+      9: '64px',
+      10: '72px',
+      11: '96px',
+      12: '128px',
+      13: '192px',
+      14: '256px',
+      15: '384px',
+      16: '512px',
+      17: '640px',
+      18: '768px',
       '88vh': '88vh',
       '24px': '24px',
       '32px': '32px',
@@ -37,8 +45,8 @@ module.exports = {
       't-screen-phone': {max: '599px'},
       't-screen-tablet-portrait': {min: '600px'},
       't-screen-tablet-landscape': {min: '900px'},
-      't-screen-pc:': {min: '1200px'},
-      't-screen-wide-pc': {min: '1800px'},
+      't-screen-pc': {min: '1200px'},
+      't-screen-pc-wide': {min: '1800px'},
     },
   },
   variants: {},
