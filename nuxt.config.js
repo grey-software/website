@@ -74,7 +74,7 @@ export default {
           dark: true,
           themes: {
             dark: {
-              primary: '#b29a66',
+              primary: '#94A3B8',
               secondary: '#424242',
               accent: '#82B1FF',
               error: '#F04747',

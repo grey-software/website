@@ -30,7 +30,7 @@
           <a href="https://github.com/grey-software" class="t-mx-4">
             <v-icon class="shadowed-image" large>mdi-github</v-icon>
           </a>
-          <v-menu open-on-hover offset-y>
+          <v-menu v-menu="donationMenuOpen" open-on-click open-on-hover offset-y>
             <template v-slot:activator="{on, attrs}">
               <v-icon
                 class="t-mx-4 shadowed-image"
@@ -58,7 +58,7 @@
             </v-list>
           </v-menu>
           <menu-icon
-            class="t-mx-2 t-h-48px t-w-48px"
+            class="t-ml-4 t-cursor-pointer t-h-48px t-w-48px"
             @click="drawerOpen = !drawerOpen"
           ></menu-icon>
         </div>
@@ -97,6 +97,7 @@ export default {
   data() {
     return {
       drawerOpen: false,
+      donationMenuOpen: false,
       rtlSwitch: false,
       donationLinks: [
         {

@@ -114,6 +114,9 @@ export default {
   display: flex;
   padding: 12px 0;
   transition: all 0.3s ease-out;
+  font-size: 20px;
+  align-items: center;
+  color: white;
 }
 
 .drawer-link:hover {

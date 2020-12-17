@@ -2,13 +2,13 @@
   <div class="nav-drawer t-p-4 t-bg-gray-700">
     <div class="nav-internal flex-col t-pt-5">
       <nuxt-link
-        @click.native="toggleDrawer"
+        @click="toggleDrawer"
         to="/vision"
         class="drawer-link t-mr-1"
         >Vision</nuxt-link
       >
       <nuxt-link
-        @click.native="toggleDrawer"
+        @click="toggleDrawer"
         to="/projects"
         class="drawer-link t-mr-1"
         >Projects</nuxt-link
@@ -17,7 +17,7 @@
     <div class="flex-col t-my-3">
       <h1 class="drawer-header t-mb-2">Community</h1>
       <a
-        @click.native="toggleDrawer"
+        @click="toggleDrawer"
         target="_blank"
         href="http://github.com/grey-software"
         class="drawer-link"
@@ -25,7 +25,7 @@
         ><github-logo class="drawer-icon t-mr-3" />Contribute</a
       >
       <a
-        @click.native="checked = false"
+        @click="checked = false"
         target="_blank"
         href="http://community.grey.software"
         class="drawer-link"
@@ -113,13 +113,13 @@ export default {
   transition: all 0.3s ease-out;
   font-size: 20px;
   align-items: center;
+  color: white !important;
 }
 
 .drawer-link:hover {
-  display: flex;
   padding: 12px 6px;
-  background: #fff;
-  color: var(--bg);
+  background: #fff !important;
+  color: var(--bg) !important;
 }
 
 .drawer-link:hover .drawer-icon {

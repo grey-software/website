@@ -5,7 +5,12 @@
       desc="We're improving the open source ecosystem by creating useful, creative, and free software with the world's latest technology. We develop our projects in the open, and invite contributors from all over the world to help shape the future of our products. As a company, one of our strategies to provide sustainable education is to develop revenue-generating applications that curious learners can help contribute to."
       icon="/icons/projects.svg"
     />
-    <section id="projects" class="container px-0">
+    <section id="projects" class="t-py-8">
+      <h1
+        class="t-text-3xl t-screen-tablet-landscape:t-text-4xl t-screen-pc:t-text-5xl t-font-bold t-mb-5"
+      >
+        Active Projects
+      </h1>
       <div class="project-cards-container">
         <project-card
           v-for="(project, id) in activeProjects"
@@ -14,8 +19,12 @@
         />
       </div>
     </section>
-    <section class="container px-0">
-      <h1 class="g-section-heading m-2 mb-5">Standby Projects</h1>
+    <section class="t-py-8">
+      <h1
+        class="t-text-3xl t-screen-tablet-landscape:t-text-4xl t-screen-pc:t-text-5xl t-font-bold t-mb-5"
+      >
+        Standby Projects
+      </h1>
       <div class="project-cards-container">
         <project-card
           v-for="(project, id) in standbyProjects"
@@ -24,8 +33,12 @@
         />
       </div>
     </section>
-    <section class="container px-0">
-      <h1 class="g-section-heading m-2 mb-5">External Projects</h1>
+    <section class="t-py-8">
+      <h1
+        class="t-text-3xl t-screen-tablet-landscape:t-text-4xl t-screen-pc:t-text-5xl t-font-bold t-mb-5"
+      >
+        External Projects
+      </h1>
       <div class="project-cards-container">
         <project-card
           v-for="(project, id) in externalProjects"
@@ -34,8 +47,12 @@
         />
       </div>
     </section>
-    <section class="container px-0">
-      <h1 class="g-section-heading mb-5">Project Concepts</h1>
+    <section class="t-py-8">
+      <h1
+        class="t-text-3xl t-screen-tablet-landscape:t-text-4xl t-screen-pc:t-text-5xl t-font-bold t-mb-5"
+      >
+        Project Concepts
+      </h1>
       <div class="project-cards-container">
         <project-card
           v-for="(project, id) in conceptProjects"
@@ -48,7 +65,7 @@
 </template>
 
 <script>
-import ProjectCard from '../../components/ProjectCard.vue'
+import ProjectCard from '@/components/ProjectCard.vue'
 export default {
   async asyncData({$content, params, error}) {
     const projectsDataStore = await $content('projects').fetch()

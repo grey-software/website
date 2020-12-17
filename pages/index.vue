@@ -1,7 +1,7 @@
 <template>
   <div class="t-container t-mx-auto t-px-6 t-pb-5">
     <!-- Hero -->
-    <section class="t-grid t-place-items-center t-h-88vh">
+    <section class="t-grid t-place-items-center t-h-screen">
       <div class="t-screen-tablet-landscape:t-flex t-justify-between">
         <div class="w-full t-screen-tablet-landscape:t-w-2/5 flex flex-col">
           <h1
@@ -31,7 +31,8 @@
               color="primary"
               large
               class="t-font-bold"
-              ><v-icon class="t-mr-2">mdi-calendar-plus</v-icon>Get Mentorship</v-btn
+              ><v-icon class="t-mr-2">mdi-calendar-plus</v-icon>Get
+              Mentorship</v-btn
             >
           </div>
         </div>
@@ -45,64 +46,9 @@
         </div>
       </div>
     </section>
-    <!-- What we do -->
-    <section class="t-h-88vh t-py-8">
-      <h1
-        class="t-text-3xl t-screen-tablet-landscape:t-text-4xl t-screen-pc:t-text-5xl t-font-bold"
-      >
-        What we do
-      </h1>
-      <div class="flex t-mt-5 t-items-center t-justify-between">
-        <div class="t-w-1/2">
-          <img
-            class="t-screen-phone:t-h-48px t-screen-tablet-portrait:t-h-96px"
-            src="@/assets/icons/create.svg"
-          />
-          <h1
-            class="t-text-xl t-screen-tablet-landscape:t-text-2xl t-screen-pc:t-text-3xl t-font-bold mt-4"
-          >
-            Create
-          </h1>
-          <p
-            class="t-text-lg t-screen-tablet-landscape:t-text-xl t-screen-pc:t-text-2xl t-font-bold mt-4"
-          >
-            We create free apps and tools to improve the open source software
-            ecosystem.
-          </p>
-          <div class="t-mt-4">
-            <nuxt-link to="/projects"
-              >Our projects
-              <v-icon class="t-ml-2">mdi-arrow-right</v-icon>
-            </nuxt-link>
-          </div>
-        </div>
-        <div class="t-w-1/2">
-          <img
-            class="t-screen-phone:t-h-48px t-screen-tablet-portrait:t-h-96px"
-            src="@/assets/icons/educate.svg"
-          />
-          <h1
-            class="t-text-xl t-screen-tablet-landscape:t-text-2xl t-screen-pc:t-text-3xl t-font-bold mt-4"
-          >
-            Educate
-          </h1>
-          <p
-            class="t-text-lg t-screen-tablet-landscape:t-text-xl t-screen-pc:t-text-2xl t-font-bold mt-4"
-          >
-            We help students learn software engineering through collaborating
-            with a mentor.
-          </p>
-          <div class="t-mt-4">
-            <nuxt-link to="/education"
-              >Learn more
-              <v-icon class="t-ml-2">mdi-arrow-right</v-icon>
-            </nuxt-link>
-          </div>
-        </div>
-      </div>
-    </section>
+    <content-cols-1x2 class="t-pb-12" title="What we do" :cols="whatWeDo" />
     <!-- Who are we? -->
-    <section class="py-12">
+    <!-- <section class="py-12">
       <h1 class="text-5xl font-bold mb-4">
         Volunteer with us! Were looking for
       </h1>
@@ -135,9 +81,11 @@
           ><v-icon>mdi-message-video</v-icon>Volunteer Onboarding</v-btn
         >
       </div>
-    </section>
+    </section> -->
     <section class="container py-8">
-      <h1 class="text-5xl font-bold pl-3 mb-5">What have we built?</h1>
+      <h1 class="text-5xl font-bold pl-3 mb-5">
+        Check out what we're building!
+      </h1>
       <div class="flex flex-wrap">
         <project-card
           v-for="(project, id) in projects"
@@ -271,14 +219,16 @@
 
 <script>
 import Contributor from '@/components/Contributor'
+import ContentCols1x2 from '@/components/ContentCols1x2'
 
 export default {
   components: {
     Contributor,
+    ContentCols1x2,
   },
   async asyncData({$content, params, error}) {
     const projectsDataStore = await $content('projects').fetch()
-    const projects = projectsDataStore.projects
+    const projects = projectsDataStore.active
     const contributorsDataStore = await $content('contributors').fetch()
 
     const contributors = Object.keys(contributorsDataStore.contributors).map(
@@ -295,6 +245,31 @@ export default {
   },
   data() {
     return {
+      whatWeDo: [
+        {
+          title: 'Create',
+          desc:
+            'We create free apps and tools to improve the open source software ecosystem.',
+          icon: '/icons/create.svg',
+          link: {
+            label: 'Our projects',
+            internal: '/projects',
+            href: '',
+          },
+        },
+        {
+          title: 'Educate',
+          desc:
+            'We help students learn software engineering through collaborating with a mentor.',
+          icon: '/icons/educate.svg',
+          link: {
+            label: 'Learn More',
+            internal: '/educate',
+            href: '',
+          },
+        },
+      ],
+
       roles: [
         {
           label: 'Engineers',

@@ -1,14 +1,16 @@
 <template>
-  <article class="mt-5 pb-5">
-    <nuxt-content
-      class="prose prose-sm sm:prose lg:prose-lg xl:prose-2xl mx-auto"
-      :document="visionPage"
-    />
-  </article>
+  <div class="mt-5 pb-5">
+    <markdown-content :content="visionPage" folder="vision" file="index" />
+  </div>
 </template>
 
 <script>
+import MarkdownContent from '@/components/MarkdownContent'
+
 export default {
+  components: {
+    MarkdownContent,
+  },
   async asyncData({$content, params, error}) {
     const visionPage = await $content('vision', 'index').fetch()
     return { visionPage }

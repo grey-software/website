@@ -7,12 +7,12 @@
         <img class="t-h-96px t-w-96px shadowed-image t-m-6" :src="project.logo" />
       </div>
       <div class="t-p-4">
-        <p
-          class="t-uppercase t-tracking-wide t-text-xl t-font-bold t-text-gray-700"
+        <div
+          class="t-uppercase t-tracking-wide t-screen-phone:t-text-lg t-screen-tablet-portrait:t-text-lg t-screen-pc:t-text-xl t-font-bold t-text-gray-700 t-h-8 t-mt-4"
         >
           {{ project.name }}
-        </p>
-        <p class="t-text-gray-700 t-h-10">{{ project.desc }}</p>
+        </div>
+        <div class="t-text-gray-700 t-screen-tablet-portrait:t-h-12 t-h-10 t-mt-4 t-screen-pc:t-text-lg">{{ project.desc }}</div>
       </div>
       <div class="flex t-items-center t-border-t t-border-gray-300 t-bg-grey-700">
         <a target="_blank" :href="project.repo" class="flex t-items-center t-p-4 t-justify-center t-w-1/2 hover:t-bg-grey-500 project-link">
