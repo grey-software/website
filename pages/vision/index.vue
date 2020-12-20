@@ -1,6 +1,6 @@
 <template>
   <div class="mt-5 pb-5">
-    <markdown-content :content="visionPage" folder="vision" file="index" />
+    <markdown-content :content="visionPage" />
   </div>
 </template>
 

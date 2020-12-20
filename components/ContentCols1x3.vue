@@ -9,7 +9,7 @@
       <div
         v-for="col in cols"
         :key="col.title"
-        class="t-screen-phone:t-w-full t-w-1/2"
+        class="t-screen-phone:t-w-full t-w-1/3"
       >
         <img
           class="t-screen-phone:t-h-48px t-screen-tablet-portrait:t-h-96px"

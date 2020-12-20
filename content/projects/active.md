@@ -1,0 +1,1 @@
+We develop our projects in the open, and invite contributors from all over the world to help shape the future of our products. As a company, one of our strategies to provide sustainable education is to develop revenue-generating applications that curious learners can help contribute to.

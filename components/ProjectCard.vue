@@ -8,7 +8,7 @@
       </div>
       <div class="t-p-4">
         <div
-          class="t-uppercase t-tracking-wide t-screen-phone:t-text-lg t-screen-tablet-portrait:t-text-lg t-screen-pc:t-text-xl t-font-bold t-text-gray-700 t-h-8 t-mt-4"
+          class="t-uppercase t-tracking-wide t-screen-phone:t-text-lg t-screen-tablet-portrait:t-text-lg t-screen-pc:t-text-xl t-font-bold t-text-gray-700 t-h-8"
         >
           {{ project.name }}
         </div>

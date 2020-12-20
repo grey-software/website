@@ -4,17 +4,17 @@
       <div class="t-container t-flex t-mx-auto t-px-6 t-pt-2 t-content-center">
         <div class="t-flex t-align-content-center t-mr-auto">
           <div class="flex t-items-center t-mr-auto">
-            <nuxt-link class="flex t-align-content-center" to="/">
+            <nuxt-link class="flex t-align-content-center t-mr-4" to="/">
               <img class="t-w-48px t-h-48px" src="/logo.png" />
             </nuxt-link>
             <nuxt-link
               to="/vision"
-              class="t-hidden t-screen-tablet-landscape:t-block t-mx-4 header-link"
+              class="t-hidden t-font-bold t-screen-tablet-landscape:t-block t-mx-4 header-link"
               >Vision</nuxt-link
             >
             <nuxt-link
               to="/projects"
-              class="t-hidden t-screen-tablet-landscape:t-block t-mx-4 header-link"
+              class="t-hidden t-font-bold t-screen-tablet-landscape:t-block t-mx-4 header-link"
               >Projects</nuxt-link
             >
           </div>

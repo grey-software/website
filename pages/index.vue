@@ -46,7 +46,10 @@
         </div>
       </div>
     </section>
-    <content-cols-1x2 class="t-pb-12" title="What we do" :cols="whatWeDo" />
+    <section class="t-pb-12">
+    <content-cols-1x2 title="What we do" :cols="whatWeDo" />
+    </section>
+    <!-- Help us stay alive -->
     <!-- Who are we? -->
     <!-- <section class="py-12">
       <h1 class="text-5xl font-bold mb-4">
@@ -82,8 +85,10 @@
         >
       </div>
     </section> -->
-    <section class="container py-8">
-      <h1 class="text-5xl font-bold pl-3 mb-5">
+    <section class="t-pb-10">
+      <h1
+      class="t-text-2xl t-screen-tablet-landscape:t-text-3xl t-screen-pc:t-text-5xl t-font-bold"
+    >
         Check out what we're building!
       </h1>
       <div class="flex flex-wrap">
@@ -227,7 +232,7 @@ export default {
     ContentCols1x2,
   },
   async asyncData({$content, params, error}) {
-    const projectsDataStore = await $content('projects').fetch()
+    const projectsDataStore = await $content('projects', 'projects').fetch()
     const projects = projectsDataStore.active
     const contributorsDataStore = await $content('contributors').fetch()
 
