@@ -7,7 +7,7 @@
     "dev": "nuxt",
     "build": "nuxt build --target static",
     "start": "nuxt start",
-    "generate": "nuxt build --target static && nuxt export",
+    "generate": "nuxt generate",
     "test": "jest",
     "fix": "prettier -l --write \"{*.js,**/*.js,**/*.vue}\"",
     "fix:js": "eslint --ext .js,.vue .",
