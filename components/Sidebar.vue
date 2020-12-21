@@ -96,11 +96,6 @@ export default {
   font-weight: 600;
 }
 
-#close-icon {
-  width: 24px;
-  height: 24px;
-}
-
 .drawer-icon {
   width: 24px;
   height: 24px;

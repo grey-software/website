@@ -22,10 +22,8 @@
       <div class="flex-col xs:t-align-end">
         <div class="t-font-bold t-text-xl t-mb-4">More Links</div>
         <div class="links">
-          <nuxt-link to="/resources"> Resources </nuxt-link>
           <nuxt-link to="/why-donate">Donate</nuxt-link>
           <a href="http://community.grey.software" target="_blank">Community</a>
-          <a href="mailto:contact@thefuturistfoundation.com">Contact Us</a>
           <nuxt-link to="/faq">FAQ</nuxt-link>
         </div>
       </div>
