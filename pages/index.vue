@@ -47,7 +47,7 @@
       </div>
     </section>
     <section class="t-pb-12">
-    <content-cols-1x2 title="What we do" :cols="whatWeDo" />
+      <content-cols-1x2 title="What we do" :cols="whatWeDo" />
     </section>
     <!-- Help us stay alive -->
     <!-- Who are we? -->
@@ -87,8 +87,8 @@
     </section> -->
     <section class="t-pb-10">
       <h1
-      class="t-text-2xl t-screen-tablet-landscape:t-text-3xl t-screen-pc:t-text-5xl t-font-bold"
-    >
+        class="t-text-2xl t-screen-tablet-landscape:t-text-3xl t-screen-pc:t-text-5xl t-font-bold"
+      >
         Check out what we're building!
       </h1>
       <div class="flex flex-wrap">
@@ -254,7 +254,7 @@ export default {
         {
           title: 'Create',
           desc:
-            'We create free apps and tools to improve the open source software ecosystem.',
+            'We create free apps and tools to improve the open source software ecosystem!',
           icon: '/icons/create.svg',
           link: {
             label: 'Our projects',
@@ -265,7 +265,7 @@ export default {
         {
           title: 'Educate',
           desc:
-            'We help students learn software engineering through collaborating with a mentor.',
+            'We research software development education strategies!',
           icon: '/icons/educate.svg',
           link: {
             label: 'Learn More',
@@ -301,162 +301,3 @@ export default {
   },
 }
 </script>
-</script>
-
-<style>
-.two-col-heading {
-  font-size: 42px;
-  font-family: var(--font-heading);
-  font-weight: 600;
-  line-height: 1.05;
-}
-
-.two-col-icon {
-  height: 96px;
-}
-
-.two-col-body {
-  font-size: 28px;
-  max-width: 434px;
-}
-
-.three-col-heading {
-  font-size: 42px;
-  font-family: var(--font-heading);
-  font-weight: 600;
-  line-height: 1.05;
-}
-
-.three-col-icon {
-  height: 96px;
-}
-
-.three-col-body {
-  font-size: 20px;
-  max-width: 343px;
-  line-height: 1.5;
-}
-
-.g-section-body {
-  font-size: 28px;
-  line-height: 1.2;
-}
-
-.g-section-heading {
-  font-weight: 700;
-  font-family: var(--font-heading);
-  color: var(--color-text-dark);
-  letter-spacing: 0.025em;
-  font-size: calc(12px + 4vw);
-  line-height: 1.05;
-  z-index: 1000;
-}
-
-.g-section-project-heading {
-  font-weight: 800;
-  font-family: var(--font-heading);
-  color: var(--color-text-dark);
-  letter-spacing: -0.025em;
-  font-size: calc(12px + 3.5vw);
-  line-height: 1.05;
-  z-index: 1000;
-}
-
-.g-section-subheading {
-  font-weight: 800;
-  font-family: var(--font-heading);
-  color: var(--color-text-dark);
-  letter-spacing: -0.025em;
-  font-size: calc(12px + 1.5vw);
-  line-height: 1.05;
-  z-index: 1000;
-  max-width: 72%;
-}
-
-.g-text-testimonial {
-  font-family: var(--font-heading);
-  margin-top: 20px;
-  font-size: 28px;
-  font-weight: 600;
-}
-
-.g-hero-tag {
-  color: var(--color-text);
-  letter-spacing: -0.032em;
-  line-height: 1.5;
-  margin-top: 32px;
-}
-
-.icon-who-we-are {
-  height: 108px;
-}
-
-@media screen and (max-width: 768px) {
-  .icon-who-we-are {
-    height: 64px;
-  }
-
-  .g-section-info {
-    font-family: var(--font-heading);
-    margin-top: 20px;
-    font-size: 20px;
-    font-weight: 600;
-  }
-
-  .two-col-heading {
-    font-size: 32px;
-    font-family: var(--font-heading);
-    font-weight: 600;
-    line-height: 1.05;
-  }
-
-  .two-col-icon {
-    height: 72px;
-  }
-
-  .two-col-body {
-    font-size: 20px;
-    max-width: 434px;
-  }
-
-  .g-section-body {
-    font-size: 24px;
-    line-height: 1.2;
-  }
-}
-
-@media screen and (max-width: 992px) {
-  .g-section-heading {
-    font-size: calc(12px + 6vw);
-    line-height: 1.05;
-    z-index: 1000;
-  }
-
-  .g-section-project-heading {
-    font-size: 64px;
-    line-height: 1.05;
-    z-index: 1000;
-  }
-
-  .g-hero-tag {
-    font-size: 22px;
-  }
-}
-
-.bg-gold {
-  background-color: var(--color-gold);
-  width: 100vw;
-}
-
-.link-freedoms {
-  font-weight: 600;
-  color: #434343;
-  transition: opacity 0.2s ease-out;
-}
-
-.link-freedoms:hover {
-  font-weight: 600;
-  color: #434343;
-  opacity: 0.69;
-}
-</style>
