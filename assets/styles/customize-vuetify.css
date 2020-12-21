@@ -5,3 +5,19 @@
 .theme--dark.v-text-field--solo > .v-input__control > .v-input__slot {
     background: unset !important;
 }
+
+.theme--dark.v-toolbar.v-sheet {
+    background: var(--bg) !important;
+}
+
+.theme--dark.v-sheet {
+    background: var(--bg) !important;
+}
+
+.theme--dark.v-list {
+    background: var(--bg) !important;
+}
+
+.v-toolbar__content, .v-toolbar__extension {
+    padding: 4px 0;
+}

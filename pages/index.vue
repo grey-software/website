@@ -1,86 +1,61 @@
 <template>
-  <div class="container mx-auto pb-5">
+  <div class="t-container t-mx-auto t-px-6 t-pb-5">
     <!-- Hero -->
-    <div class="grid place-items-center h-88vh">
-      <div class="lg:flex justify-between">
-        <div class="lg:w-2/5 flex flex-col">
-          <h1 class="text-5xl font-bold">
-            Learn by Building<br />Open Source Software
+    <section class="t-grid t-place-items-center t-h-screen">
+      <div class="t-screen-tablet-landscape:t-flex t-justify-between">
+        <div class="w-full t-screen-tablet-landscape:t-w-2/5 flex flex-col">
+          <h1
+            class="t-text-3xl t-screen-tablet-landscape:t-text-4xl t-screen-pc:t-text-5xl t-font-bold"
+          >
+            Learn by Building <br />
+            Open Source Software
           </h1>
-          <p class="g-hero-tag text-2xl">
+          <p class="t-text-xl t-mt-4">
             We're on a mission to empower people to create open-source software
             for their communities and societies!
           </p>
-          <div class="mt-4">
+          <div class="flex t-items-center t-mt-4">
             <nuxt-link to="/projects">
-              <v-btn elevation="4" x-large outlined color="primary" class="mr-4"
-                ><v-icon large class="mr-2">mdi-lightbulb</v-icon>Projects</v-btn
+              <v-btn
+                elevation="4"
+                outlined
+                color="primary"
+                class="t-mr-4 t-font-bold t-bg-green-400"
+                large
+                ><v-icon class="t-mr-2">mdi-lightbulb</v-icon>Projects</v-btn
               >
             </nuxt-link>
             <v-btn
               href="http://meet.grey.software"
               elevation="4"
-              x-large
               color="primary"
-              ><v-icon large class="mr-2">mdi-calendar-plus</v-icon> Book our Time!</v-btn
+              large
+              class="t-font-bold"
+              ><v-icon class="t-mr-2">mdi-calendar-plus</v-icon>Get
+              Mentorship</v-btn
             >
           </div>
         </div>
-        <div class="md:w-4/5 lg:w-1/2 pl-5 mt-5 lg:-mt-5">
-          <img class="float-right" src="@/assets/img/open-source.svg" />
-        </div>
-      </div>
-    </div>
-    <!-- What we do -->
-    <section class="container mx-auto py-8">
-      <div class="flex">
-        <div>
-          <h1 class="text-5xl font-bold">What do we do?</h1>
-        </div>
-      </div>
-      <div class="flex mt-5 align--center">
-        <div class="mb-5 mr-12">
-          <img class="two-col-icon" src="@/assets/icons/create.svg" />
-          <h1 class="two-col-heading mt-4">Create</h1>
-          <p class="two-col-body mt-4">
-            We create free apps and tools to improve the open source software
-            ecosystem.
-          </p>
-          <div class="mt-4">
-            <nuxt-link to="/projects" class="arrow-link"
-              >Our projects
-              <fa-icon
-                class="ml-2 mt-2"
-                :icon="['fas', 'long-arrow-alt-right']"
-              ></fa-icon>
-            </nuxt-link>
-          </div>
-        </div>
-        <div class="mb-4">
-          <img class="two-col-icon" src="@/assets/icons/educate.svg" />
-          <h1 class="two-col-heading mt-4">Educate</h1>
-          <p class="two-col-body mt-4">
-            We help students learn software engineering through collaborating
-            with a mentor.
-          </p>
-          <div class="mt-4">
-            <nuxt-link to="/education" class="arrow-link"
-              >Learn more
-              <fa-icon
-                class="ml-2 mt-2"
-                :icon="['fas', 'long-arrow-alt-right']"
-              ></fa-icon>
-            </nuxt-link>
-          </div>
+        <div
+          class="t-screen-phone:t-w-4/5 t-screen-tablet-landscape:t-w-1/2 t-pl-5 t-mt-5"
+        >
+          <img
+            class="t-screen-phone:t-mx-auto t-screen-tablet-landscape:t-float-right"
+            src="@/assets/img/open-source.svg"
+          />
         </div>
       </div>
     </section>
+    <section class="t-pb-12">
+      <content-cols-1x2 title="What we do" :cols="whatWeDo" />
+    </section>
+    <!-- Help us stay alive -->
     <!-- Who are we? -->
-    <section class="py-12">
+    <!-- <section class="py-12">
       <h1 class="text-5xl font-bold mb-4">
         Volunteer with us! Were looking for
       </h1>
-      <div class="flex pt-5 justify-space-between align--center">
+      <div class="flex pt-5 justify-space-between items-center">
         <div
           v-for="role in roles"
           :key="role.label"
@@ -109,9 +84,13 @@
           ><v-icon>mdi-message-video</v-icon>Volunteer Onboarding</v-btn
         >
       </div>
-    </section>
-    <section class="container py-8">
-      <h1 class="text-5xl font-bold pl-3 mb-5">What have we built?</h1>
+    </section> -->
+    <section class="t-pb-10">
+      <h1
+        class="t-text-2xl t-screen-tablet-landscape:t-text-3xl t-screen-pc:t-text-5xl t-font-bold"
+      >
+        Check out what we're building!
+      </h1>
       <div class="flex flex-wrap">
         <project-card
           v-for="(project, id) in projects"
@@ -135,7 +114,7 @@
             <b-button
               size="sm"
               variant="outline-primary"
-              class="mr-4 g-btn-alt d-flex align--center"
+              class="mr-4 g-btn-alt flex items-center"
               target="_blank"
             >
               Enrollment Full
@@ -155,7 +134,7 @@
             <nuxt-link to="/apprentice">
               <b-button
                 size="sm"
-                class="mr-4 g-btn d-flex align--center"
+                class="mr-4 g-btn flex items-center"
                 target="_blank"
               >
                 Check it out!
@@ -176,7 +155,7 @@
             <b-button
               size="sm"
               variant="outline-primary"
-              class="mr-4 g-btn-alt d-flex align--center"
+              class="mr-4 g-btn-alt flex items-center"
               target="_blank"
             >
               Enrollment Full
@@ -245,14 +224,16 @@
 
 <script>
 import Contributor from '@/components/Contributor'
+import ContentCols1x2 from '@/components/ContentCols1x2'
 
 export default {
   components: {
     Contributor,
+    ContentCols1x2,
   },
   async asyncData({$content, params, error}) {
-    const projectsDataStore = await $content('projects').fetch()
-    const projects = projectsDataStore.projects
+    const projectsDataStore = await $content('projects', 'projects').fetch()
+    const projects = projectsDataStore.active
     const contributorsDataStore = await $content('contributors').fetch()
 
     const contributors = Object.keys(contributorsDataStore.contributors).map(
@@ -269,6 +250,31 @@ export default {
   },
   data() {
     return {
+      whatWeDo: [
+        {
+          title: 'Create',
+          desc:
+            'We create free apps and tools to improve the open source software ecosystem!',
+          icon: '/icons/create.svg',
+          link: {
+            label: 'Our projects',
+            internal: '/projects',
+            href: '',
+          },
+        },
+        {
+          title: 'Educate',
+          desc:
+            'We research software development education strategies!',
+          icon: '/icons/educate.svg',
+          link: {
+            label: 'Learn More',
+            internal: '/educate',
+            href: '',
+          },
+        },
+      ],
+
       roles: [
         {
           label: 'Engineers',
@@ -295,176 +301,3 @@ export default {
   },
 }
 </script>
-</script>
-
-<style>
-.two-col-heading {
-  font-size: 42px;
-  font-family: var(--font-heading);
-  font-weight: 600;
-  line-height: 1.05;
-}
-
-.two-col-icon {
-  height: 96px;
-}
-
-.two-col-body {
-  font-size: 28px;
-  max-width: 434px;
-}
-
-.three-col-heading {
-  font-size: 42px;
-  font-family: var(--font-heading);
-  font-weight: 600;
-  line-height: 1.05;
-}
-
-.three-col-icon {
-  height: 96px;
-}
-
-.three-col-body {
-  font-size: 20px;
-  max-width: 343px;
-  line-height: 1.5;
-}
-
-.g-section-body {
-  font-size: 28px;
-  line-height: 1.2;
-}
-
-.g-section-heading {
-  font-weight: 700;
-  font-family: var(--font-heading);
-  color: var(--color-text-dark);
-  letter-spacing: 0.025em;
-  font-size: calc(12px + 4vw);
-  line-height: 1.05;
-  z-index: 1000;
-}
-
-.g-section-project-heading {
-  font-weight: 800;
-  font-family: var(--font-heading);
-  color: var(--color-text-dark);
-  letter-spacing: -0.025em;
-  font-size: calc(12px + 3.5vw);
-  line-height: 1.05;
-  z-index: 1000;
-}
-
-.g-section-subheading {
-  font-weight: 800;
-  font-family: var(--font-heading);
-  color: var(--color-text-dark);
-  letter-spacing: -0.025em;
-  font-size: calc(12px + 1.5vw);
-  line-height: 1.05;
-  z-index: 1000;
-  max-width: 72%;
-}
-
-.g-text-testimonial {
-  font-family: var(--font-heading);
-  margin-top: 20px;
-  font-size: 28px;
-  font-weight: 600;
-}
-
-.g-hero-tag {
-  color: var(--color-text);
-  letter-spacing: -0.032em;
-  line-height: 1.5;
-  margin-top: 32px;
-}
-
-.icon-who-we-are {
-  height: 108px;
-}
-
-.arrow-link {
-  color: var(--color-gold);
-  font-size: 28px;
-  transition: color 0.2s ease-out;
-}
-
-.arrow-link:hover {
-  color: var(--color-gold-light);
-}
-
-@media screen and (max-width: 768px) {
-  .icon-who-we-are {
-    height: 64px;
-  }
-
-  .g-section-info {
-    font-family: var(--font-heading);
-    margin-top: 20px;
-    font-size: 20px;
-    font-weight: 600;
-  }
-
-  .two-col-heading {
-    font-size: 32px;
-    font-family: var(--font-heading);
-    font-weight: 600;
-    line-height: 1.05;
-  }
-
-  .two-col-icon {
-    height: 72px;
-  }
-
-  .two-col-body {
-    font-size: 20px;
-    max-width: 434px;
-  }
-
-  .arrow-link {
-    font-size: 20px;
-  }
-
-  .g-section-body {
-    font-size: 24px;
-    line-height: 1.2;
-  }
-}
-
-@media screen and (max-width: 992px) {
-  .g-section-heading {
-    font-size: calc(12px + 6vw);
-    line-height: 1.05;
-    z-index: 1000;
-  }
-
-  .g-section-project-heading {
-    font-size: 64px;
-    line-height: 1.05;
-    z-index: 1000;
-  }
-
-  .g-hero-tag {
-    font-size: 22px;
-  }
-}
-
-.bg-gold {
-  background-color: var(--color-gold);
-  width: 100vw;
-}
-
-.link-freedoms {
-  font-weight: 600;
-  color: #434343;
-  transition: opacity 0.2s ease-out;
-}
-
-.link-freedoms:hover {
-  font-weight: 600;
-  color: #434343;
-  opacity: 0.69;
-}
-</style>

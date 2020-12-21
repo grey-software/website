@@ -1,9 +1,9 @@
 <template>
-  <div class="d-flex container mt-5 report-card py-4 pl-4">
+  <div class="flex container mt-5 report-card py-4 pl-4">
     <h1 class="report-section-header mb-4">{{ repoName() }}</h1>
 
-    <div class="d-flex pr-section">
-      <div class="d-flex detail-box">
+    <div class="flex pr-section">
+      <div class="flex detail-box">
         <div class="detail-icon-value-container">
           <img
             src="../assets/icons/new-issues.svg"
@@ -14,7 +14,7 @@
         <p>New Issues</p>
       </div>
 
-      <div class="d-flex detail-box">
+      <div class="flex detail-box">
         <div class="detail-icon-value-container">
           <img
             src="../assets/icons/closed-issues.svg"
@@ -25,7 +25,7 @@
         <p>Closed Issues</p>
       </div>
 
-      <div class="d-flex detail-box">
+      <div class="flex detail-box">
         <div class="detail-icon-value-container">
           <img
             src="../assets/icons/merge-open-pr.svg"
@@ -36,7 +36,7 @@
         <p>Open Pull Requests</p>
       </div>
 
-      <div class="d-flex detail-box">
+      <div class="flex detail-box">
         <div class="detail-icon-value-container">
           <img
             src="../assets/icons/merge-pr.svg"
@@ -48,12 +48,12 @@
       </div>
     </div>
 
-    <!-- <div class="d-flex branches-section mt-4">
+    <!-- <div class="flex branches-section mt-4">
       <h1 class="report-section-header mb-4">Master Branch</h1>
 
-      <div class="d-flex branches-info">
+      <div class="flex branches-info">
 
-        <div class="d-flex detail-box">
+        <div class="flex detail-box">
           <div class="detail-icon-value-container">
             <img
               src="../assets/icons/new-issues.svg"
@@ -64,7 +64,7 @@
           <p>Authors</p>
         </div>
 
-        <div class="d-flex detail-box">
+        <div class="flex detail-box">
           <div class="detail-icon-value-container">
             <img
               src="../assets/icons/new-issues.svg"
@@ -75,7 +75,7 @@
           <p>Authors</p>
         </div>
 
-        <div class="d-flex detail-box">
+        <div class="flex detail-box">
           <div class="detail-icon-value-container">
             <img
               src="../assets/icons/new-issues.svg"
@@ -86,7 +86,7 @@
           <p>Additions</p>
         </div>
 
-        <div class="d-flex detail-box">
+        <div class="flex detail-box">
           <div class="detail-icon-value-container">
             <img
               src="../assets/icons/new-issues.svg"

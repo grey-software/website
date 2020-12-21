@@ -4,13 +4,14 @@ export default () => {
   return new Vuex.Store({
     state() {
       return {
-        drawerOpen: false,
+        rtil: false,
       }
     },
     mutations: {
-      toggleDrawer: state => {
-        state.drawerOpen = !state.drawerOpen
+      setRtl(state, payload) {
+        state.rtl = payload.rtl;
       },
     },
   })
 }
+

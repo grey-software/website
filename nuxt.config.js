@@ -1,21 +1,18 @@
 require('dotenv').config()
 
 export default {
-  env: {
-    apiUrl: process.env.API_URL,
-  },
   /*
    ** Headers of the page
    */
   head: {
-    title: process.env.npm_package_name || '',
+    title: 'Grey Software',
     meta: [
       {charset: 'utf-8'},
       {name: 'viewport', content: 'width=device-width, initial-scale=1'},
       {
         hid: 'description',
         name: 'description',
-        content: process.env.npm_package_description || '',
+        content: "We're on a mission to empower people to create open-source software for their communities and societies!",
       },
       {hid: 'og:title', name: 'og:title', content: 'Grey Software'},
       {hid: 'og:image', name: 'og:image', content: '/logo.png'},
@@ -74,7 +71,7 @@ export default {
           dark: true,
           themes: {
             dark: {
-              primary: '#b29a66',
+              primary: '#94A3B8',
               secondary: '#424242',
               accent: '#82B1FF',
               error: '#F04747',

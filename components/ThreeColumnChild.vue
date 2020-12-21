@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="mb-3 d-flex align-middle icon-size">
+    <div class="mb-3 flex align-middle icon-size">
       <img :src="icon" />
     </div>
     <p v-if="title != ''" class="mb-3 mt-5 title">{{ title }}</p>

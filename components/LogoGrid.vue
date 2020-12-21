@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="d-md-flex flex-wrap justify-content-around">
+    <div class="d-mflex flex-wrap justify-content-around">
       <div class="text-center m-3" v-for="logo in logos" :key="logo">
         <!-- image div -->
         <i class="logo-icon" :class="logo"></i>

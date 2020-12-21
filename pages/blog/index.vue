@@ -3,7 +3,7 @@
     <h1>Blog Posts</h1>
     <div v-for="article of articles" :key="article.slug" class="mb-5">
       <NuxtLink :to="{name: 'blog-slug', params: {slug: article.slug}}">
-        <div class="article-card d-flex justify-space-between">
+        <div class="article-card flex justify-space-between">
           <div class="flex-col mr-2">
             <h2>{{ article.title }}</h2>
             <p>{{ article.description }}</p>

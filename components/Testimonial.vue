@@ -1,9 +1,9 @@
 <template>
   <div class="p-4 m-4 testimonial-container">
     <div class="mt-4 desc">{{ desc }}</div>
-    <div class="mt-5 d-flex">
+    <div class="mt-5 flex">
       <img :src="imgSrc" alt="profile image" class="mr-4" />
-      <div class="d-flex flex-column justify-content-center">
+      <div class="flex flex-column justify-content-center">
         <div class="name">{{ name }}</div>
         <div class="about-person mt-2">{{ aboutPerson }}</div>
       </div>
