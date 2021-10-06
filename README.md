@@ -1,4 +1,6 @@
+<div style="text-align:center">
 # grey.software
+</div>
 
 > [Grey Software&#39;s website](https://grey.software/)
 
