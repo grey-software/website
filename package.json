@@ -23,7 +23,7 @@
     "@tailwindcss/typography": "^0.3.1",
     "code": "^5.2.4",
     "core-js": "^3.6.5",
-    "node-fetch": "^2.6.1",
+    "node-fetch": "^3.1.1",
     "nuxt": "^2.14.11",
     "nuxt-mq": "^2.0.1",
     "phantomjs": "^2.1.7",
